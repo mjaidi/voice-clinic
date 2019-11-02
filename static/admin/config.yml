@@ -1,0 +1,8 @@
+backend:
+  name: github
+  repo: mjaidi/falu-deco
+  branch: master
+
+# Configure media upload destinations
+media_folder: /static/assets
+public_folder: /assets

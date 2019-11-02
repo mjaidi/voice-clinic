@@ -46,6 +46,7 @@ CMS.init({
         { label: "Description", name: "description", widget: "string" },
         { label: "Body", name: "body", widget: "markdown" },
         { label: "Photo", name: "photo", widget: "image" },
+        { label: "Photo2", name: "photo2", widget: "image" },
       ],
     },
   ],

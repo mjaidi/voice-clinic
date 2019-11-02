@@ -6,3 +6,5 @@ backend:
 # Configure media upload destinations
 media_folder: /static/assets
 public_folder: /assets
+
+collections:

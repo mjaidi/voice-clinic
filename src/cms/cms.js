@@ -27,7 +27,7 @@ CMS.init({
         ],
       },
     },
-    media_folder: "/static/assets",
+    // media_folder: "/static/assets",
     public_folder: "/assets",
   },
   collections: [

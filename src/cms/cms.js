@@ -2,7 +2,7 @@ import CMS from "netlify-cms-app"
 import cloudinary from "netlify-cms-media-library-cloudinary"
 CMS.registerMediaLibrary(cloudinary)
 
-console.log(process.env.CLOUDINARY_API_KEY)
+console.log(process.env.GATSBY_CLOUDINARY_API_KEY)
 
 CMS.init({
   config: {
@@ -16,7 +16,7 @@ CMS.init({
       name: "cloudinary",
       config: {
         cloud_name: "dw6uzjc8d",
-        api_key: process.env.CLOUDINARY_API_KEY,
+        api_key: process.env.GATSBY_CLOUDINARY_API_KEY,
         default_transformations: [
           [
             {

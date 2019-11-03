@@ -1,8 +1,8 @@
-window.CMS_MANUAL_INIT = true
-
 import CMS from "netlify-cms-app"
 import cloudinary from "netlify-cms-media-library-cloudinary"
 CMS.registerMediaLibrary(cloudinary)
+
+console.log(process.env.CLOUDINARY_API_KEY)
 
 CMS.init({
   config: {
@@ -28,27 +28,27 @@ CMS.init({
         ],
       },
     },
-    // media_folder: "/static/assets",
     public_folder: "/assets",
-  },
-  collections: [
-    {
-      name: "blog",
-      label: "Blog",
-      folder: "content/blog",
-      create: true,
-      slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-      editor: {
-        preview: false,
+
+    collections: [
+      {
+        name: "blog",
+        label: "Blog",
+        folder: "content/blog",
+        create: true,
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+        editor: {
+          preview: false,
+        },
+        fields: [
+          { label: "Title", name: "title", widget: "string" },
+          { label: "Publish Date", name: "date", widget: "date" },
+          { label: "Description", name: "description", widget: "string" },
+          { label: "Body", name: "body", widget: "markdown" },
+          { label: "Photo", name: "photo", widget: "image", required: false },
+          { label: "Photo2", name: "photo2", widget: "image", required: false },
+        ],
       },
-      fields: [
-        { label: "Title", name: "title", widget: "string" },
-        { label: "Publish Date", name: "date", widget: "date" },
-        { label: "Description", name: "description", widget: "string" },
-        { label: "Body", name: "body", widget: "markdown" },
-        { label: "Photo", name: "photo", widget: "image" },
-        { label: "Photo2", name: "photo2", widget: "image" },
-      ],
-    },
-  ],
+    ],
+  },
 })

@@ -1,6 +1,6 @@
 import CMS from "netlify-cms-app"
-import cloudinary from "netlify-cms-media-library-cloudinary"
-CMS.registerMediaLibrary("cloudinary", cloudinary)
+import uploadcare from "netlify-cms-media-library-uploadcare"
+CMS.registerMediaLibrary(uploadcare)
 
 CMS.init({
   config: {
@@ -11,10 +11,12 @@ CMS.init({
       squash_merges: true, // @NOTE Beta feature
     },
     media_library: {
-      name: "cloudinary",
+      name: "uploadcare",
       config: {
-        cloud_name: "dw6uzjc8d",
-        api_key: process.env.GATSBY_CLOUDINARY_API_KEY,
+        publicKey: process.env.GATSBY_UPLOADCARE_API_KEY,
+      },
+      settings: {
+        autoFilename: true,
       },
     },
     public_folder: "/assets",

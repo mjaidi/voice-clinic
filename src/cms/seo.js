@@ -1,12 +1,12 @@
 export const seo = [
   {
     label: "SEO Title",
-    name: "title",
+    name: "seo_title",
     widget: "string",
   },
   {
     label: "Meta Description",
-    name: "description",
+    name: "seo_description",
     widget: "string",
   },
 ]

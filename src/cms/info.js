@@ -7,7 +7,7 @@ export const info = {
     {
       name: "main",
       label: "Main",
-      file: "content/info.yml",
+      file: "content/info/info.md",
       fields: [
         ...seo,
         {

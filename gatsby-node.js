@@ -9,6 +9,11 @@ exports.createPages = ({ graphql, actions }) => {
     `
       {
         allMdx(
+          filter: {
+            parent: {
+              internal: { description: { regex: "/content/projects/" } }
+            }
+          }
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
@@ -19,7 +24,6 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
-                date
               }
             }
           }
@@ -31,18 +35,19 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    // Create project posts pages.
+    // Create project projects pages.
     const projects = result.data.allMdx.edges
-
-    posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
+    console.log(result)
+    projects.forEach((project, index) => {
+      const previous =
+        index === projects.length - 1 ? null : projects[index + 1].node
+      const next = index === 0 ? null : projects[index - 1].node
 
       createPage({
-        path: `project${post.node.fields.slug}`,
+        path: `projects${project.node.fields.slug}`,
         component: projectDetail,
         context: {
-          slug: post.node.fields.slug,
+          slug: project.node.fields.slug,
           previous,
           next,
         },

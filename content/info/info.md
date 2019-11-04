@@ -1,3 +1,4 @@
+---
 seo_title: Some Title
 seo_description: Some description
 title: Other Title
@@ -6,3 +7,4 @@ text: |-
   Some body in the text
 
   * You can add lists and other tings
+---

@@ -15,7 +15,7 @@ class Project extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All projects" />
         <div style={{ margin: "20px 0 40px" }}>
-          {posts.map(({ node }) => {
+          {projects.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <div key={node.fields.slug}>
@@ -34,7 +34,7 @@ class Project extends React.Component {
                 <small>{node.frontmatter.date}</small>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
+                    __html: node.excerpt,
                   }}
                 />
               </div>
@@ -68,7 +68,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
           }
         }
       }

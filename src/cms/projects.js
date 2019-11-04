@@ -28,8 +28,8 @@ export const projects = {
       name: "gallerie",
       widget: "list",
       fields: [
-        { label: "Nom", name: "nom", wiget: "string" },
-        { label: "Image", name: "image", wiget: "image" },
+        { label: "Nom", name: "nom", widget: "string" },
+        { label: "Image", name: "image", widget: "image" },
       ],
     },
   ],

@@ -1,7 +1,7 @@
 ---
 seo_title: New Title
 seo_description: Some description
-title: some image
+title: Some New Project
 date: '2019-11-21'
 text: Some body - need to make this field optional
 gallerie:

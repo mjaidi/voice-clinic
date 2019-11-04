@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Button from "../components/common/button"
 
 const IndexPage = () => (
   <Layout>
@@ -14,7 +15,9 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/projects/">Go to Projects</Link>
+    <Link to="/projects/">
+      <Button marginTop="85px">Go to Projects</Button>
+    </Link>
   </Layout>
 )
 

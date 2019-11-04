@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import Button from "../components/common/button"
 import Container from "../components/common/container"
 
-import { HeaderWrapper } from "./styles/index_page"
+import { HeaderWrapper } from "../page_styles/index_page"
 
 const IndexPage = () => (
   <Layout>

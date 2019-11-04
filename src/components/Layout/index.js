@@ -10,16 +10,15 @@ import PropTypes from "prop-types"
 
 import Header from "../Header"
 import { Global } from "./globalStyles"
-import { LayoutWrapper } from "./styles"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Global />
       <Header />
-      <LayoutWrapper>
+      <div>
         <main>{children}</main>
-      </LayoutWrapper>
+      </div>
     </>
   )
 }

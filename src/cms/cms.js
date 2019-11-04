@@ -1,5 +1,7 @@
 import CMS from "netlify-cms-app"
 import uploadcare from "netlify-cms-media-library-uploadcare"
+import { info } from "./info"
+import { projects } from "./projects"
 CMS.registerMediaLibrary(uploadcare)
 
 CMS.init({
@@ -20,26 +22,6 @@ CMS.init({
       },
     },
     public_folder: "/assets",
-
-    collections: [
-      {
-        name: "blog",
-        label: "Blog",
-        folder: "content/blog",
-        create: true,
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-        editor: {
-          preview: false,
-        },
-        fields: [
-          { label: "Title", name: "title", widget: "string" },
-          { label: "Publish Date", name: "date", widget: "date" },
-          { label: "Description", name: "description", widget: "string" },
-          { label: "Body", name: "body", widget: "markdown" },
-          { label: "Photo", name: "photo", widget: "image", required: false },
-          { label: "Photo2", name: "photo2", widget: "image", required: false },
-        ],
-      },
-    ],
+    collections: [info, projects],
   },
 })

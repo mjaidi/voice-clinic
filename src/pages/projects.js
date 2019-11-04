@@ -5,15 +5,15 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Button from "../components/common/button"
 
-class Blog extends React.Component {
+class Project extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMdx.edges
+    const projects = data.allMdx.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="All projects" />
         <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
@@ -26,7 +26,7 @@ class Blog extends React.Component {
                 >
                   <Link
                     style={{ boxShadow: `none` }}
-                    to={`blog${node.fields.slug}`}
+                    to={`projects${node.fields.slug}`}
                   >
                     {title}
                   </Link>
@@ -49,7 +49,7 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog
+export default Project
 
 export const pageQuery = graphql`
   query {

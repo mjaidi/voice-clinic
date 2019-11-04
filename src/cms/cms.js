@@ -17,15 +17,6 @@ CMS.init({
       config: {
         cloud_name: "dw6uzjc8d",
         api_key: process.env.GATSBY_CLOUDINARY_API_KEY,
-        default_transformations: [
-          [
-            {
-              width: 2000,
-              quality: 80,
-              crop: "limit",
-            },
-          ],
-        ],
       },
     },
     public_folder: "/assets",

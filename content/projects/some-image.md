@@ -5,9 +5,11 @@ title: Some New Project
 date: '2019-11-21'
 text: Some body - need to make this field optional
 gallerie:
-  - image: 'https://ucarecdn.com/f77b0405-4542-4c3e-b878-3988690a500c/'
+  - image: >-
+      https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968811/bfgd2lt3itwvjiazm4vs.jpg
     nom: First Image
-  - image: 'https://ucarecdn.com/cb0e314b-0fc7-4c06-8f7c-48efae61ba7c/'
+  - image: >-
+      https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968837/uowpmjm96spcigvmccno.jpg
     nom: Second Image
 ---
 

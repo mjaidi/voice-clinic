@@ -7,11 +7,10 @@ image: 'https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572689557/sample.jpg
 categories:
   - images:
       - >-
-        https://res.cloudinary.com/dw6uzjc8d/video/upload/v1572689575/samples/elephants.mp4
+        https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968837/uowpmjm96spcigvmccno.jpg
       - >-
-        https://res.cloudinary.com/dw6uzjc8d/video/upload/v1572689572/samples/sea-turtle.mp4
-      - >-
-        https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572689568/samples/cloudinary-group.jpg
+        https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968811/bfgd2lt3itwvjiazm4vs.jpg
+      - 'https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572689557/sample.jpg'
     title: Test
   - images:
       - >-

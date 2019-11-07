@@ -8,6 +8,7 @@ export const GalleryItem = styled.div`
   cursor: pointer;
   img {
     margin: 0;
+    width: 100%;
   }
   @media (max-width: 900px) {
     width: 48%;

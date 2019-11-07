@@ -11,11 +11,11 @@ import PropTypes from "prop-types"
 import Header from "../Header"
 import { Global } from "./globalStyles"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   return (
     <>
       <Global />
-      <Header />
+      <Header location={location} />
       <div>
         <main>{children}</main>
       </div>

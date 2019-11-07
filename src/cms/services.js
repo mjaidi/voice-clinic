@@ -20,8 +20,15 @@ export const services = {
       required: true,
     },
     {
-      label: "Image_fond",
+      label: "Image Fond",
       name: "image",
+      widget: "image",
+      required: true,
+      allow_multiple: false,
+    },
+    {
+      label: "Icon",
+      name: "icon",
       widget: "image",
       required: true,
       allow_multiple: false,

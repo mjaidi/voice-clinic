@@ -11,7 +11,7 @@ export const CarouselContainer = styled.div`
   }
 `
 export const CarouselImage = styled.div`
-  height: ${props => props.height || "80vh"};
+  height: ${props => props.height || "90vh"};
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -113,8 +113,8 @@ export const CarouselSteps = styled.div`
   }
 `
 export const CarouselArrow = styled.div`
-  height: ${props => props.height || "80vh"};
-  line-height: ${props => props.height || "80vh"};
+  height: ${props => props.height || "90vh"};
+  line-height: ${props => props.height || "90vh"};
   vertical-align: middle;
   position: absolute;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.8), transparent);

@@ -5,6 +5,9 @@
     "version": "0.1.0",
     "author": "Kyle Mathews <mathews.kyle@gmail.com>",
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.25",
+        "@fortawesome/free-solid-svg-icons": "^5.11.2",
+        "@fortawesome/react-fontawesome": "^0.1.7",
         "@mdx-js/mdx": "^1.5.1",
         "@mdx-js/react": "^1.5.1",
         "add": "^2.0.6",
@@ -13,6 +16,7 @@
         "gatsby": "^2.17.6",
         "gatsby-image": "^2.2.30",
         "gatsby-plugin-feed": "^2.3.19",
+        "gatsby-plugin-google-fonts": "^1.0.1",
         "gatsby-plugin-manifest": "^2.2.25",
         "gatsby-plugin-mdx": "^1.0.52",
         "gatsby-plugin-netlify": "^2.1.23",

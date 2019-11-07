@@ -78,6 +78,12 @@ export const home = {
           required: true,
         },
         {
+          label: "Titre",
+          name: "title",
+          widget: "string",
+          required: true,
+        },
+        {
           label: "Text",
           name: "text",
           widget: "markdown",

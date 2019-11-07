@@ -34,22 +34,13 @@ const ServiceDetailTemplate = props => {
             {allImgs.map((i, index) => {
               return (
                 <GalleryItem key={index}>
-                  <LightgalleryItem group="any" src={i.image}>
+                  <LightgalleryItem src={i.image}>
                     <img src={i.image} alt={i.category} />
                   </LightgalleryItem>
                 </GalleryItem>
               )
             })}
           </Masonry>
-          <p
-            style={{
-              display: `block`,
-              marginBottom: 2,
-              marginTop: -1,
-            }}
-          >
-            {service.frontmatter.date}
-          </p>
           <MDXRenderer>{service.body}</MDXRenderer>
           <hr
             style={{

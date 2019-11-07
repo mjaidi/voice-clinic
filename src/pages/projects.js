@@ -7,12 +7,12 @@ import Button from "../components/common/button"
 import Container from "../components/common/container"
 
 const Project = props => {
-  const { data, location } = props
+  const { data } = props
   const siteTitle = data.site.siteMetadata.title
   const projects = data.allMdx.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location="/projects" title={siteTitle}>
       <Container>
         <SEO title="All projects" />
         <div style={{ margin: "20px 0 40px" }}>

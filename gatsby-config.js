@@ -15,8 +15,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Quicksand`,
-          `source sans pro\:300,400,500,700`, // you can also specify font weights and styles
+          `Quicksand\:300,400,500,700`,
+          `Paytone One\:300,400,500,700`, // you can also specify font weights and styles
         ],
         display: "swap",
       },

@@ -1,11 +1,13 @@
 import styled from "styled-components"
-import { shadowMain } from "../components/Layout/variables"
+import { shadowMain, headerFont } from "../components/Layout/variables"
 export const About = styled.div`
   padding-top: 5rem;
   padding-bottom: 5rem;
   h2 {
     text-align: center;
     margin-bottom: 2rem;
+    font-family: ${headerFont};
+    font-size: 30px;
   }
   .flex {
     display: flex;
@@ -44,7 +46,9 @@ export const Services = styled.div`
   }
   h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    font-size: 30px;
+    font-family: ${headerFont};
   }
   .service-card {
     transition: all 0.5s;

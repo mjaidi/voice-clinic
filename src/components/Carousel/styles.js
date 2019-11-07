@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { headerFont } from "../Layout/variables"
 export const CarouselContainer = styled.div`
   display: flex;
   font-family: unset;
@@ -37,12 +37,13 @@ export const CarouselImage = styled.div`
     color: white;
     justify-content: center;
     position: absolute;
-    top: 38%;
+    top: 35%;
     letter-spacing: 2px;
     text-shadow: 1px 1px 19px rgba(0, 0, 0, 1);
     h2 {
       margin: 0;
-      font-size: 35px;
+      font-size: 40px;
+      font-family: ${headerFont};
     }
   }
 

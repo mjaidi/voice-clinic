@@ -1,18 +1,19 @@
 import styled from "styled-components"
-import { dark } from "../../Layout/variables"
+import { dark, headerFont, accentMain } from "../../Layout/variables"
 export const Wrapper = styled.div`
   a {
     color: ${dark};
     text-decoration: none;
     font-size: 18px;
     font-weight: 300;
+    font-family: ${headerFont};
     &:hover {
-      font-weight: 500;
+      color: ${accentMain};
     }
   }
 
   .active {
-    font-weight: 700;
+    color: ${accentMain};
   }
 
   ${({ desktop }) =>

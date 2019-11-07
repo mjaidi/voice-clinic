@@ -2,7 +2,7 @@
 seo_title: New Title
 seo_description: Some description
 logo: https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968811/bfgd2lt3itwvjiazm4vs.jpg
-banner_images:
+banner_gallery:
   - image: >-
       https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968811/bfgd2lt3itwvjiazm4vs.jpg
     title: First Image

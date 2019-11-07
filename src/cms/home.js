@@ -7,7 +7,7 @@ export const home = {
     {
       name: "banner",
       label: "Banner",
-      file: "content/info/home.md",
+      file: "content/home/home.md",
       fields: [
         ...seo,
         {
@@ -43,7 +43,7 @@ export const home = {
     {
       name: "contact",
       label: "Contact",
-      file: "content/info/contact.md",
+      file: "content/home/contact.md",
       fields: [
         {
           label: "Numéro Téléphone",
@@ -68,7 +68,7 @@ export const home = {
     {
       name: "about",
       label: "About",
-      file: "content/info/about.md",
+      file: "content/home/about.md",
       fields: [
         {
           label: "Image",

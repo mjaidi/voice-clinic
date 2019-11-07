@@ -5,7 +5,7 @@ import { Wrapper } from "./styles"
 
 const NavbarLinks = ({ desktop }) => (
   <Wrapper desktop={desktop}>
-    <Link to="/about">About</Link>
+    <Link to="/services">Services</Link>
     <Link to="/projects">Projects</Link>
     <Link to="/contact">Contact</Link>
   </Wrapper>

@@ -5,30 +5,41 @@ import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
 
 import Container from "../components/common/container"
 import Masonry from "react-masonry-component"
-import { GalleryItem } from "../template_styles/project-detail"
+import { GalleryItem } from "../template_styles/service-detail"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import "lightgallery.js/dist/css/lightgallery.css"
 
-const ProjectDetailTemplate = props => {
-  const project = props.data.mdx
+const ServiceDetailTemplate = props => {
+  const service = props.data.mdx
   const siteTitle = props.data.site.siteMetadata.title
   const { previous, next } = props.pageContext
+  let allImgs = []
+  for (const cat of service.frontmatter.categories) {
+    for (const img of cat.images) {
+      allImgs.push({ image: img, category: cat.title })
+    }
+  }
+
   return (
     <Layout location={props.location} title={siteTitle}>
       <LightgalleryProvider>
         <Container>
           <SEO
-            title={project.frontmatter.title}
-            description={project.frontmatter.description || project.excerpt}
+            title={service.frontmatter.title}
+            description={service.frontmatter.description || service.excerpt}
           />
-          <h1>{project.frontmatter.title}</h1>
+          <h1>{service.frontmatter.title}</h1>
           <Masonry>
-            <GalleryItem>
-              <LightgalleryItem group="any" src={project.frontmatter.image}>
-                <img src={project.frontmatter.image} alt="new" />
-              </LightgalleryItem>
-            </GalleryItem>
+            {allImgs.map((i, index) => {
+              return (
+                <GalleryItem key={index}>
+                  <LightgalleryItem group="any" src={i.image}>
+                    <img src={i.image} alt={i.category} />
+                  </LightgalleryItem>
+                </GalleryItem>
+              )
+            })}
           </Masonry>
           <p
             style={{
@@ -37,9 +48,9 @@ const ProjectDetailTemplate = props => {
               marginTop: -1,
             }}
           >
-            {project.frontmatter.date}
+            {service.frontmatter.date}
           </p>
-          <MDXRenderer>{project.body}</MDXRenderer>
+          <MDXRenderer>{service.body}</MDXRenderer>
           <hr
             style={{
               marginBottom: 2,
@@ -57,14 +68,14 @@ const ProjectDetailTemplate = props => {
           >
             <li>
               {previous && (
-                <Link to={`projects${previous.fields.slug}`} rel="prev">
+                <Link to={`services${previous.fields.slug}`} rel="prev">
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={`projects${next.fields.slug}`} rel="next">
+                <Link to={`services${next.fields.slug}`} rel="next">
                   {next.frontmatter.title} →
                 </Link>
               )}
@@ -76,10 +87,10 @@ const ProjectDetailTemplate = props => {
   )
 }
 
-export default ProjectDetailTemplate
+export default ServiceDetailTemplate
 
 export const pageQuery = graphql`
-  query ProjectDetailBySlug($slug: String!) {
+  query serviceDetailBySlug($slug: String!) {
     site {
       siteMetadata {
         title
@@ -93,6 +104,10 @@ export const pageQuery = graphql`
         title
         description
         image
+        categories {
+          title
+          images
+        }
       }
     }
   }

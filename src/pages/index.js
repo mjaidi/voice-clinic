@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -7,22 +7,12 @@ import Button from "../components/common/button"
 import Container from "../components/common/container"
 import Carousel from "../components/Carousel"
 
-import facade from "../../content/assets/facade.jpg"
-import umnia from "../../content/assets/umnia.jpg"
-
-const IndexPage = () => {
-  const carouselImgs = [
-    {
-      headline: "Falu Déco",
-      subline: "Façadier, enseignes et ameublement",
-      url: umnia,
-    },
-    {
-      headline: "Falu Déco",
-      subline: "spécialiste des façades et amménagement extérieur",
-      url: facade,
-    },
-  ]
+const IndexPage = props => {
+  const { data } = props
+  const homePageData = data.allMdx.nodes[0].frontmatter
+  const carouselImgs = homePageData.banner_gallery.map(g => {
+    return { headline: g.title, subline: g.subtitle, url: g.image }
+  })
   return (
     <Layout>
       <SEO title="Home" />
@@ -37,3 +27,33 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMdx(
+      filter: {
+        parent: {
+          internal: { description: { regex: "/content/home/home.md/" } }
+        }
+      }
+    ) {
+      nodes {
+        frontmatter {
+          banner_gallery {
+            image
+            subtitle
+            title
+          }
+          logo
+          seo_title
+          seo_description
+        }
+      }
+    }
+  }
+`

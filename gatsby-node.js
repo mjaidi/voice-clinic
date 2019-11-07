@@ -4,14 +4,14 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const projectDetail = path.resolve(`./src/templates/project-detail.js`)
+  const serviceDetail = path.resolve(`./src/templates/service-detail.js`)
   return graphql(
     `
       {
         allMdx(
           filter: {
             parent: {
-              internal: { description: { regex: "/content/projects/" } }
+              internal: { description: { regex: "/content/services/" } }
             }
           }
           limit: 1000
@@ -34,19 +34,19 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    // Create project projects pages.
-    const projects = result.data.allMdx.edges
+    // Create service services pages.
+    const services = result.data.allMdx.edges
     console.log(result)
-    projects.forEach((project, index) => {
+    services.forEach((service, index) => {
       const previous =
-        index === projects.length - 1 ? null : projects[index + 1].node
-      const next = index === 0 ? null : projects[index - 1].node
+        index === services.length - 1 ? null : services[index + 1].node
+      const next = index === 0 ? null : services[index - 1].node
 
       createPage({
-        path: `projects${project.node.fields.slug}`,
-        component: projectDetail,
+        path: `services${service.node.fields.slug}`,
+        component: serviceDetail,
         context: {
-          slug: project.node.fields.slug,
+          slug: service.node.fields.slug,
           previous,
           next,
         },

@@ -44,6 +44,11 @@ export const services = {
           widget: "image",
           allow_multiple: true,
           required: true,
+          media_library: {
+            config: {
+              multiple: true,
+            },
+          },
         },
       ],
     },

@@ -6,17 +6,17 @@ import SEO from "../components/seo"
 import Button from "../components/common/button"
 import Container from "../components/common/container"
 
-const Project = props => {
+const Services = props => {
   const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
-  const projects = data.allMdx.edges
+  const services = data.allMdx.edges
 
   return (
     <Layout location={location} title={siteTitle}>
       <Container>
-        <SEO title="All projects" />
+        <SEO title="All Services" />
         <div style={{ margin: "20px 0 40px" }}>
-          {projects.map(({ node }) => {
+          {services.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <div key={node.fields.slug}>
@@ -25,7 +25,12 @@ const Project = props => {
                     marginBottom: 15,
                   }}
                 >
-                  {title}
+                  <Link
+                    style={{ boxShadow: `none` }}
+                    to={`services${node.fields.slug}`}
+                  >
+                    {title}
+                  </Link>
                 </h3>
                 <p
                   dangerouslySetInnerHTML={{
@@ -44,7 +49,7 @@ const Project = props => {
   )
 }
 
-export default Project
+export default Services
 
 export const pageQuery = graphql`
   query {
@@ -55,11 +60,12 @@ export const pageQuery = graphql`
     }
     allMdx(
       filter: {
-        parent: { internal: { description: { regex: "/content/projects/" } } }
+        parent: { internal: { description: { regex: "/content/services/" } } }
       }
     ) {
       edges {
         node {
+          excerpt
           fields {
             slug
           }

@@ -1,23 +1,21 @@
 ---
 seo_title: New Title
 seo_description: Some description
-title: Some New Project
-date: '2019-11-21'
-text: Some body - need to make this field optional
-gallerie:
+logo: https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968811/bfgd2lt3itwvjiazm4vs.jpg
+banner_gallerie:
   - image: >-
       https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968811/bfgd2lt3itwvjiazm4vs.jpg
-    nom: First Image
+    title: First Image
+    subtitle: First Image description for subtitle
   - image: >-
       https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968837/uowpmjm96spcigvmccno.jpg
-    nom: Second Image
+    title: Second Image
   - image: 'https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572689557/sample.jpg'
-    nom: test2
+    title: test2
   - image: >-
       https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572689562/samples/sheep.jpg
-    nom: test3
+    title: test3
   - image: >-
       https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572689569/samples/landscapes/nature-mountains.jpg
-    nom: test4
+    title: test4
 ---
-

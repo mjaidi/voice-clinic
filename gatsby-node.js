@@ -14,7 +14,6 @@ exports.createPages = ({ graphql, actions }) => {
               internal: { description: { regex: "/content/projects/" } }
             }
           }
-          sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
           edges {

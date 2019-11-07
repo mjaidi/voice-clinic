@@ -14,7 +14,6 @@ const ProjectDetailTemplate = props => {
   const project = props.data.mdx
   const siteTitle = props.data.site.siteMetadata.title
   const { previous, next } = props.pageContext
-  console.log(project.frontmatter.gallerie)
   return (
     <Layout location={props.location} title={siteTitle}>
       <LightgalleryProvider>
@@ -25,15 +24,11 @@ const ProjectDetailTemplate = props => {
           />
           <h1>{project.frontmatter.title}</h1>
           <Masonry>
-            {project.frontmatter.gallerie.map((i, index) => {
-              return (
-                <GalleryItem>
-                  <LightgalleryItem group="any" src={i.image} key={index}>
-                    <img src={i.image} alt={i.name} />
-                  </LightgalleryItem>
-                </GalleryItem>
-              )
-            })}
+            <GalleryItem>
+              <LightgalleryItem group="any" src={project.frontmatter.image}>
+                <img src={project.frontmatter.image} alt="new" />
+              </LightgalleryItem>
+            </GalleryItem>
           </Masonry>
           <p
             style={{
@@ -62,14 +57,14 @@ const ProjectDetailTemplate = props => {
           >
             <li>
               {previous && (
-                <Link to={`blog${previous.fields.slug}`} rel="prev">
+                <Link to={`projects${previous.fields.slug}`} rel="prev">
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={`blog${next.fields.slug}`} rel="next">
+                <Link to={`projects${next.fields.slug}`} rel="next">
                   {next.frontmatter.title} →
                 </Link>
               )}
@@ -96,12 +91,8 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
-        text
-        gallerie {
-          image
-          nom
-        }
+        description
+        image
       }
     }
   }

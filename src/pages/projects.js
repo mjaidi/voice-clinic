@@ -63,7 +63,6 @@ export const pageQuery = graphql`
       filter: {
         parent: { internal: { description: { regex: "/content/projects/" } } }
       }
-      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {
@@ -72,7 +71,6 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
           }
         }

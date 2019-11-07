@@ -1,7 +1,7 @@
 import CMS from "netlify-cms-app"
 // import uploadcare from "netlify-cms-media-library-uploadcare"
 import cloudinary from "netlify-cms-media-library-cloudinary"
-import { info } from "./info"
+import { home } from "./home"
 import { projects } from "./projects"
 CMS.registerMediaLibrary(cloudinary)
 
@@ -25,6 +25,6 @@ CMS.init({
       },
     },
     public_folder: "/assets",
-    collections: [info, projects],
+    collections: [home, projects],
   },
 })

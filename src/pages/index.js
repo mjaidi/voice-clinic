@@ -82,10 +82,11 @@ const IndexPage = props => {
           <LightgalleryProvider>
             <Title>Nouveautés</Title>
             <div className="insta-flex">
-              {instagram.map(i => {
+              {instagram.map((i, index) => {
                 return (
-                  <div class="insta-card">
+                  <div className="insta-card" key={index}>
                     <LightgalleryItem
+                      group="all"
                       src={i.node.localFile.childImageSharp.fixed.src}
                     >
                       <Img fixed={i.node.localFile.childImageSharp.fixed} />

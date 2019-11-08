@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { accentMain } from "../components/Layout/variables"
 export const GalleryItem = styled.div`
   width: 32%;
   margin-left: 5px;
@@ -18,5 +18,23 @@ export const GalleryItem = styled.div`
   }
   &:hover {
     transform: scale(1.05);
+  }
+`
+export const CategorySelector = styled.ul`
+  display: flex;
+  list-style: none;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  justify-content: space-evenly;
+  li {
+    font-weight: bold;
+    &.active {
+      color: ${accentMain};
+    }
+    &:hover {
+      color: ${accentMain};
+      cursor: pointer;
+    }
   }
 `

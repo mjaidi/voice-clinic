@@ -1,5 +1,13 @@
 import styled from "styled-components"
-import { dark, headerFont, accentMain } from "../../Layout/variables"
+import {
+  dark,
+  headerFont,
+  mainFont,
+  accentMain,
+  accentMainLight,
+  background,
+  shadowMain,
+} from "../../Layout/variables"
 export const Wrapper = styled.div`
   a {
     color: ${dark};
@@ -14,6 +22,10 @@ export const Wrapper = styled.div`
 
   .active {
     color: ${accentMain};
+  }
+
+  .navbarLink {
+    position: relative;
   }
 
   ${({ desktop }) =>
@@ -44,4 +56,44 @@ export const Wrapper = styled.div`
 					}
 			}
 	`}
+`
+
+export const Menu = styled.ul`
+  display: none;
+  list-style: none;
+  padding: 1rem;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 10;
+  min-width: 200px;
+  background: ${background};
+  box-shadow: ${shadowMain};
+  a {
+    font-size: 15px;
+    font-family: ${mainFont};
+  }
+
+  &.active {
+    display: block;
+  }
+  li {
+    color: ${dark};
+    padding: 0.5rem;
+    &:hover {
+      color: ${accentMain};
+      background: ${accentMainLight};
+    }
+  }
+  ${({ desktop }) =>
+    desktop
+      ? ``
+      : `
+    &.active {
+      position: relative;
+      top: 0;
+      left: 5px;
+      padding: 0;
+    }
+  `}
 `

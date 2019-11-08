@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "../Header"
+import Footer from "../Footer"
 import { Global } from "./globalStyles"
 
 const Layout = ({ children, location }) => {
@@ -19,6 +20,7 @@ const Layout = ({ children, location }) => {
       <div>
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   )
 }

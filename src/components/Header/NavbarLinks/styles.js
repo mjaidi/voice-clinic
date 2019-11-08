@@ -81,7 +81,7 @@ export const Menu = styled.ul`
     color: ${dark};
     padding: 0.5rem;
     &:hover {
-      color: ${accentMain};
+      color: ${dark};
       background: ${accentMainLight};
     }
   }

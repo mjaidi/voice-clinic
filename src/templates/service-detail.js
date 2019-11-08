@@ -4,6 +4,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
 
 import Container from "../components/common/container"
+import PageHeader from "../components/common/pageHeader"
 import Masonry from "react-masonry-component"
 import {
   GalleryItem,
@@ -35,12 +36,16 @@ const ServiceDetailTemplate = props => {
   console.log(categoryList)
   return (
     <Layout location={props.location} title={siteTitle}>
+      <PageHeader
+        title={service.frontmatter.title}
+        image={service.frontmatter.image}
+      ></PageHeader>
+
       <Container>
         <SEO
           title={service.frontmatter.title}
           description={service.frontmatter.description || service.excerpt}
         />
-        <h1>{service.frontmatter.title}</h1>
         <CategorySelector>
           {categoryList.map(c => (
             <li

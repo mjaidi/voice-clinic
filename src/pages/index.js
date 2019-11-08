@@ -1,13 +1,14 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Container from "../components/common/container"
-import TopClip from "../components/common/top_clip.js"
+import TriangleClip from "../components/common/triangle_clip.js"
 import Carousel from "../components/Carousel"
-
-import { About, Services } from "../page_styles/index_page"
+import Img from "gatsby-image"
+import { About, Services, Instagram } from "../page_styles/index_page"
 import { accentSecondaryLight } from "../components/Layout/variables"
 
 const IndexPage = props => {
@@ -15,6 +16,8 @@ const IndexPage = props => {
   const homePageData = data.home.nodes[0].frontmatter
   const aboutData = data.about.nodes[0].frontmatter
   const services = data.services.edges
+  const instagram = data.insta.edges
+  console.log(instagram)
   const carouselImgs = homePageData.banner_gallery.map(g => {
     return { headline: g.title, subline: g.subtitle, url: g.image }
   })
@@ -40,7 +43,7 @@ const IndexPage = props => {
           </div>
         </About>
       </Container>
-      <TopClip color={accentSecondaryLight} />
+      <TriangleClip color={accentSecondaryLight} />
       <Container color={accentSecondaryLight}>
         <Services>
           <h2>Nos Services</h2>
@@ -60,6 +63,28 @@ const IndexPage = props => {
             })}
           </div>
         </Services>
+      </Container>
+      <TriangleClip color={accentSecondaryLight} direction="bottom" />
+      <Container>
+        <Instagram>
+          <LightgalleryProvider>
+            <h2>Nouveautés</h2>
+            <div className="insta-flex">
+              {instagram.map(i => {
+                return (
+                  <div class="insta-card">
+                    <LightgalleryItem
+                      src={i.node.localFile.childImageSharp.fixed.src}
+                    >
+                      <Img fixed={i.node.localFile.childImageSharp.fixed} />
+                    </LightgalleryItem>
+                    <p>{i.node.caption}</p>
+                  </div>
+                )
+              })}
+            </div>
+          </LightgalleryProvider>
+        </Instagram>
       </Container>
     </Layout>
   )
@@ -116,6 +141,20 @@ export const pageQuery = graphql`
           frontmatter {
             title
             icon
+          }
+        }
+      }
+    }
+    insta: allInstaNode {
+      edges {
+        node {
+          caption
+          localFile {
+            childImageSharp {
+              fixed {
+                ...GatsbyImageSharpFixed
+              }
+            }
           }
         }
       }

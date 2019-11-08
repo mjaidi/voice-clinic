@@ -41,31 +41,6 @@ export const home = {
       ],
     },
     {
-      name: "contact",
-      label: "Contact",
-      file: "content/home/contact.md",
-      fields: [
-        {
-          label: "Numéro Téléphone",
-          name: "phone",
-          widget: "string",
-          required: true,
-        },
-        {
-          label: "Email",
-          name: "email",
-          widget: "string",
-          required: true,
-        },
-        {
-          label: "Adresse",
-          name: "address",
-          widget: "string",
-          required: true,
-        },
-      ],
-    },
-    {
       name: "about",
       label: "About",
       file: "content/home/about.md",
@@ -87,6 +62,54 @@ export const home = {
           label: "Text",
           name: "text",
           widget: "markdown",
+          required: true,
+        },
+      ],
+    },
+    {
+      name: "clients",
+      label: "Clients",
+      file: "content/home/clients.md",
+      fields: [
+        {
+          label: "Logos Clients",
+          name: "client_gallery",
+          widget: "list",
+          fields: [
+            { label: "Nom", name: "name", widget: "string", required: false },
+
+            {
+              label: "Logo",
+              name: "logo",
+              widget: "image",
+              allow_multiple: false,
+              required: true,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "contact",
+      label: "Contact",
+      file: "content/home/contact.md",
+      fields: [
+        {
+          label: "Numéro Téléphone",
+          name: "phone",
+          widget: "string",
+          required: true,
+        },
+        {
+          label: "Email",
+          name: "email",
+          widget: "string",
+          required: true,
+        },
+        {
+          label: "Adresse",
+          name: "address",
+          widget: "string",
           required: true,
         },
       ],

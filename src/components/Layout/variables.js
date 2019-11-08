@@ -2,7 +2,7 @@ export const background = "#fbfcfffa"
 export const dark = "#1e1e1e"
 export const light = "#eee"
 export const accentMain = "#b93232"
-export const accentMainLight = "#ffd4d4"
+export const accentMainLight = "#fdeded"
 export const accentSecondaryLight = "#f0f8ff"
 
 export const mainFont = "'Quicksand', sans-serif"

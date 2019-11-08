@@ -1,14 +1,16 @@
 import styled from "styled-components"
 import { shadowMain, headerFont } from "../components/Layout/variables"
+
+export const Title = styled.h2`
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: ${headerFont};
+  font-size: 30px;
+`
+
 export const About = styled.div`
   padding-top: 5rem;
   padding-bottom: 5rem;
-  h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-family: ${headerFont};
-    font-size: 30px;
-  }
   .flex {
     display: flex;
     justify-content: center;
@@ -43,12 +45,6 @@ export const Services = styled.div`
     margin: 1rem;
     width: 30%;
     height: 12rem;
-  }
-  h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 30px;
-    font-family: ${headerFont};
   }
   .service-card {
     transition: all 0.5s;
@@ -94,22 +90,15 @@ export const Services = styled.div`
 export const Instagram = styled.div`
   padding-top: 3rem;
   padding-bottom: 10rem;
-  h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 30px;
-    font-family: ${headerFont};
-  }
-
   .insta-card {
     transition: all 0.5s;
     box-shadow: ${shadowMain};
     border-radius: 10px;
     height: 100%;
     background: white;
-    width: 22%;
-    height: 20rem;
-    margin: 1rem;
+    width: 30%;
+    height: 25rem;
+    margin: 2rem 1rem;
 
     &:hover {
       transform: scale(1.05);
@@ -126,14 +115,14 @@ export const Instagram = styled.div`
       height: 100%;
       object-fit: cover;
       margin-bottom: 0;
-      border-radius: 10px 10px 0 0;
+      border-radius: 10px 10px 0px 0px;
     }
     p {
       text-align: center;
-      padding: 1rem 0;
+      padding: 1.5rem 0.4rem;
       margin: 0;
       overflow: hidden;
-      height: 3rem;
+      height: 90px;
     }
   }
   .insta-flex {
@@ -152,4 +141,9 @@ export const Instagram = styled.div`
       width: 100%;
     }
   }
+`
+
+export const Clients = styled.div`
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 `

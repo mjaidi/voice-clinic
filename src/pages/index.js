@@ -8,8 +8,17 @@ import Container from "../components/common/container"
 import TriangleClip from "../components/common/triangle_clip.js"
 import Carousel from "../components/Carousel"
 import Img from "gatsby-image"
-import { About, Services, Instagram } from "../page_styles/index_page"
-import { accentSecondaryLight } from "../components/Layout/variables"
+import {
+  About,
+  Services,
+  Instagram,
+  Clients,
+  Title,
+} from "../page_styles/index_page"
+import {
+  accentSecondaryLight,
+  accentMainLight,
+} from "../components/Layout/variables"
 
 const IndexPage = props => {
   const { data } = props
@@ -33,7 +42,7 @@ const IndexPage = props => {
           <div className="flex">
             <img src={aboutData.image} alt="about" />
             <div>
-              <h2>{aboutData.title}</h2>
+              <Title>{aboutData.title}</Title>
               <p
                 dangerouslySetInnerHTML={{
                   __html: aboutData.text,
@@ -46,7 +55,7 @@ const IndexPage = props => {
       <TriangleClip color={accentSecondaryLight} />
       <Container color={accentSecondaryLight}>
         <Services>
-          <h2>Nos Services</h2>
+          <Title>Nos Services</Title>
           <div className="service-flex">
             {services.map(({ node }) => {
               return (
@@ -68,7 +77,7 @@ const IndexPage = props => {
       <Container>
         <Instagram>
           <LightgalleryProvider>
-            <h2>Nouveautés</h2>
+            <Title>Nouveautés</Title>
             <div className="insta-flex">
               {instagram.map(i => {
                 return (
@@ -86,6 +95,18 @@ const IndexPage = props => {
           </LightgalleryProvider>
         </Instagram>
       </Container>
+      <TriangleClip color={accentMainLight} />
+      <Container color={accentMainLight}>
+        <Clients>
+          <Title>Nos Clients</Title>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </Clients>
+      </Container>
+      <TriangleClip color={accentMainLight} direction="bottom" />
     </Layout>
   )
 }

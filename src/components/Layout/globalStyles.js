@@ -18,4 +18,11 @@ p {
   line-height: 1.4
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
 `

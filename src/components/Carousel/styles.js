@@ -31,14 +31,21 @@ export const CarouselImage = styled.div`
     flex-direction: column;
   }
 
+  .CarouselCaptionsContainer {
+    display: flex;
+    flex-direction: column;
+    column: reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
   .CarouselImageContainer .CarouselImageLabel {
     width: 100%;
-    display: flex;
     color: white;
-    justify-content: center;
-    position: absolute;
-    top: 35%;
+    text-align: center;
     letter-spacing: 2px;
+    padding: 1rem 0;
     text-shadow: 1px 1px 19px rgba(0, 0, 0, 1);
     h2 {
       margin: 0;
@@ -49,33 +56,25 @@ export const CarouselImage = styled.div`
 
   .CarouselImageContainer .CarouselImageSubline {
     width: 100%;
-    display: flex;
     color: white;
-    position: absolute;
-    top: 45%;
-    justify-content: center;
+    text-align: center;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    padding: 1rem 0;
+
     h4 {
       margin: 0;
       font-size: 20px;
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
     }
   }
-
-  .CarouselImageContainer .CarouselImageTextOverlay {
-    width: 100%;
+  a {
     display: flex;
-    height: 120px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+    justify-content: center;
+    width: 100%;
   }
 
   .CarouselImageCurrent {
     opacity: 1;
-  }
-  .CarouselImageLabel {
-    position: absolute;
-    display: flex;
-    justify-content: center;
   }
 `
 export const CarouselSteps = styled.div`

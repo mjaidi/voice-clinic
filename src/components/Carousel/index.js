@@ -5,6 +5,8 @@ import {
   CarouselSteps,
   CarouselArrow,
 } from "./styles"
+import { Link } from "gatsby"
+import Button from "../common/button"
 
 const Carousel = props => {
   const [imageIndex, setImageIndex] = useState(0)
@@ -46,19 +48,21 @@ const Carousel = props => {
               backgroundPosition: "center",
             }}
           >
-            {image.headline && (
-              <div className="CarouselImageLabel">
-                <h2>{image.headline}</h2>
-              </div>
-            )}
-            {image.subline && (
-              <div className="CarouselImageSubline">
-                <h4>{image.subline}</h4>
-              </div>
-            )}
-            {(image.headline || image.subline) && (
-              <div className="CarouselImageTextOverlay" />
-            )}
+            <div className="CarouselCaptionsContainer">
+              {image.headline && (
+                <div className="CarouselImageLabel">
+                  <h2>{image.headline}</h2>
+                </div>
+              )}
+              {image.subline && (
+                <div className="CarouselImageSubline">
+                  <h4>{image.subline}</h4>
+                </div>
+              )}
+              <Link to="/contact">
+                <Button>Vous avez un projet?</Button>
+              </Link>
+            </div>
           </div>
         ))}
       </CarouselImage>

@@ -102,7 +102,6 @@ const IndexPage = props => {
       <Container color={accentMainLight}>
         <Clients>
           <Title>Nos Clients</Title>
-
           <CardCarousel images={clientImgs} />
         </Clients>
       </Container>

@@ -23,7 +23,11 @@ const CardCarousel = props => {
 
   return (
     <CarouselContainer height={props.height || null}>
-      <CarouselArrow className="ArrowBack" onClick={() => handleBack()}>
+      <CarouselArrow
+        className="ArrowBack"
+        onClick={() => handleBack()}
+        height={props.height || null}
+      >
         <div className="CarouselArrowIcon">
           <span className="chevron left"></span>
         </div>
@@ -70,7 +74,6 @@ const CardCarousel = props => {
           </div>
         ))}
       </CarouselCard>
-
       <CarouselArrow
         className="ArrowNext"
         onClick={() => handleNext()}

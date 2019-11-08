@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import Container from "../components/common/container"
 import TriangleClip from "../components/common/triangle_clip.js"
 import Carousel from "../components/Carousel"
+import CardCarousel from "../components/CardCarousel"
 import Img from "gatsby-image"
 import {
   About,
@@ -25,11 +26,13 @@ const IndexPage = props => {
   const homePageData = data.home.nodes[0].frontmatter
   const aboutData = data.about.nodes[0].frontmatter
   const services = data.services.edges
+  const clients = data.clients.nodes[0].frontmatter
   const instagram = data.insta.edges
-  console.log(instagram)
   const carouselImgs = homePageData.banner_gallery.map(g => {
     return { headline: g.title, subline: g.subtitle, url: g.image }
   })
+  const clientImgs = clients.client_gallery.map(c => c.logo)
+
   return (
     <Layout location="/">
       <SEO
@@ -99,11 +102,8 @@ const IndexPage = props => {
       <Container color={accentMainLight}>
         <Clients>
           <Title>Nos Clients</Title>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+
+          <CardCarousel images={clientImgs} />
         </Clients>
       </Container>
       <TriangleClip color={accentMainLight} direction="bottom" />
@@ -176,6 +176,22 @@ export const pageQuery = graphql`
                 ...GatsbyImageSharpFixed
               }
             }
+          }
+        }
+      }
+    }
+    clients: allMdx(
+      filter: {
+        parent: {
+          internal: { description: { regex: "/content/home/clients.md/" } }
+        }
+      }
+    ) {
+      nodes {
+        frontmatter {
+          client_gallery {
+            logo
+            nom
           }
         }
       }

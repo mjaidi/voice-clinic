@@ -49,8 +49,9 @@ export const CarouselImage = styled.div`
     text-shadow: 1px 1px 19px rgba(0, 0, 0, 1);
     h2 {
       margin: 0;
-      font-size: 40px;
+      font-size: 50px;
       font-family: ${headerFont};
+      text-transform: uppercase;
     }
   }
 
@@ -59,7 +60,7 @@ export const CarouselImage = styled.div`
     color: white;
     text-align: center;
     letter-spacing: 2px;
-    padding: 1rem 0;
+    padding-bottom: 2rem;
 
     h4 {
       margin: 0;

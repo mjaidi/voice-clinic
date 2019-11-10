@@ -3,9 +3,11 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import Button from "../components/common/button"
 import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
+import Button from "../components/common/button"
+import { ServicesWrapper, ServicesCard } from "../page_styles/services"
+import { accentSecondary } from "../components/Layout/variables"
 
 const Services = props => {
   const { data } = props
@@ -20,35 +22,44 @@ const Services = props => {
       ></PageHeader>
       <Container>
         <SEO title="Nos Services" />
-        <div style={{ margin: "20px 0 40px" }}>
-          {services.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
+        <ServicesWrapper>
+          {services.map((p, index) => {
+            const title = p.node.frontmatter.title || p.node.fields.slug
             return (
-              <div key={node.fields.slug}>
-                <h3
-                  style={{
-                    marginBottom: 15,
-                  }}
-                >
-                  <Link
-                    style={{ boxShadow: `none` }}
-                    to={`services${node.fields.slug}`}
+              <ServicesCard key={p.node.fields.slug}>
+                <img
+                  src={p.node.frontmatter.image}
+                  alt={p.node.frontmatter.title}
+                  class={index % 2 === 0 ? "show top" : "hide top"}
+                ></img>
+                <div className="services-content">
+                  <h3
+                    style={{
+                      marginBottom: 15,
+                    }}
                   >
                     {title}
+                  </h3>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: p.node.frontmatter.description,
+                    }}
+                  />
+                  <Link to={`services${p.node.fields.slug}`}>
+                    <Button background={accentSecondary}>
+                      En savoir plus...
+                    </Button>
                   </Link>
-                </h3>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description,
-                  }}
-                />
-              </div>
+                </div>
+                <img
+                  src={p.node.frontmatter.image}
+                  alt={p.node.frontmatter.title}
+                  class={index % 2 === 1 ? "show bottom" : "hide bottom"}
+                ></img>
+              </ServicesCard>
             )
           })}
-        </div>
-        <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
-        </Link>
+        </ServicesWrapper>
       </Container>
     </Layout>
   )
@@ -77,6 +88,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
+            image
           }
         }
       }

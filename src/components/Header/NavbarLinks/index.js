@@ -8,6 +8,12 @@ const NavbarLinks = ({ data, desktop, location }) => {
   return (
     <Wrapper desktop={desktop}>
       <Link
+        to="/"
+        className={location === "/" ? "navbarLink active" : "navbarLink"}
+      >
+        Acceuil
+      </Link>
+      <Link
         to="/services"
         className={
           location === "/services" ? "navbarLink active" : "navbarLink"
@@ -20,9 +26,9 @@ const NavbarLinks = ({ data, desktop, location }) => {
           className={activeMenu === "services" ? "active" : ""}
           onMouseOut={event => setActiveMenu("")}
         >
-          {data.services.edges.map(e => {
+          {data.services.edges.map((e, index) => {
             return (
-              <li>
+              <li key={index}>
                 <Link to={`services${e.node.fields.slug}`}>
                   {e.node.frontmatter.title}
                 </Link>

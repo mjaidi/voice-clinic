@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { dark, shadowMain } from "../Layout/variables"
+import { dark, shadowMain, borderRadius } from "../Layout/variables"
 export const CarouselContainer = styled.div`
   display: flex;
   font-family: unset;
@@ -21,7 +21,7 @@ export const CarouselCard = styled.div`
   justify-content: center;
   align-items: center;
   background: white;
-  border-radius: 10px;
+  border-radius: ${borderRadius};
   box-shadow: ${shadowMain};
   .carousel-img {
     opacity: 0;

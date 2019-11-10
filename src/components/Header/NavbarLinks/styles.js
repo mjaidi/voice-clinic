@@ -2,7 +2,6 @@ import styled from "styled-components"
 import {
   dark,
   headerFont,
-  mainFont,
   accentMain,
   accentMainLight,
   background,
@@ -12,8 +11,9 @@ export const Wrapper = styled.div`
   a {
     color: ${dark};
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
     font-family: ${headerFont};
     &:hover {
       color: ${accentMain};
@@ -71,7 +71,8 @@ export const Menu = styled.ul`
   box-shadow: ${shadowMain};
   a {
     font-size: 15px;
-    font-family: ${mainFont};
+    text-transform: none;
+    font-weight: 500;
   }
 
   &.active {
@@ -80,8 +81,10 @@ export const Menu = styled.ul`
   li {
     color: ${dark};
     padding: 0.5rem;
-    &:hover {
+    a:hover {
       color: ${dark};
+    }
+    &:hover {
       background: ${accentMainLight};
     }
   }
@@ -94,6 +97,7 @@ export const Menu = styled.ul`
       top: 0;
       left: 5px;
       padding: 0;
+      box-shadow: none;
     }
   `}
 `

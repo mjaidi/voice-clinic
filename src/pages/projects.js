@@ -1,13 +1,15 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-
+import React, { useState } from "react"
+import { graphql } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import Button from "../components/common/button"
 import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
+import { ProjectWrapper, ProjectCard } from "../page_styles/projects"
 
 const Project = props => {
+  const [expandCard, setExpandCard] = useState({ cardIndex: 0, status: false })
   const { data } = props
   const siteTitle = data.site.siteMetadata.title
   const projects = data.allMdx.edges
@@ -21,11 +23,18 @@ const Project = props => {
 
       <Container>
         <SEO title="Tous nos projets" />
-        <div style={{ margin: "20px 0 40px" }}>
-          {projects.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
+        <ProjectWrapper>
+          {projects.map((p, index) => {
+            const title = p.node.frontmatter.title || p.node.fields.slug
             return (
-              <div key={node.fields.slug}>
+              <ProjectCard
+                key={p.node.fields.slug}
+                show={expandCard.cardIndex === index && expandCard.status}
+              >
+                <img
+                  src={p.node.frontmatter.image}
+                  alt={p.node.frontmatter.title}
+                />
                 <h3
                   style={{
                     marginBottom: 15,
@@ -35,16 +44,31 @@ const Project = props => {
                 </h3>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description,
+                    __html: p.node.frontmatter.description,
                   }}
                 />
-              </div>
+                <h5
+                  className="expand"
+                  onClick={event =>
+                    setExpandCard({ cardIndex: index, status: true })
+                  }
+                >
+                  <FontAwesomeIcon icon={faCaretDown} />
+                  Voir plus
+                </h5>
+                <h5
+                  className="contract"
+                  onClick={event =>
+                    setExpandCard({ cardIndex: index, status: false })
+                  }
+                >
+                  <FontAwesomeIcon icon={faCaretUp} />
+                  Voir moins
+                </h5>
+              </ProjectCard>
             )
           })}
-        </div>
-        <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
-        </Link>
+        </ProjectWrapper>
       </Container>
     </Layout>
   )
@@ -72,6 +96,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
+            image
           }
         }
       }

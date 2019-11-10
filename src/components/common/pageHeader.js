@@ -30,6 +30,7 @@ const PageHeaderStyled = styled.section`
     font-family: ${headerFont};
     width: 100%;
     color: white;
+    text-transform: uppercase;
   }
 `
 

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { accentMain } from "../components/Layout/variables"
+import { accentMain, headerFont } from "../components/Layout/variables"
 export const GalleryItem = styled.div`
   width: 32%;
   margin-left: 5px;
@@ -37,4 +37,20 @@ export const CategorySelector = styled.ul`
       cursor: pointer;
     }
   }
+`
+
+export const CategoryHeader = styled.h2`
+  text-align: center;
+  font-family: ${headerFont};
+  color: ${accentMain};
+  margin: 2rem auto;
+`
+
+export const ServiceNavigation = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin-top: -60px;
 `

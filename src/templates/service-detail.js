@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
 
 import Container from "../components/common/container"
@@ -9,6 +8,8 @@ import Masonry from "react-masonry-component"
 import {
   GalleryItem,
   CategorySelector,
+  CategoryHeader,
+  ServiceNavigation,
 } from "../template_styles/service-detail"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -33,7 +34,6 @@ const ServiceDetailTemplate = props => {
   }
   const categoryList = [...new Set(allImgs.map(i => i.category))]
   categoryList.unshift("Tous")
-  console.log(categoryList)
   return (
     <Layout location={props.location} title={siteTitle}>
       <PageHeader
@@ -46,48 +46,8 @@ const ServiceDetailTemplate = props => {
           title={service.frontmatter.title}
           description={service.frontmatter.description || service.excerpt}
         />
-        <CategorySelector>
-          {categoryList.map(c => (
-            <li
-              onClick={event => setActiveCategory(c)}
-              className={c === activeCategory ? "active" : ""}
-            >
-              {c}
-            </li>
-          ))}
-        </CategorySelector>
-        {filteredImgs.length > 0 && (
-          <LightgalleryProvider>
-            <Masonry>
-              {filteredImgs.map((i, index) => {
-                return (
-                  <GalleryItem key={index}>
-                    <LightgalleryItem src={i.image}>
-                      <img src={i.image} alt={i.category} />
-                    </LightgalleryItem>
-                  </GalleryItem>
-                )
-              })}
-            </Masonry>
-          </LightgalleryProvider>
-        )}
 
-        <MDXRenderer>{service.body}</MDXRenderer>
-        <hr
-          style={{
-            marginBottom: 2,
-          }}
-        />
-
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+        <ServiceNavigation>
           <li>
             {previous && (
               <Link to={`services${previous.fields.slug}`} rel="prev">
@@ -102,7 +62,42 @@ const ServiceDetailTemplate = props => {
               </Link>
             )}
           </li>
-        </ul>
+        </ServiceNavigation>
+        <hr />
+        <br />
+        <p
+          dangerouslySetInnerHTML={{
+            __html: service.frontmatter.description,
+          }}
+        />
+        <CategoryHeader>Types de {service.frontmatter.title}</CategoryHeader>
+
+        <CategorySelector>
+          {categoryList.map(c => (
+            <li
+              onClick={event => setActiveCategory(c)}
+              className={c === activeCategory ? "active" : ""}
+              key={c}
+            >
+              {c}
+            </li>
+          ))}
+        </CategorySelector>
+        {filteredImgs.length > 0 && (
+          <LightgalleryProvider>
+            <Masonry>
+              {filteredImgs.map((i, index) => {
+                return (
+                  <GalleryItem key={index}>
+                    <LightgalleryItem group="all" src={i.image}>
+                      <img src={i.image} alt={i.category} />
+                    </LightgalleryItem>
+                  </GalleryItem>
+                )
+              })}
+            </Masonry>
+          </LightgalleryProvider>
+        )}
       </Container>
     </Layout>
   )

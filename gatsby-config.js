@@ -22,7 +22,7 @@ module.exports = {
       options: {
         fonts: [
           `Quicksand\:300,400,500,700`,
-          `Paytone One\:300,400,500,700`, // you can also specify font weights and styles
+          `PT Sans\:300,400,500,700`, // you can also specify font weights and styles
         ],
         display: "swap",
       },
@@ -80,7 +80,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `content/assets/logo.png`, // This path is relative to the root of the site.
       },
     },
 

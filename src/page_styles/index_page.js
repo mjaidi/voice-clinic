@@ -1,11 +1,16 @@
 import styled from "styled-components"
-import { shadowMain, headerFont } from "../components/Layout/variables"
+import {
+  shadowMain,
+  headerFont,
+  borderRadius,
+} from "../components/Layout/variables"
 
 export const Title = styled.h2`
   text-align: center;
   margin-bottom: 2rem;
   font-family: ${headerFont};
-  font-size: 30px;
+  font-size: 35px;
+  text-transform: uppercase;
 `
 
 export const About = styled.div`
@@ -49,7 +54,7 @@ export const Services = styled.div`
   .service-card {
     transition: all 0.5s;
     box-shadow: ${shadowMain};
-    border-radius: 10px;
+    border-radius: ${borderRadius};
     height: 100%;
     background: white;
 
@@ -61,7 +66,7 @@ export const Services = styled.div`
       max-height: 70%;
       object-fit: contain;
       margin-bottom: 0;
-      border-radius: 10px 10px 0 0;
+      border-radius: ${borderRadius} ${borderRadius} 0 0;
     }
     h4 {
       text-align: center;
@@ -93,7 +98,7 @@ export const Instagram = styled.div`
   .insta-card {
     transition: all 0.5s;
     box-shadow: ${shadowMain};
-    border-radius: 10px;
+    border-radius: ${borderRadius};
     height: 100%;
     background: white;
     width: 30%;
@@ -115,14 +120,14 @@ export const Instagram = styled.div`
       height: 100%;
       object-fit: cover;
       margin-bottom: 0;
-      border-radius: 10px 10px 0px 0px;
+      border-radius: ${borderRadius} ${borderRadius} 0px 0px;
     }
     p {
       text-align: center;
       padding: 1.5rem 0.4rem;
       margin: 0;
       overflow: hidden;
-      height: 90px;
+      height: 70px;
     }
   }
   .insta-flex {

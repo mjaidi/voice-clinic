@@ -106,7 +106,6 @@ const IndexPage = props => {
           <CardCarousel images={clientImgs} />
         </Clients>
       </Container>
-      <TriangleClip color={accentMainLight} direction="bottom" />
     </Layout>
   )
 }

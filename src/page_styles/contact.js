@@ -30,6 +30,7 @@ export const ContactForm = styled.section`
       padding: 0.5rem;
       font-family: ${mainFont};
       border: 1px solid ${light};
+      font-size: 18px;
       &:focus {
         border-color: ${accentSecondary};
         outline-color: ${background};

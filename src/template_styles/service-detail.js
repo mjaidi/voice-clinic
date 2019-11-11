@@ -52,5 +52,4 @@ export const ServiceNavigation = styled.ul`
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin-top: -60px;
 `

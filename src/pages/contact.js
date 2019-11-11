@@ -134,6 +134,7 @@ const Contact = props => {
                 </div>
                 <Dropzone
                   accept="image/*"
+                  name="files"
                   onDrop={acceptedFiles => {
                     console.log(acceptedFiles)
                     // do nothing if no files
@@ -162,7 +163,7 @@ const Contact = props => {
                     if (values.files.length === 0) {
                       return (
                         <div {...getRootProps()} style={DropzoneStyle}>
-                          <input {...getInputProps()} />
+                          <input name="files" {...getInputProps()} />
                           <p>Gissez vos fichier ici! (max 1MB)</p>
                         </div>
                       )
@@ -170,7 +171,7 @@ const Contact = props => {
 
                     return (
                       <div {...getRootProps()} style={DropzoneStyle}>
-                        <input {...getInputProps()} />
+                        <input name="files" {...getInputProps()} />
 
                         {values.files.map((file, i) => (
                           <Thumb key={i} file={file} />

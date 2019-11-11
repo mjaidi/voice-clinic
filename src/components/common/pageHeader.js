@@ -21,7 +21,6 @@ const PageHeaderStyled = styled.section`
   position: relative;
   background-size: cover;
   background-position: center;
-  margin-bottom: 5rem;
   h1 {
     position: absolute;
     top: 30%;

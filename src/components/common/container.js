@@ -13,7 +13,7 @@ const ContainerStyled = styled.section`
     margin: 0 auto;
     max-width: 1200px;
     padding: 0px 1.0875rem 1.45rem;
-    padding-top: 0;
+    padding-top: ${props => props.props.paddingTop || "0"};
   }
 `
 

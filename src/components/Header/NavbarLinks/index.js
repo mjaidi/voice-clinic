@@ -11,7 +11,7 @@ const NavbarLinks = ({ data, desktop, location }) => {
         to="/"
         className={location === "/" ? "navbarLink active" : "navbarLink"}
       >
-        Acceuil
+        Accueil
       </Link>
       <Link
         to="/services"
@@ -43,13 +43,13 @@ const NavbarLinks = ({ data, desktop, location }) => {
           location === "/projects" ? "navbarLink active" : "navbarLink"
         }
       >
-        Projects
+        Projets
       </Link>
       <Link
         to="/contact"
         className={location === "/contact" ? "navbarLink active" : "navbarLink"}
       >
-        Contact
+        Demandez un Devis
       </Link>
     </Wrapper>
   )

@@ -14,7 +14,7 @@ import { ContactForm, Feedback } from "../page_styles/contact"
 import { accentMainLight } from "../components/Layout/variables"
 
 const Contact = props => {
-  const [feedbackMsg, setFeedbackMsg] = useState("some message")
+  const [feedbackMsg, setFeedbackMsg] = useState("")
   return (
     <Layout location="/contact" title="Contactez Nous">
       <PageHeader title="Demandez nous un devis"></PageHeader>
@@ -32,7 +32,11 @@ const Contact = props => {
         </Feedback>
         <ContactForm>
           <Formik
-            initialValues={{ email: "", message: "" }}
+            initialValues={{
+              email: "",
+              message: "",
+              "form-name": "Contact Form",
+            }}
             validate={values => {
               const errors = {}
               if (!values.email) {

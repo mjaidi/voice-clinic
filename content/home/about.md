@@ -1,7 +1,7 @@
 ---
 image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572689564/samples/landscapes/architecture-signs.jpg
-title: 'Qui nous sommes'
+title: Qui sommes nous
 text: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus orci,
   ultrices quis lacus sed, pellentesque pulvinar sem. Proin vitae ante et justo

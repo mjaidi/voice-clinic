@@ -3,11 +3,15 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
 import Button from "../components/common/button"
 import { ServicesWrapper, ServicesCard } from "../page_styles/services"
-import { accentSecondary } from "../components/Layout/variables"
+import {
+  accentSecondary,
+  accentSecondaryLight,
+  background,
+} from "../components/Layout/variables"
+import TriangleClip from "../components/common/triangle_clip.js"
 
 const Services = props => {
   const { data } = props
@@ -20,13 +24,21 @@ const Services = props => {
         title="Nos Services"
         image="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
       ></PageHeader>
-      <Container>
-        <SEO title="Nos Services" />
-        <ServicesWrapper>
-          {services.map((p, index) => {
-            const title = p.node.frontmatter.title || p.node.fields.slug
-            return (
-              <ServicesCard key={p.node.fields.slug}>
+      <SEO title="Nos Services" />
+      <ServicesWrapper>
+        {services.map((p, index) => {
+          const title = p.node.frontmatter.title || p.node.fields.slug
+          return (
+            <div>
+              {index !== 0 && (
+                <TriangleClip
+                  color={index % 2 === 1 ? accentSecondaryLight : background}
+                ></TriangleClip>
+              )}
+              <ServicesCard
+                key={p.node.fields.slug}
+                background={index % 2 === 1 ? accentSecondaryLight : background}
+              >
                 <img
                   src={p.node.frontmatter.image}
                   alt={p.node.frontmatter.title}
@@ -57,10 +69,16 @@ const Services = props => {
                   class={index % 2 === 1 ? "show bottom" : "hide bottom"}
                 ></img>
               </ServicesCard>
-            )
-          })}
-        </ServicesWrapper>
-      </Container>
+              {index !== services.length - 1 && (
+                <TriangleClip
+                  color={index % 2 === 1 ? accentSecondaryLight : background}
+                  direction="bottom"
+                ></TriangleClip>
+              )}
+            </div>
+          )
+        })}
+      </ServicesWrapper>
     </Layout>
   )
 }

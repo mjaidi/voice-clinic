@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { Formik } from "formik"
 import axios from "axios"
 import qs from "query-string"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTimesCircle } from "@fortawesome/free-solid-svg-icons"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -12,14 +14,22 @@ import { ContactForm, Feedback } from "../page_styles/contact"
 import { accentMainLight } from "../components/Layout/variables"
 
 const Contact = props => {
-  const [feedbackMsg, setFeedbackMsg] = useState("")
+  const [feedbackMsg, setFeedbackMsg] = useState("some message")
   return (
     <Layout location="/contact" title="Contactez Nous">
       <PageHeader title="Demandez nous un devis"></PageHeader>
 
       <Container color={accentMainLight} paddingTop="3rem">
         <SEO title="Demandez un Devis" />
-        <Feedback>{feedbackMsg}</Feedback>
+        <Feedback className={feedbackMsg === "" ? "" : "show"}>
+          <div className="feedback-content">
+            <FontAwesomeIcon
+              icon={faTimesCircle}
+              onClick={event => setFeedbackMsg("")}
+            />
+            {feedbackMsg}
+          </div>
+        </Feedback>
         <ContactForm>
           <Formik
             initialValues={{ email: "", message: "" }}
@@ -39,14 +49,13 @@ const Contact = props => {
             }}
             onSubmit={(values, { setSubmitting }) => {
               const axiosOptions = {
-                url: this.props.location.pathname,
+                url: props.location.pathname,
                 method: "post",
                 headers: {
                   "Content-Type": "application/x-www-form-urlencoded",
                 },
                 data: qs.stringify(values),
               }
-
               axios(axiosOptions)
                 .then(response => {
                   setFeedbackMsg("Form submitted successfully!")

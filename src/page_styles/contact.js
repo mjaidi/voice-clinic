@@ -6,6 +6,7 @@ import {
   accentSecondary,
   background,
   mainFont,
+  borderRadius,
 } from "../components/Layout/variables"
 
 export const ContactForm = styled.section`
@@ -47,4 +48,31 @@ export const ContactForm = styled.section`
     }
   }
 `
-export const Feedback = styled.div``
+export const Feedback = styled.div`
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  .feedback-content {
+    padding: 4rem;
+    max-width: 500px;
+    position: relative;
+    background: ${background};
+    border-radius: ${borderRadius};
+  }
+  svg {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+  }
+  &.show {
+    display: flex;
+  }
+`

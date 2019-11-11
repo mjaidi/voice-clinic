@@ -76,3 +76,12 @@ export const Feedback = styled.div`
     display: flex;
   }
 `
+
+export const DropzoneStyle = {
+  width: "100%",
+  minHeight: "5rem",
+  border: `1px dashed ${accentSecondary}`,
+  textAlign: "center",
+  marginBottom: " 2rem",
+  fontWeight: "bold",
+}

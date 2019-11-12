@@ -1,6 +1,6 @@
 ---
 image: >-
-  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572689564/samples/landscapes/architecture-signs.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img635_mipix5.jpg
 title: Qui sommes nous
 text: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus orci,

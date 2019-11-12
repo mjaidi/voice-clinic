@@ -35,6 +35,12 @@ const ServiceDetailTemplate = props => {
   }
   const categoryList = [...new Set(allImgs.map(i => i.category))]
   categoryList.unshift("Tous")
+
+  const title = ["a", "e", "i", "o", "u"].includes(
+    service.frontmatter.title.toLowerCase().charAt(0)
+  )
+    ? "Types d'"
+    : "Types de "
   return (
     <Layout location={props.location} title={siteTitle}>
       <PageHeader
@@ -71,7 +77,10 @@ const ServiceDetailTemplate = props => {
             __html: service.frontmatter.description,
           }}
         />
-        <CategoryHeader>Types de {service.frontmatter.title}</CategoryHeader>
+        <CategoryHeader>
+          {title}
+          <span class="lowercase">{service.frontmatter.title}</span>
+        </CategoryHeader>
 
         <CategorySelector>
           {categoryList.map(c => (

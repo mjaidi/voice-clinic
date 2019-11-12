@@ -10,4 +10,4 @@ export const mainFont = "'Quicksand', sans-serif"
 export const headerFont = "'PT Sans', sans-serif"
 
 export const shadowMain = "2px 5px 10px #ddd"
-export const borderRadius = "0"
+export const borderRadius = "5px"

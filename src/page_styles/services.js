@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { headerFont, background } from "../components/Layout/variables"
-import texture from "../../content/assets/bright-squares.png"
+import texture from "../../content/assets/crissxcross.png"
 
 export const ServicesWrapper = styled.div`
   margin: 0 auto;

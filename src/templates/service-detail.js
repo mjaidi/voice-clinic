@@ -36,7 +36,7 @@ const ServiceDetailTemplate = props => {
   const categoryList = [...new Set(allImgs.map(i => i.category))]
   categoryList.unshift("Tous")
 
-  const title = ["a", "e", "i", "o", "u"].includes(
+  const categoryTitle = ["a", "e", "i", "o", "u"].includes(
     service.frontmatter.title.toLowerCase().charAt(0)
   )
     ? "Types d'"
@@ -78,7 +78,7 @@ const ServiceDetailTemplate = props => {
           }}
         />
         <CategoryHeader>
-          {title}
+          {categoryTitle}
           <span class="lowercase">{service.frontmatter.title}</span>
         </CategoryHeader>
 

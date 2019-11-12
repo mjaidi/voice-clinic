@@ -16,7 +16,7 @@ CMS.init({
     media_library: {
       name: "cloudinary",
       config: {
-        cloud_name: "dw6uzjc8d",
+        cloud_name: "faludeco",
         api_key: process.env.GATSBY_CLOUDINARY_API_KEY,
       },
       settings: {

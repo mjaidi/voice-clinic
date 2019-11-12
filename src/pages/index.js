@@ -5,9 +5,8 @@ import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Container from "../components/common/container"
-import TriangleClip from "../components/common/triangle_clip.js"
+import TriangleClip from "../components/common/triangleClip.js"
 import Carousel from "../components/Carousel"
-import CardCarousel from "../components/CardCarousel"
 import Img from "gatsby-image"
 import {
   About,
@@ -20,6 +19,8 @@ import {
   accentSecondaryLight,
   accentMainLight,
 } from "../components/Layout/variables"
+import Grid from "../components/common/grid"
+import GridItem from "../components/common/gridItem"
 
 const IndexPage = props => {
   const { data } = props
@@ -27,11 +28,10 @@ const IndexPage = props => {
   const aboutData = data.about.nodes[0].frontmatter
   const services = data.services.edges
   const clients = data.clients.nodes[0].frontmatter
-  const instagram = data.insta.edges
+  const instagram = data.insta.edges.filter(i => i.node.localFile !== null)
   const carouselImgs = homePageData.banner_gallery.map(g => {
     return { headline: g.title, subline: g.subtitle, url: g.image }
   })
-  const clientImgs = clients.client_gallery.map(c => c.logo)
 
   return (
     <Layout location="/">
@@ -42,68 +42,84 @@ const IndexPage = props => {
       <Carousel images={carouselImgs} />
       <Container>
         <About>
-          <div className="flex">
-            <img src={aboutData.image} alt="about" />
-            <div>
+          <Grid>
+            <GridItem lgColumns={10} lgNbColumns={4} margin={15}>
+              <img src={aboutData.image} alt="about" />
+            </GridItem>
+            <GridItem lgColumns={10} lgNbColumns={6} margin={15}>
               <Title>{aboutData.title}</Title>
               <p
                 dangerouslySetInnerHTML={{
                   __html: aboutData.text,
                 }}
               />
-            </div>
-          </div>
+            </GridItem>
+          </Grid>
         </About>
       </Container>
-      <TriangleClip color={accentSecondaryLight} />
-      <Container color={accentSecondaryLight}>
+      <TriangleClip color={accentSecondaryLight} textured />
+      <Container color={accentSecondaryLight} textured>
         <Services>
           <Title>Nos Services</Title>
-          <div className="service-flex">
+          <Grid>
             {services.map(({ node }) => {
               return (
-                <Link to={`services${node.fields.slug}`} key={node.fields.slug}>
-                  <div className="service-card">
-                    <img
-                      src={node.frontmatter.icon}
-                      alt={node.frontmatter.title}
-                    />
-                    <h4>{node.frontmatter.title}</h4>
-                  </div>
-                </Link>
+                <GridItem key={node.fields.slug}>
+                  <Link to={`services${node.fields.slug}`}>
+                    <div className="service-card">
+                      <img
+                        src={node.frontmatter.icon}
+                        alt={node.frontmatter.title}
+                      />
+                      <h4>{node.frontmatter.title}</h4>
+                    </div>
+                  </Link>
+                </GridItem>
               )
             })}
-          </div>
+          </Grid>
         </Services>
       </Container>
-      <TriangleClip color={accentSecondaryLight} direction="bottom" />
+      <TriangleClip color={accentSecondaryLight} direction="bottom" textured />
       <Container>
         <Instagram>
           <LightgalleryProvider>
             <Title>Nouveautés</Title>
-            <div className="insta-flex">
+            <Grid>
               {instagram.map((i, index) => {
                 return (
-                  <div className="insta-card" key={index}>
-                    <LightgalleryItem
-                      group="all"
-                      src={i.node.localFile.childImageSharp.fixed.src}
-                    >
-                      <Img fixed={i.node.localFile.childImageSharp.fixed} />
-                    </LightgalleryItem>
-                    <p>{i.node.caption}</p>
-                  </div>
+                  <GridItem key={index}>
+                    <div className="insta-card">
+                      <LightgalleryItem
+                        group="all"
+                        src={i.node.localFile.childImageSharp.fixed.src}
+                      >
+                        <Img fixed={i.node.localFile.childImageSharp.fixed} />
+                      </LightgalleryItem>
+                      <p>{i.node.caption}</p>
+                    </div>
+                  </GridItem>
                 )
               })}
-            </div>
+            </Grid>
           </LightgalleryProvider>
         </Instagram>
       </Container>
-      <TriangleClip color={accentMainLight} />
-      <Container color={accentMainLight}>
+      <TriangleClip color={accentMainLight} textured />
+      <Container color={accentMainLight} textured>
         <Clients>
           <Title>Nos Clients</Title>
-          <CardCarousel images={clientImgs} />
+          <Grid justifyContent="left">
+            {clients.client_gallery.map((c, index) => (
+              <GridItem
+                lgColumns={5}
+                mdColumns={3}
+                key={JSON.stringify(c.logo)}
+              >
+                <img src={c.logo} alt="client"></img>
+              </GridItem>
+            ))}
+          </Grid>
         </Clients>
       </Container>
     </Layout>

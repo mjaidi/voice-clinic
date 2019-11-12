@@ -26,6 +26,7 @@ export const Wrapper = styled.div`
 
   .navbarLink {
     position: relative;
+    display: inline-block;
   }
 
   ${({ desktop }) =>
@@ -35,7 +36,7 @@ export const Wrapper = styled.div`
 					display: none;
 			}
 
-			a {
+			.navbarLink {
 					margin-right: 3rem;
 
 					&:last-child {
@@ -48,7 +49,7 @@ export const Wrapper = styled.div`
 			display: flex;
 			flex-direction: column;
 
-			a {
+			.navbarLink {
 					margin-bottom: 1rem;
 
 					&:last-child {
@@ -65,7 +66,7 @@ export const Menu = styled.ul`
   position: absolute;
   top: 35px;
   left: 0;
-  z-index: 10;
+  z-index: 20;
   min-width: 200px;
   background: ${background};
   box-shadow: ${shadowMain};

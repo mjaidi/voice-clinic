@@ -7,24 +7,24 @@ const NavbarLinks = ({ data, desktop, location }) => {
 
   return (
     <Wrapper desktop={desktop}>
-      <Link
-        to="/"
-        className={location === "/" ? "navbarLink active" : "navbarLink"}
-      >
-        Accueil
-      </Link>
-      <Link
-        to="/services"
-        className={
-          location === "/services" ? "navbarLink active" : "navbarLink"
-        }
-        onMouseOver={event => setActiveMenu("services")}
-      >
-        Services
+      <div className="navbarLink">
+        <Link to="/" className={location === "/" ? " active" : ""}>
+          Accueil
+        </Link>
+      </div>
+      <div className="navbarLink">
+        <Link
+          to="/services"
+          className={location === "/services" ? " active" : ""}
+          onMouseOver={event => setActiveMenu("services")}
+        >
+          Services
+        </Link>
+
         <Menu
           desktop={desktop}
           className={activeMenu === "services" ? "active" : ""}
-          onMouseOut={event => setActiveMenu("")}
+          onMouseLeave={event => setActiveMenu("")}
         >
           {data.services.edges.map((e, index) => {
             return (
@@ -36,21 +36,23 @@ const NavbarLinks = ({ data, desktop, location }) => {
             )
           })}
         </Menu>
-      </Link>
-      <Link
-        to="/projects"
-        className={
-          location === "/projects" ? "navbarLink active" : "navbarLink"
-        }
-      >
-        Projets
-      </Link>
-      <Link
-        to="/contact"
-        className={location === "/contact" ? "navbarLink active" : "navbarLink"}
-      >
-        Demandez un Devis
-      </Link>
+      </div>
+      <div className="navbarLink">
+        <Link
+          to="/projects"
+          className={location === "/projects" ? " active" : ""}
+        >
+          Projets
+        </Link>
+      </div>
+      <div className="navbarLink">
+        <Link
+          to="/contact"
+          className={location === "/contact" ? " active" : ""}
+        >
+          Demandez un Devis
+        </Link>
+      </div>
     </Wrapper>
   )
 }

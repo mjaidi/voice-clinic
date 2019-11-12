@@ -2,8 +2,6 @@ import React, { useState } from "react"
 import { Formik } from "formik"
 import axios from "axios"
 import qs from "query-string"
-import Dropzone from "react-dropzone"
-import Thumb from "../components/common/thumb"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons"
 
@@ -12,8 +10,8 @@ import SEO from "../components/seo"
 import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
 import Button from "../components/common/button"
-import { ContactForm, Feedback, DropzoneStyle } from "../page_styles/contact"
-import { accentMainLight } from "../components/Layout/variables"
+import { ContactForm, Feedback } from "../page_styles/contact"
+import { accentSecondaryLight } from "../components/Layout/variables"
 
 const Contact = props => {
   const [feedbackMsg, setFeedbackMsg] = useState("")
@@ -22,7 +20,7 @@ const Contact = props => {
     <Layout location="/contact" title="Contactez Nous">
       <PageHeader title="Demandez nous un devis"></PageHeader>
 
-      <Container color={accentMainLight} paddingTop="3rem">
+      <Container color={accentSecondaryLight} paddingTop="3rem" textured>
         <SEO title="Demandez un Devis" />
         <Feedback className={feedbackMsg === "" ? "" : "show"}>
           <div className="feedback-content">
@@ -137,54 +135,6 @@ const Contact = props => {
                     {errors.message && touched.message && errors.message}
                   </div>
                 </div>
-                <Dropzone
-                  accept="image/*"
-                  name="files"
-                  onDrop={acceptedFiles => {
-                    console.log(acceptedFiles)
-                    // do nothing if no files
-                    if (acceptedFiles.length === 0) {
-                      return
-                    }
-
-                    // on drop we add to the existing files
-                    setFieldValue("files", values.files.concat(acceptedFiles))
-                  }}
-                >
-                  {({
-                    isDragActive,
-                    isDragReject,
-                    getRootProps,
-                    getInputProps,
-                  }) => {
-                    if (isDragActive) {
-                      return "Ce fichier est autorié"
-                    }
-
-                    if (isDragReject) {
-                      return "ce fichier n'est pas autorisé"
-                    }
-
-                    if (values.files.length === 0) {
-                      return (
-                        <div {...getRootProps()} style={DropzoneStyle}>
-                          <input name="files[]" {...getInputProps()} />
-                          <p>Gissez vos fichier ici! (max 1MB)</p>
-                        </div>
-                      )
-                    }
-
-                    return (
-                      <div {...getRootProps()} style={DropzoneStyle}>
-                        <input name="files[]" {...getInputProps()} />
-
-                        {values.files.map((file, i) => (
-                          <Thumb key={i} file={file} />
-                        ))}
-                      </div>
-                    )
-                  }}
-                </Dropzone>
                 <Button type="submit" disabled={isSubmitting}>
                   Envoyer
                 </Button>

@@ -1,20 +1,17 @@
 import styled from "styled-components"
 import { accentMain, headerFont } from "../components/Layout/variables"
 export const GalleryItem = styled.div`
-  width: 32%;
-  margin-left: 5px;
-  margin-right: 5px;
-  transition: all 0.5s;
+  height: 20rem;
+  transition: all 0.5s linear;
   cursor: pointer;
   img {
     margin: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  @media (max-width: 900px) {
-    width: 48%;
-  }
-  @media (max-width: 600px) {
-    width: 98%;
+  .react_lightgallery_item {
+    height: 100%;
   }
   &:hover {
     transform: scale(1.05);

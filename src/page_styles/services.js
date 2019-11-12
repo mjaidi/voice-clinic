@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { headerFont, background } from "../components/Layout/variables"
+import texture from "../../content/assets/bright-squares.png"
 
 export const ServicesWrapper = styled.div`
   margin: 0 auto;
@@ -11,7 +12,9 @@ export const ServicesCard = styled.div`
   align-items: center;
   flex-wrap: wrap;
   padding: 7rem 0;
-  background: ${props => props.background || background};
+  background-color: ${props => props.background || background};
+  background-image: url(${props => (props.textured ? texture : "")});
+
   img {
     width: 30%;
     object-fit: cover;

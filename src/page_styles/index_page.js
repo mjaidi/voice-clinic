@@ -16,13 +16,7 @@ export const Title = styled.h2`
 export const About = styled.div`
   padding-top: 5rem;
   padding-bottom: 5rem;
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   img {
-    width: 30rem;
     max-width: 100%;
     margin-right: 2rem;
     box-shadow: ${shadowMain};
@@ -30,14 +24,6 @@ export const About = styled.div`
   p {
     white-space: pre-wrap;
     text-align: justify;
-  }
-  @media (max-width: 900px) {
-    .flex {
-      flex-direction: column;
-    }
-    img {
-      margin: 0 0 2rem 0;
-    }
   }
 `
 
@@ -47,9 +33,8 @@ export const Services = styled.div`
   a {
     text-decoration: none;
     color: inherit;
-    margin: 1rem;
-    width: 30%;
     height: 12rem;
+    display: block;
   }
   .service-card {
     transition: all 0.5s;
@@ -74,22 +59,6 @@ export const Services = styled.div`
       margin: 0;
     }
   }
-  .service-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  @media (max-width: 900px) {
-    a {
-      width: 45%;
-    }
-  }
-  @media (max-width: 600px) {
-    a {
-      width: 100%;
-    }
-  }
 `
 
 export const Instagram = styled.div`
@@ -101,9 +70,7 @@ export const Instagram = styled.div`
     border-radius: ${borderRadius};
     height: 100%;
     background: white;
-    width: 30%;
     height: 25rem;
-    margin: 2rem 1rem;
 
     &:hover {
       transform: scale(1.05);
@@ -130,25 +97,14 @@ export const Instagram = styled.div`
       height: 70px;
     }
   }
-  .insta-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  @media (max-width: 900px) {
-    .insta-card {
-      width: 45%;
-    }
-  }
-  @media (max-width: 600px) {
-    .insta-card {
-      width: 100%;
-    }
-  }
 `
 
 export const Clients = styled.div`
   padding-top: 5rem;
   padding-bottom: 5rem;
+  img {
+    width: 100%;
+    max-height: 15rem;
+    object-fit: contain;
+  }
 `

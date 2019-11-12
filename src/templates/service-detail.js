@@ -4,7 +4,8 @@ import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
 
 import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
-import Masonry from "react-masonry-component"
+import Grid from "../components/common/grid"
+import GridItem from "../components/common/gridItem"
 import {
   GalleryItem,
   CategorySelector,
@@ -85,17 +86,19 @@ const ServiceDetailTemplate = props => {
         </CategorySelector>
         {filteredImgs.length > 0 && (
           <LightgalleryProvider>
-            <Masonry>
+            <Grid>
               {filteredImgs.map((i, index) => {
                 return (
-                  <GalleryItem key={index}>
-                    <LightgalleryItem group="all" src={i.image}>
-                      <img src={i.image} alt={i.category} />
-                    </LightgalleryItem>
-                  </GalleryItem>
+                  <GridItem key={index}>
+                    <GalleryItem>
+                      <LightgalleryItem group="all" src={i.image}>
+                        <img src={i.image} alt={i.category} />
+                      </LightgalleryItem>
+                    </GalleryItem>
+                  </GridItem>
                 )
               })}
-            </Masonry>
+            </Grid>
           </LightgalleryProvider>
         )}
       </Container>

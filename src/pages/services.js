@@ -11,7 +11,7 @@ import {
   accentSecondaryLight,
   background,
 } from "../components/Layout/variables"
-import TriangleClip from "../components/common/triangle_clip.js"
+import TriangleClip from "../components/common/triangleClip.js"
 
 const Services = props => {
   const { data } = props
@@ -33,11 +33,13 @@ const Services = props => {
               {index !== 0 && (
                 <TriangleClip
                   color={index % 2 === 1 ? accentSecondaryLight : background}
+                  textured={index % 2 === 1 ? true : false}
                 ></TriangleClip>
               )}
               <ServicesCard
                 key={p.node.fields.slug}
                 background={index % 2 === 1 ? accentSecondaryLight : background}
+                textured={index % 2 === 1 ? true : false}
               >
                 <img
                   src={p.node.frontmatter.image}
@@ -72,6 +74,7 @@ const Services = props => {
               {index !== services.length - 1 && (
                 <TriangleClip
                   color={index % 2 === 1 ? accentSecondaryLight : background}
+                  textured={index % 2 === 1 ? true : false}
                   direction="bottom"
                 ></TriangleClip>
               )}

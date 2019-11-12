@@ -5,15 +5,7 @@ import {
   borderRadius,
 } from "../components/Layout/variables"
 
-export const ProjectWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-`
 export const ProjectCard = styled.div`
-  margin: 1rem;
-  width: 45%;
   border-radius: ${borderRadius};
   box-shadow: ${shadowMain};
   height: ${props => (props.show ? "100%" : "40rem")};
@@ -38,9 +30,7 @@ export const ProjectCard = styled.div`
     overflow: hidden;
     transition: height 0.5s linear;
   }
-  @media (max-width: 900px) {
-    width: 100%;
-  }
+
   h5 {
     text-align: center;
     font-size: 15px;
@@ -52,6 +42,8 @@ export const ProjectCard = styled.div`
   .expand {
     display: ${props => (!props.show ? "block" : "none")};
     color: ${accentMain};
+    padding-bottom: 2rem;
+
     &:hover {
       transform: scale(1.1);
     }
@@ -59,6 +51,8 @@ export const ProjectCard = styled.div`
   .contract {
     display: ${props => (props.show ? "block" : "none")};
     color: ${accentMain};
+    padding-bottom: 2rem;
+
     &:hover {
       transform: scale(1.1);
     }

@@ -1,8 +1,8 @@
 ---
 seo_title: Enseignes
 seo_description: >-
-  Spécialiste des enseignes en tout genre, enseignes drapeau, totems, enseignes
-  lumineuses ...
+  Spécialiste des enseignes en tout genre, signalétique intérieur, enseignes
+  drapeau, totems, enseignes lumineuses ...
 title: Enseignes
 description: >-
   Fusce ac tincidunt ex. In tempus elit dolor, id ultrices nibh faucibus quis.
@@ -67,5 +67,13 @@ categories:
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584547/Photos/img146_qjj9pz.jpg
     title: Totem
+  - images:
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img312_ysgefv.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img313_nykr9n.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img314_vukkwo.jpg
+    title: Signalétique Intérieur
 ---
 

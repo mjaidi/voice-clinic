@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react"
 import { Formik } from "formik"
 import axios from "axios"
-import qs from "query-string"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons"
 import Button from "../../common/button"

@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { light, accentMain } from "../../Layout/variables"
 
 export const Wrapper = styled.div`
-  padding: 1rem 0;
+  padding: 0.3rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +16,7 @@ export const Wrapper = styled.div`
 
   @media (min-width: 601px) {
     width: 90%;
+    padding: 1rem 0;
   }
 
   @media (min-width: 993px) {

@@ -19,6 +19,7 @@ export const GalleryItem = styled.div`
 `
 export const CategorySelector = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   width: 100%;
   margin: 10px 0;
@@ -26,6 +27,7 @@ export const CategorySelector = styled.ul`
   justify-content: space-evenly;
   li {
     font-weight: bold;
+    margin: 10px;
     &.active {
       color: ${accentMain};
     }
@@ -52,4 +54,9 @@ export const ServiceNavigation = styled.ul`
   justify-content: space-between;
   list-style: none;
   padding: 0;
+  p {
+    padding-top: 1rem;
+    border-top: 1px solid;
+    text-align: justify;
+  }
 `

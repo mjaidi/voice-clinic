@@ -9,14 +9,13 @@ import GridItem from "../components/common/gridItem"
 import ContactForm from "../components/contact/ContactForm"
 import ContactInfo from "../components/contact/ContactInfo"
 // import { ContactWrapper } from "../page_styles/contact"
-import { accentSecondaryLight } from "../components/Layout/variables"
 
 const Contact = props => {
   return (
     <Layout location="/contact" title="Contactez Nous">
       <PageHeader title="Demandez un devis"></PageHeader>
 
-      <Container color={accentSecondaryLight} paddingTop="3rem" textured>
+      <Container paddingTop="3rem" textured>
         <SEO title="Demandez un Devis" />
 
         <Grid>

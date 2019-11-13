@@ -31,11 +31,11 @@ export const ContactFormSection = styled.section`
       line-height: 2;
       padding: 0.5rem;
       font-family: ${mainFont};
-      border: 1px solid ${light};
+      border: 2px solid ${light};
       font-size: 15px;
       &:focus {
         border-color: ${accentSecondary};
-        outline-color: ${background};
+        outline: none;
       }
       &.error {
         border-color: ${accentMain};
@@ -52,7 +52,7 @@ export const ContactFormSection = styled.section`
     .fileLabel {
       cursor: pointer;
       font-size: 13px;
-      padding: 1rem 2rem;
+      padding: 0.7rem 1rem;
       background: ${accentSecondary};
       color: white;
       width: 6.5rem;

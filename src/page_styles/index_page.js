@@ -3,17 +3,45 @@ import {
   shadowMain,
   headerFont,
   borderRadius,
+  blackTransparent,
 } from "../components/Layout/variables"
 
 export const Title = styled.h2`
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   font-family: ${headerFont};
-  font-size: 35px;
+  color: ${blackTransparent};
+  font-size: 70px;
   text-transform: uppercase;
+  &:before,
+  &:after {
+    content: "";
+    display: inline-block;
+    margin: 0 0.6em;
+    border: solid;
+    top: -25px;
+    position: relative;
+    width: 80px;
+  }
+  @media (max-width: 900px) {
+    font-size: 50px;
+    margin-bottom: 2rem;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
 `
 
 export const About = styled.div`
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: ${headerFont};
+    color: ${blackTransparent};
+    font-size: 50px;
+    text-transform: uppercase;
+  }
   padding-top: 5rem;
   padding-bottom: 5rem;
   img {
@@ -101,7 +129,7 @@ export const Instagram = styled.div`
 
 export const Clients = styled.div`
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 15rem;
   img {
     width: 100%;
     max-height: 15rem;

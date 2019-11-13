@@ -45,12 +45,20 @@ export const Wrapper = styled.div`
 			}
 		`
       : `
-			padding: 3rem;
+      padding: 3rem;
+      a {
+        font-size: 18px;
+
+      }
+
 			display: flex;
 			flex-direction: column;
 
 			.navbarLink {
-					margin-bottom: 1rem;
+          margin-bottom: 1rem;
+          padding-bottom: 0.5rem;
+          padding-top: 0.5rem;
+
 
 					&:last-child {
 							margin-bottom: unset;
@@ -93,12 +101,19 @@ export const Menu = styled.ul`
     desktop
       ? ``
       : `
+      background: none;
+      a {
+        font-size: 15px;
+
+      }
     &.active {
       position: relative;
       top: 0;
       left: 5px;
-      padding: 0;
-      box-shadow: none;
+
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+            box-shadow: none;
     }
   `}
 `

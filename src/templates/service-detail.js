@@ -70,14 +70,13 @@ const ServiceDetailTemplate = props => {
               </Link>
             )}
           </li>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: service.frontmatter.description,
+            }}
+          />
         </ServiceNavigation>
-        <hr />
-        <br />
-        <p
-          dangerouslySetInnerHTML={{
-            __html: service.frontmatter.description,
-          }}
-        />
+
         <CategoryHeader>
           {categoryTitle}
           <span class="lowercase">{service.frontmatter.title}</span>

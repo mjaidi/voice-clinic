@@ -77,6 +77,13 @@ export const CarouselImage = styled.div`
   .CarouselImageCurrent {
     opacity: 1;
   }
+  @media (max-width: 900px) {
+    .CarouselImageLabel {
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
 `
 export const CarouselSteps = styled.div`
   display: flex;
@@ -97,6 +104,11 @@ export const CarouselSteps = styled.div`
     user-select: none;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
     font-size: 1.5em;
+  }
+  @media (max-width: 900px) {
+    .carouselStep {
+      font-size: 1rem;
+    }
   }
 
   .CarouselStep:hover {

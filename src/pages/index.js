@@ -15,10 +15,7 @@ import {
   Clients,
   Title,
 } from "../page_styles/index_page"
-import {
-  accentSecondaryLight,
-  accentMainLight,
-} from "../components/Layout/variables"
+import { accentSecondaryLight } from "../components/Layout/variables"
 import Grid from "../components/common/grid"
 import GridItem from "../components/common/gridItem"
 
@@ -47,7 +44,7 @@ const IndexPage = props => {
               <img src={aboutData.image} alt="about" />
             </GridItem>
             <GridItem lgColumns={10} lgNbColumns={6} margin={15}>
-              <Title>{aboutData.title}</Title>
+              <h2>{aboutData.title}</h2>
               <p
                 dangerouslySetInnerHTML={{
                   __html: aboutData.text,
@@ -105,8 +102,8 @@ const IndexPage = props => {
           </LightgalleryProvider>
         </Instagram>
       </Container>
-      <TriangleClip color={accentMainLight} textured />
-      <Container color={accentMainLight} textured>
+      <TriangleClip textured />
+      <Container textured>
         <Clients>
           <Title>Nos Clients</Title>
           <Grid justifyContent="left">

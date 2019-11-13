@@ -5,6 +5,7 @@ export const accentMain = "#DA241C"
 export const accentMainLight = "#ffe4e2"
 export const accentSecondary = "#096693"
 export const accentSecondaryLight = "#daf3ff"
+export const blackTransparent = "rgba(150,150,150, 0.8)"
 
 export const mainFont = "'Quicksand', sans-serif"
 export const headerFont = "'PT Sans', sans-serif"

@@ -20,7 +20,6 @@ const NavbarLinks = ({ data, desktop, location }) => {
         >
           Services
         </Link>
-
         <Menu
           desktop={desktop}
           className={activeMenu === "services" ? "active" : ""}

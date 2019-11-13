@@ -24,7 +24,7 @@ const Project = props => {
       ></PageHeader>
 
       <Container>
-        <SEO title="Tous nos projets" />
+        <SEO title="Tous nos projets" description="Liste de nos projets" />
         <Grid>
           {projects.map((p, index) => {
             const title = p.node.frontmatter.title || p.node.fields.slug

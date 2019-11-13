@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   a {
     color: ${dark};
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
     font-family: ${headerFont};
@@ -71,7 +71,7 @@ export const Menu = styled.ul`
   background: ${background};
   box-shadow: ${shadowMain};
   a {
-    font-size: 15px;
+    font-size: 13px;
     text-transform: none;
     font-weight: 500;
   }

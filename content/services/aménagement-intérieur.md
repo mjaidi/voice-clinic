@@ -16,7 +16,8 @@ description: >-
   cursus purus sem, in varius ligula placerat sit amet. Nullam consectetur massa
   id suscipit ullamcorper. Proin molestie nulla eget accumsan imperdiet. Nunc
   nec fringilla nunc, et pellentesque lorem.
-image: 'https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572689557/sample.jpg'
+image: >-
+  https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img917_yi4njl.jpg
 icon: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1573209045/hymaqxjuljlneeeqa9ft.png
 categories:

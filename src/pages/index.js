@@ -93,7 +93,9 @@ const IndexPage = props => {
                       >
                         <Img fixed={i.node.localFile.childImageSharp.fixed} />
                       </LightgalleryItem>
-                      <p>{i.node.caption}</p>
+                      <div className="overlay">
+                        <p>{i.node.caption}</p>
+                      </div>
                     </div>
                   </GridItem>
                 )

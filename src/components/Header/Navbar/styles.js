@@ -30,7 +30,7 @@ export const Logo = styled.img`
 `
 
 export const PhoneNumber = styled.div`
-  padding: 1rem 2rem;
+  padding: 0.7rem 1.5rem;
   margin-left: -5rem;
   background: ${accentMain};
   color: ${light};

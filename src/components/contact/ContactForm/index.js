@@ -15,6 +15,13 @@ const ContactForm = props => {
     inputEl.current.click()
   }
 
+  const toBase64 = file =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader()
+      reader.readAsDataURL(file)
+      reader.onload = () => resolve(reader.result)
+      reader.onerror = error => reject(error)
+    })
   return (
     <div>
       <Feedback className={feedbackMsg === "" ? "" : "show"}>
@@ -32,7 +39,6 @@ const ContactForm = props => {
           initialValues={{
             email: "",
             message: "",
-            "form-name": "Contact Form",
             file: "",
           }}
           validate={values => {
@@ -49,16 +55,17 @@ const ContactForm = props => {
             }
             return errors
           }}
-          onSubmit={(values, { setSubmitting, resetForm }) => {
-            console.log(values)
+          onSubmit={async (values, { setSubmitting, resetForm }) => {
+            const file = await toBase64(values.file)
             const axiosOptions = {
               url: props.location.pathname,
               method: "post",
               headers: {
                 "Content-Type": "application/x-www-form-urlencoded",
               },
-              data: qs.stringify(JSON.stringify(values)),
+              data: qs.stringify({ ...values, file: file }),
             }
+
             console.log(axiosOptions)
 
             axios(axiosOptions)
@@ -90,6 +97,7 @@ const ContactForm = props => {
               name="Contact Form"
               method="POST"
               data-netlify="true"
+              id="form"
             >
               <input type="hidden" name="form-name" value="Contact Form" />
               <div className="form-group">

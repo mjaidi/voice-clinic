@@ -37,6 +37,7 @@ const ContactForm = props => {
       <ContactFormSection>
         <Formik
           initialValues={{
+            "form-name": "Contact Form",
             email: "",
             message: "",
             file: "",

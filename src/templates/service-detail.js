@@ -18,7 +18,8 @@ import "lightgallery.js/dist/css/lightgallery.css"
 
 const ServiceDetailTemplate = props => {
   const [activeCategory, setActiveCategory] = useState("Tous")
-  const service = props.data.mdx
+  const service = props.data.allMdx.edges[0].node
+
   const siteTitle = props.data.site.siteMetadata.title
   const { previous, next } = props.pageContext
   let allImgs = []
@@ -50,8 +51,8 @@ const ServiceDetailTemplate = props => {
 
       <Container>
         <SEO
-          title={service.frontmatter.title}
-          description={service.frontmatter.description || service.excerpt}
+          title={service.frontmatter.seo_title}
+          description={service.frontmatter.seo_description}
         />
 
         <ServiceNavigation>
@@ -124,17 +125,21 @@ export const pageQuery = graphql`
         title
       }
     }
-    mdx(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      body
-      frontmatter {
-        title
-        description
-        image
-        categories {
-          title
-          images
+    allMdx(filter: { fields: { slug: { eq: $slug } } }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            seo_title
+            seo_description
+            title
+            description
+            image
+            categories {
+              images
+              title
+            }
+          }
         }
       }
     }

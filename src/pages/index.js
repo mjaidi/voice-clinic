@@ -116,7 +116,7 @@ const IndexPage = props => {
                 mdColumns={3}
                 key={JSON.stringify(c.logo)}
               >
-                <img src={c.logo} alt="client"></img>
+                <img src={c.logo} alt={c.name}></img>
               </GridItem>
             ))}
           </Grid>
@@ -206,7 +206,7 @@ export const pageQuery = graphql`
         frontmatter {
           client_gallery {
             logo
-            nom
+            name
           }
         }
       }

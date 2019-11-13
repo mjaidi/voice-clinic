@@ -69,3 +69,51 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    """
+    Markdown Node
+    """
+    type MarkdownRemark implements Node @infer {
+      frontmatter: Frontmatter!
+    }
+
+    """
+    Markdown Frontmatter
+    """
+    type Frontmatter @infer {
+      seo_title: String!
+      seo_description: String!
+      categories: CategoriesJSON!
+      banner_gallery: BannerGallery!
+      title: String!
+      description: String!
+      email: String!
+      icon: String!
+      logo: String!
+      phone: String!
+      text: String!
+
+
+    }
+    """
+    Banner  Gallery
+    """
+    type BannerGallery implements Node @dontInfer {
+      title: String!
+      subtitle: String!
+      image: String!
+    }
+
+    """
+    Categories
+    """
+    type CategoriesJSON implements Node @dontInfer {
+      title: String!
+      images: [String!]!
+    }
+  `
+  createTypes(typeDefs)
+}

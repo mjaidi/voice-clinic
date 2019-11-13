@@ -57,7 +57,7 @@ const ContactForm = props => {
               headers: {
                 "Content-Type": "application/x-www-form-urlencoded",
               },
-              data: qs.stringify(values),
+              data: qs.stringify(JSON.stringify(values)),
             }
             console.log(axiosOptions)
 
@@ -137,7 +137,7 @@ const ContactForm = props => {
                   ref={inputEl}
                   type="file"
                   name="file"
-                  style={{ visibility: "hidden" }}
+                  style={{ display: "none" }}
                   className={
                     errors.file && touched.file && errors.file ? "error" : ""
                   }

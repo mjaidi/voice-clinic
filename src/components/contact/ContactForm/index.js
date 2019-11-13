@@ -14,14 +14,14 @@ const ContactForm = props => {
   function handleLabelClick() {
     inputEl.current.click()
   }
-
-  const toBase64 = file =>
-    new Promise((resolve, reject) => {
-      const reader = new FileReader()
-      reader.readAsDataURL(file)
-      reader.onload = () => resolve(reader.result)
-      reader.onerror = error => reject(error)
+  const encode = data => {
+    const formData = new FormData()
+    Object.keys(data).forEach(k => {
+      formData.append(k, data[k])
     })
+    return formData
+  }
+
   return (
     <div>
       <Feedback className={feedbackMsg === "" ? "" : "show"}>
@@ -56,14 +56,16 @@ const ContactForm = props => {
             return errors
           }}
           onSubmit={async (values, { setSubmitting, resetForm }) => {
-            const file = await toBase64(values.file)
+            let formData = encode(values)
+            console.log(formData)
+
             const axiosOptions = {
               url: props.location.pathname,
               method: "post",
               headers: {
                 "Content-Type": "application/x-www-form-urlencoded",
               },
-              data: qs.stringify({ ...values, file: file }),
+              data: formData,
             }
 
             console.log(axiosOptions)

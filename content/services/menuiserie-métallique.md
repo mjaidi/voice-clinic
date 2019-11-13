@@ -12,7 +12,7 @@ description: >-
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img401_z8ljfm.jpg
 icon: >-
-  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1573209288/xp24bhkhx8wvvxkuidi9.png
+  https://res.cloudinary.com/faludeco/image/upload/v1573633129/icons/steem_ev4kov.png
 categories:
   - images: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img401_z8ljfm.jpg

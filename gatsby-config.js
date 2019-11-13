@@ -35,6 +35,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -63,10 +64,11 @@ module.exports = {
         name: `assets`,
       },
     },
+
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [".mdx", ".md"],
+        extensions: [`.mdx`, `.md`],
       },
     },
     `gatsby-transformer-sharp`,

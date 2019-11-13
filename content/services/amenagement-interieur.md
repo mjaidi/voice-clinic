@@ -1,6 +1,6 @@
 ---
 seo_title: Aménagement Intérieur
-seo_description: 'Spécialiste de l''aménagement intérieur, meubles, habillages mur, décoration'
+seo_description: "Spécialiste de l'aménagement intérieur, meubles, habillages mur, décoration"
 title: Aménagement Intérieur
 description: >-
   Fusce ac tincidunt ex. In tempus elit dolor, id ultrices nibh faucibus quis.
@@ -102,4 +102,3 @@ categories:
         https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img503_zzgieo.jpg
     title: Décoration
 ---
-

@@ -70,50 +70,50 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
-  const typeDefs = `
-    """
-    Markdown Node
-    """
-    type MarkdownRemark implements Node @infer {
-      frontmatter: Frontmatter!
-    }
+// exports.createSchemaCustomization = ({ actions }) => {
+//   const { createTypes } = actions
+//   const typeDefs = `
+//     """
+//     Markdown Node
+//     """
+//     type Mdx implements Node @infer {
+//       frontmatter: Frontmatter!
+//     }
 
-    """
-    Markdown Frontmatter
-    """
-    type Frontmatter @infer {
-      seo_title: String!
-      seo_description: String!
-      categories: CategoriesJSON!
-      banner_gallery: BannerGallery!
-      title: String!
-      description: String!
-      email: String!
-      icon: String!
-      logo: String!
-      phone: String!
-      text: String!
+//     """
+//     Markdown Frontmatter
+//     """
+//     type Frontmatter @infer {
+//       seo_title: String!
+//       seo_description: String!
+//       categories: Categories
+//       banner_gallery: BannerGallery
+//       title: String!
+//       description: String
+//       email: String
+//       icon: String
+//       logo: String
+//       phone: String
+//       text: String
+//       address: String
 
+//     }
+//     """
+//     Banner  Gallery
+//     """
+//     type BannerGallery implements Node @infer {
+//       title: String
+//       subtitle: String
+//       image: String
+//     }
 
-    }
-    """
-    Banner  Gallery
-    """
-    type BannerGallery implements Node @dontInfer {
-      title: String!
-      subtitle: String!
-      image: String!
-    }
-
-    """
-    Categories
-    """
-    type CategoriesJSON implements Node @dontInfer {
-      title: String!
-      images: [String!]!
-    }
-  `
-  createTypes(typeDefs)
-}
+//     """
+//     Categories
+//     """
+//     type Categories implements Node @infer {
+//       title: String
+//       images: [String!]
+//     }
+//   `
+//   createTypes(typeDefs)
+// }

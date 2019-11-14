@@ -103,5 +103,37 @@ categories:
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img503_zzgieo.jpg
     title: Décoration
+  - images:
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img608_n6ofhd.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584545/Photos/img607_c0efbz.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584542/Photos/img403_qxc8zq.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img725_zgnk7u.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img505_xtw0xm.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img504_y1fx2r.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img578_owi9az.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img577_ek4hjy.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img576_ajoyn1.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img726_wfoac4.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img562_i2hdmn.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img593_hbsk1r.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img561_u1cbjx.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img592_hwnfwk.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584535/Photos/img591_m8an93.jpg
+    title: Menuiserie Bois
 ---
 

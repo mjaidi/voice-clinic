@@ -9,13 +9,13 @@ const GridItem = props => (
 
 const GridItemStyled = styled.div`
   margin: ${props => props.props.margin}px;
+  display: ${props => (props.props.hidden ? "none" : "block")};
   ${props =>
     props.props.lgColumns < widthMap.length + 1
       ? `width: calc(${widthMap[props.props.lgColumns - 1] *
           props.props.lgNbColumns}% - ${2 * props.props.margin}px);`
       : `width: calc(100% - ${2 * props.props.margin}px);`}
-
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     ${props =>
       props.props.mdColumns < widthMap.length + 1
         ? `width: calc(${widthMap[props.props.mdColumns - 1] *

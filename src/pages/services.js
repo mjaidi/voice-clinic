@@ -29,7 +29,7 @@ const Services = props => {
         {services.map((p, index) => {
           const title = p.node.frontmatter.title || p.node.fields.slug
           return (
-            <div>
+            <div key={p.node.fields.slug}>
               {index !== 0 && (
                 <TriangleClip
                   color={index % 2 === 1 ? accentSecondaryLight : background}
@@ -37,14 +37,13 @@ const Services = props => {
                 ></TriangleClip>
               )}
               <ServicesCard
-                key={p.node.fields.slug}
                 background={index % 2 === 1 ? accentSecondaryLight : background}
                 textured={index % 2 === 1 ? true : false}
               >
                 <img
                   src={p.node.frontmatter.image}
                   alt={p.node.frontmatter.title}
-                  class={index % 2 === 0 ? "show top" : "hide top"}
+                  className={index % 2 === 0 ? "show top" : "hide top"}
                 ></img>
                 <div className="services-content">
                   <h3
@@ -68,7 +67,7 @@ const Services = props => {
                 <img
                   src={p.node.frontmatter.image}
                   alt={p.node.frontmatter.title}
-                  class={index % 2 === 1 ? "show bottom" : "hide bottom"}
+                  className={index % 2 === 1 ? "show bottom" : "hide bottom"}
                 ></img>
               </ServicesCard>
               {index !== services.length - 1 && (

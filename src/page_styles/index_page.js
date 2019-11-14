@@ -3,7 +3,6 @@ import {
   shadowMain,
   headerFont,
   borderRadius,
-  blackTransparent,
   background,
   accentMain,
 } from "../components/Layout/variables"
@@ -84,7 +83,7 @@ export const Services = styled.div`
       &:after {
         border: none;
         width: 50%;
-        border-bottom: 2px solid #da241c;
+        border-top: 2px solid #da241c;
         top: 210px;
         left: 25%;
       }

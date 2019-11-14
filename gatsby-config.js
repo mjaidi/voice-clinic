@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Falu Déco`,
-    description: `Falu déco est un spécialiste de l'amménagement intérieur, façades et enseignes en tout genre.`,
+    title: `First Sign`,
+    description: `First Sign est un spécialiste de l'amménagement intérieur, façades, menuiserie métallurgique et enseignes en tout genre.`,
     author: `@mjaidi`,
   },
   plugins: [

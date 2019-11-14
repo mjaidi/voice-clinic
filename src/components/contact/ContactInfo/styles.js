@@ -16,11 +16,12 @@ export const ContactInfo = styled.div`
   font-family: ${headerFont};
   box-shadow: ${shadowMain};
   border-radius: ${borderRadius};
-
   svg {
     font-size: 40px;
   }
   @media (max-width: 600px) {
+    text-align: center;
+
     font-size: 18px;
     svg {
       top: 0;

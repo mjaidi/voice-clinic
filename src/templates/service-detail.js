@@ -79,7 +79,7 @@ const ServiceDetailTemplate = props => {
 
         <CategoryHeader>
           {categoryTitle}
-          <span class="lowercase">{service.frontmatter.title}</span>
+          <span className="lowercase">{service.frontmatter.title}</span>
         </CategoryHeader>
 
         <CategorySelector>
@@ -96,11 +96,14 @@ const ServiceDetailTemplate = props => {
         {filteredImgs.length > 0 && (
           <LightgalleryProvider>
             <Grid>
-              {filteredImgs.map((i, index) => {
+              {allImgs.map((i, index) => {
                 return (
-                  <GridItem key={index}>
+                  <GridItem
+                    key={index}
+                    hidden={filteredImgs.includes(i) ? false : true}
+                  >
                     <GalleryItem>
-                      <LightgalleryItem group="all" src={i.image}>
+                      <LightgalleryItem group={i.category} src={i.image}>
                         <img src={i.image} alt={i.category} />
                       </LightgalleryItem>
                     </GalleryItem>

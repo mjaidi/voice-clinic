@@ -59,6 +59,13 @@ export const ContactFormSection = styled.section`
       border-radius: ${borderRadius};
     }
   }
+  @media (max-width: 600px) {
+    padding: 3rem 1rem;
+    .form-group input,
+    .form-group textarea {
+      width: 90%;
+    }
+  }
 `
 export const Feedback = styled.div`
   background-color: rgba(0, 0, 0, 0.5);

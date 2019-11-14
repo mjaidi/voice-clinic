@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { accentMain, headerFont } from "../components/Layout/variables"
+
 export const GalleryItem = styled.div`
   height: 20rem;
   transition: all 0.5s linear;
@@ -12,6 +13,10 @@ export const GalleryItem = styled.div`
   }
   .react_lightgallery_item {
     height: 100%;
+  }
+  &.hide {
+    display: none;
+    margin: -10px;
   }
   &:hover {
     transform: scale(1.05);

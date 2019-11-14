@@ -1,8 +1,8 @@
 ---
 seo_title: First Sign
 seo_description: >-
-  Spécialiste des enseignes, agencement de façades, menuiserie aluminium,
-  menuiserie bois et travaux de corian
+  Spécialiste des enseignes, agencement de façades, menuiserie métallurgique, et
+  agencement intérieur
 logo: 'https://res.cloudinary.com/faludeco/image/upload/v1573584640/logo_sxxobi.png'
 banner_gallery:
   - image: >-

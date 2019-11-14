@@ -13,10 +13,10 @@ import ContactInfo from "../components/contact/ContactInfo"
 const Contact = props => {
   return (
     <Layout location="/contact" title="Contactez Nous">
-      <PageHeader title="Demandez un devis"></PageHeader>
+      <PageHeader title="Demande de devis"></PageHeader>
 
       <Container paddingTop="3rem" textured>
-        <SEO title="Demandez un Devis" />
+        <SEO title="Demande de Devis" />
 
         <Grid>
           <GridItem lgColumns={6} lgNbColumns={2}>

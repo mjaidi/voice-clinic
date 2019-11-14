@@ -15,7 +15,6 @@ import {
   Clients,
   Title,
 } from "../page_styles/index_page"
-import { accentSecondaryLight } from "../components/Layout/variables"
 import Grid from "../components/common/grid"
 import GridItem from "../components/common/gridItem"
 
@@ -44,7 +43,7 @@ const IndexPage = props => {
               <img src={aboutData.image} alt="about" />
             </GridItem>
             <GridItem lgColumns={10} lgNbColumns={6} margin={15}>
-              <h2>{aboutData.title}</h2>
+              <Title>{aboutData.title}</Title>
               <p
                 dangerouslySetInnerHTML={{
                   __html: aboutData.text,
@@ -54,21 +53,30 @@ const IndexPage = props => {
           </Grid>
         </About>
       </Container>
-      <TriangleClip color={accentSecondaryLight} textured />
-      <Container color={accentSecondaryLight} textured>
+      <TriangleClip textured />
+      <Container textured>
         <Services>
           <Title>Nos Services</Title>
           <Grid>
             {services.map(({ node }) => {
               return (
-                <GridItem key={node.fields.slug}>
+                <GridItem lgColumns={2} mdColumns={1} key={node.fields.slug}>
                   <Link to={`services${node.fields.slug}`}>
                     <div className="service-card">
-                      <img
-                        src={node.frontmatter.icon}
-                        alt={node.frontmatter.title}
-                      />
-                      <h4>{node.frontmatter.title}</h4>
+                      <Grid>
+                        <GridItem lgColumns={2}>
+                          <img
+                            src={node.frontmatter.icon}
+                            alt={node.frontmatter.title}
+                          />
+                          <h4>{node.frontmatter.title}</h4>
+                        </GridItem>
+                        <GridItem lgColumns={2}>
+                          {node.frontmatter.categories.map(c => (
+                            <p key={c.title}>{c.title}</p>
+                          ))}
+                        </GridItem>
+                      </Grid>
                     </div>
                   </Link>
                 </GridItem>
@@ -77,7 +85,7 @@ const IndexPage = props => {
           </Grid>
         </Services>
       </Container>
-      <TriangleClip color={accentSecondaryLight} direction="bottom" textured />
+      <TriangleClip direction="bottom" textured />
       <Container>
         <Instagram>
           <LightgalleryProvider>
@@ -176,6 +184,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
             icon
+            categories {
+              title
+            }
           }
         }
       }

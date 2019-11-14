@@ -49,7 +49,7 @@ const NavbarLinks = ({ data, desktop, location }) => {
           to="/contact"
           className={location === "/contact" ? " active" : ""}
         >
-          Demandez un Devis
+          Demande de Devis
         </Link>
       </div>
     </Wrapper>

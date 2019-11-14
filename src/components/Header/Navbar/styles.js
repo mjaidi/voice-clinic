@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   padding: 0.3rem 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
 
   a {
     color: #212121;
@@ -16,29 +16,29 @@ export const Wrapper = styled.div`
 
   @media (min-width: 601px) {
     width: 90%;
-    padding: 1rem 0;
-  }
-
-  @media (min-width: 993px) {
-    width: 80%;
   }
 `
 export const Logo = styled.img`
-  max-height: 3rem;
+  max-height: 4rem;
   padding: 0;
   margin: 0;
+  right: 25rem;
+  @media (max-width: 900px) {
+    max-height: 3rem;
+  }
 `
 
 export const PhoneNumber = styled.div`
   padding: 0.7rem 1.5rem;
-  margin-left: -5rem;
   background: ${accentMain};
   color: ${light};
   border-radius: 25px;
+  position: absolute;
+  right: 0rem;
   svg {
     margin-right: 1rem;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `

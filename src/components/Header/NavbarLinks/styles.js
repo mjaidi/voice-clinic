@@ -8,6 +8,8 @@ import {
   shadowMain,
 } from "../../Layout/variables"
 export const Wrapper = styled.div`
+  position: absolute;
+  left: 7rem;
   a {
     color: ${dark};
     text-decoration: none;
@@ -32,7 +34,8 @@ export const Wrapper = styled.div`
   ${({ desktop }) =>
     desktop
       ? `
-			@media (max-width: 960px) {
+
+			@media (max-width: 900px) {
 					display: none;
 			}
 
@@ -45,7 +48,9 @@ export const Wrapper = styled.div`
 			}
 		`
       : `
-      padding: 3rem;
+      position: absolute;
+      left: 0rem;
+      padding: 3rem 1rem 3rem 3rem;
       a {
         font-size: 18px;
 

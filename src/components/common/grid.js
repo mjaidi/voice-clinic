@@ -8,6 +8,7 @@ const GridStyled = styled.div`
   flex-wrap: wrap;
   justify-content: ${props => props.props.justifyContent || "center"};
   align-items: ${props => props.props.alignItems || "center"};
+  padding: ${props => props.props.padding || 0};
 `
 
 export default Grid

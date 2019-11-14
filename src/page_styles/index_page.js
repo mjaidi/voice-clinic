@@ -5,22 +5,25 @@ import {
   borderRadius,
   blackTransparent,
   background,
+  accentMain,
 } from "../components/Layout/variables"
 
 export const Title = styled.h2`
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   font-family: ${headerFont};
-  color: ${blackTransparent};
-  font-size: 70px;
+  color: ${accentMain};
+  font-size: 40px;
+  font-weight: lighter;
   text-transform: uppercase;
   &:before,
   &:after {
     content: "";
     display: inline-block;
-    margin: 0 0.6em;
+    margin: 0 0.5em;
     border: solid;
-    top: -25px;
+    border-width: thin;
+    top: -10px;
     position: relative;
     width: 80px;
   }
@@ -36,12 +39,7 @@ export const Title = styled.h2`
 
 export const About = styled.div`
   h2 {
-    text-align: center;
     margin-bottom: 1rem;
-    font-family: ${headerFont};
-    color: ${blackTransparent};
-    font-size: 50px;
-    text-transform: uppercase;
   }
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -62,7 +60,6 @@ export const Services = styled.div`
   a {
     text-decoration: none;
     color: inherit;
-    height: 12rem;
     display: block;
   }
   .service-card {
@@ -71,13 +68,33 @@ export const Services = styled.div`
     border-radius: ${borderRadius};
     height: 100%;
     background: white;
-
+    padding: 2rem 1rem;
+    position: relative;
+    &:after {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 50%;
+      border-left: 3px solid ${accentMain};
+      position: absolute;
+      left: 270px;
+      top: 25%;
+    }
+    @media (max-width: 600px) {
+      &:after {
+        border: none;
+        width: 50%;
+        border-bottom: 2px solid #da241c;
+        top: 210px;
+        left: 25%;
+      }
+    }
     &:hover {
       transform: scale(1.05);
     }
     img {
       width: 100%;
-      max-height: 70%;
+      max-height: 7rem;
       object-fit: contain;
       margin-bottom: 0;
       border-radius: ${borderRadius} ${borderRadius} 0 0;
@@ -122,7 +139,7 @@ export const Instagram = styled.div`
       background-color: ${background};
       border-radius: ${borderRadius};
       text-align: center;
-      z-index: 30;
+      z-index: 10;
       box-sizing: border-box;
       cursor: pointer;
     }

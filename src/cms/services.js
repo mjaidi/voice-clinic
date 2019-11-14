@@ -20,6 +20,12 @@ export const services = {
       required: true,
     },
     {
+      label: "Position (ordre d'affichage)",
+      name: "order",
+      widget: "integer",
+      required: true,
+    },
+    {
       label: "Image Fond",
       name: "image",
       widget: "image",

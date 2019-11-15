@@ -8,8 +8,6 @@ import {
 export const ProjectCard = styled.div`
   border-radius: ${borderRadius};
   box-shadow: ${shadowMain};
-  height: ${props => (props.show ? "100%" : "40rem")};
-  transition: height 0.5s linear;
 
   img {
     width: 100%;
@@ -26,9 +24,9 @@ export const ProjectCard = styled.div`
   p {
     white-space: pre-wrap;
     padding: 0 1.5rem;
-    height: ${props => (props.show ? "100%" : "10rem")};
     overflow: hidden;
-    transition: height 0.5s linear;
+    max-height: ${props => (props.show ? "50rem" : "10rem")};
+    transition: max-height 0.9s linear;
   }
 
   h5 {
@@ -43,7 +41,7 @@ export const ProjectCard = styled.div`
     display: ${props => (!props.show ? "block" : "none")};
     color: ${accentMain};
     padding-bottom: 2rem;
-
+    transition: all 0.4s;
     &:hover {
       transform: scale(1.1);
     }
@@ -52,7 +50,7 @@ export const ProjectCard = styled.div`
     display: ${props => (props.show ? "block" : "none")};
     color: ${accentMain};
     padding-bottom: 2rem;
-
+    transition: all 0.4s;
     &:hover {
       transform: scale(1.1);
     }

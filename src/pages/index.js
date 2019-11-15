@@ -9,7 +9,6 @@ import TriangleClip from "../components/common/triangleClip.js"
 import Carousel from "../components/Carousel"
 import Img from "gatsby-image"
 import {
-  Entrance,
   About,
   Services,
   Instagram,
@@ -36,11 +35,6 @@ const IndexPage = props => {
         title={homePageData.seo_title}
         description={homePageData.seo_description}
       />
-
-      <Entrance>
-        <img src={homePageData.logo} alt="logo"></img>
-      </Entrance>
-
       <Carousel images={carouselImgs} />
       <Container>
         <About>
@@ -157,7 +151,6 @@ export const pageQuery = graphql`
             subtitle
             title
           }
-          logo
           seo_title
           seo_description
         }

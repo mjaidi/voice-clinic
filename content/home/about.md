@@ -1,6 +1,6 @@
 ---
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img635_mipix5.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1573844455/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_29_qcqrv0.jpg
 title: Notre Histoire
 text: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus orci,

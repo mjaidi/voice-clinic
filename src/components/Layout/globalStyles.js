@@ -52,7 +52,7 @@ export const Entrance = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   animation: ${entranceAnimation} 3s ease-in 1;

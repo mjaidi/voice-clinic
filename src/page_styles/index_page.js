@@ -63,11 +63,11 @@ export const Services = styled.div`
   }
   .service-card {
     transition: all 0.5s;
-    box-shadow: ${shadowMain};
     border-radius: ${borderRadius};
+    border: 3px solid ${accentMain};
     height: 100%;
     background: white;
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.75rem;
     position: relative;
     &:after {
       content: " ";
@@ -76,10 +76,11 @@ export const Services = styled.div`
       height: 50%;
       border-left: 3px solid ${accentMain};
       position: absolute;
-      left: 270px;
+      left: calc(50% - 20px);
       top: 25%;
     }
     @media (max-width: 600px) {
+      border-width: 2px;
       &:after {
         border: none;
         width: 50%;
@@ -89,7 +90,8 @@ export const Services = styled.div`
       }
     }
     &:hover {
-      transform: scale(1.05);
+      box-shadow: ${shadowMain};
+      transform: scale(1.02);
     }
     img {
       width: 100%;

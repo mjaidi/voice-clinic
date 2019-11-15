@@ -121,6 +121,7 @@ const IndexPage = props => {
               <GridItem
                 lgColumns={5}
                 mdColumns={3}
+                smColumns={2}
                 key={JSON.stringify(c.logo)}
               >
                 <img src={c.logo} alt={c.name}></img>

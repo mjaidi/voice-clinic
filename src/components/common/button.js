@@ -1,9 +1,17 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import { accentMain, headerFont } from "../Layout/variables"
 const Button = props => (
-  <ButtonWrapper props={props}>{props.children}</ButtonWrapper>
+  <ButtonWrapper props={props} disabled={props.disabled}>
+    {!props.disabled && props.children}
+    {props.disabled && "..."}
+  </ButtonWrapper>
 )
+const BounceAnimation = keyframes`
+  0% { opacity: 0.4; letter-spacing: 5px }
+  50% { opacity: 0.7; letter-spacing: 2px}
+  100% { opacity: 0.4; letter-spacing: 5px }
+`
 
 const ButtonWrapper = styled.button`
   display: block;
@@ -28,6 +36,15 @@ const ButtonWrapper = styled.button`
   &:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
     background: lighten(${props => props.props.background || accentMain}, 10%);
+  }
+  &:disabled {
+    font-weight: bold;
+    &:hover {
+      background: ${props => props.props.background || accentMain};
+      box-shadow: none;
+      cursor: default;
+    }
+    animation: ${BounceAnimation} 2s linear infinite;
   }
 `
 

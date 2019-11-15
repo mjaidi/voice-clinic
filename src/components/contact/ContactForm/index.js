@@ -55,9 +55,13 @@ const ContactForm = props => {
             }
             return errors
           }}
-          onSubmit={async (values, { setSubmitting, resetForm }) => {
+          onSubmit={async (
+            values,
+            { isSubmitting, setSubmitting, resetForm }
+          ) => {
             let formData = encode(values)
             console.log(formData)
+            console.log(isSubmitting)
 
             const axiosOptions = {
               url: props.location.pathname,

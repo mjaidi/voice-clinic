@@ -15,7 +15,7 @@ import React, { useContext } from "react"
 import Header from "../Header"
 import Footer from "../Footer"
 import { Global, Entrance } from "./globalStyles"
-import logo from "../../../content/assets/logo.png"
+import logo from "../../../content/assets/logo.svg"
 
 const Layout = ({ children, location }) => {
   const dispatch = useContext(GlobalDispatchContext)

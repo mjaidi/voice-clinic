@@ -119,9 +119,9 @@ const IndexPage = props => {
           <Grid justifyContent="left">
             {clients.client_gallery.map((c, index) => (
               <GridItem
-                lgColumns={5}
-                mdColumns={3}
-                smColumns={2}
+                lgColumns={7}
+                mdColumns={5}
+                smColumns={3}
                 key={JSON.stringify(c.logo)}
               >
                 <img src={c.logo} alt={c.name}></img>

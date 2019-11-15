@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import texture from "../../../content/assets/crissxcross.png"
+import texture from "../../../content/assets/brick-wall.png"
 
 const TriangleClip = props => (
   <TriangleClipStyled props={props}>{props.children}</TriangleClipStyled>

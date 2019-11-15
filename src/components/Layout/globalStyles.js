@@ -34,10 +34,13 @@ const entranceAnimation = keyframes`
   z-index: 100;
 
 }
-99% {
+70% {
   transform: scale(80);
   opacity: 1;
   z-index: 100;
+}
+99% {
+  opacity: 0.1;
 }
 100% {
   opacity: 0;
@@ -55,7 +58,7 @@ export const Entrance = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  animation: ${entranceAnimation} 5s ease-in 1;
+  animation: ${entranceAnimation} 6s ease-in 1;
   img {
     position: relative;
     right: 7%;

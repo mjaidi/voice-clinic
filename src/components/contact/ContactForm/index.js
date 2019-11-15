@@ -9,6 +9,7 @@ import { ContactFormSection, Feedback } from "./styles"
 
 const ContactForm = props => {
   const [feedbackMsg, setFeedbackMsg] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
   let inputEl = useRef(null)
   function handleLabelClick() {
     inputEl.current.click()
@@ -60,8 +61,7 @@ const ContactForm = props => {
             { isSubmitting, setSubmitting, resetForm }
           ) => {
             let formData = encode(values)
-            console.log(formData)
-            console.log(isSubmitting)
+            setIsLoading(true)
 
             const axiosOptions = {
               url: props.location.pathname,
@@ -72,19 +72,20 @@ const ContactForm = props => {
               data: formData,
             }
 
-            console.log(axiosOptions)
-
             axios(axiosOptions)
               .then(response => {
                 setFeedbackMsg(
                   "Votre demande a été envoyé avec succès! Nous vous contacterons dans les plus brefs délais"
                 )
                 setSubmitting(false)
+                setIsLoading(false)
+
                 resetForm({})
               })
               .catch(err => {
                 setFeedbackMsg("Une erreur c'est produite!")
                 setSubmitting(false)
+                setIsLoading(false)
               })
           }}
         >
@@ -165,7 +166,7 @@ const ContactForm = props => {
                   {errors.file && touched.file && errors.file}
                 </div>
               </div>
-              <Button type="submit" disabled={isSubmitting}>
+              <Button type="submit" disabled={isLoading}>
                 Envoyer
               </Button>
             </form>

@@ -3,10 +3,6 @@ import React from "react"
 export const GlobalStateContext = React.createContext()
 export const GlobalDispatchContext = React.createContext()
 
-const initialState = {
-  firstLoad: true,
-}
-
 function reducer(state, action) {
   switch (action.type) {
     case "TOOGLE_FIRST_LOAD": {
@@ -20,8 +16,8 @@ function reducer(state, action) {
   }
 }
 
-const GlobalContextProvider = ({ children }) => {
-  const [state, dispatch] = React.useReducer(reducer, initialState)
+const GlobalContextProvider = ({ children, initial }) => {
+  const [state, dispatch] = React.useReducer(reducer, initial)
   return (
     <GlobalStateContext.Provider value={state}>
       <GlobalDispatchContext.Provider value={dispatch}>

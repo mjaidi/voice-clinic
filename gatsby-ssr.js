@@ -8,7 +8,13 @@
 const React = require("react")
 const GlobalContextProvider = require("./src/context/GlobalContextProvider")
   .default
-
+const initialState = {
+  firstLoad: false,
+}
 exports.wrapRootElement = ({ element }) => {
-  return <GlobalContextProvider>{element}</GlobalContextProvider>
+  return (
+    <GlobalContextProvider initial={initialState}>
+      {element}
+    </GlobalContextProvider>
+  )
 }

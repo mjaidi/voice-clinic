@@ -35,7 +35,7 @@ const entranceAnimation = keyframes`
 
 }
 99% {
-  transform: scale(12);
+  transform: scale(80);
   opacity: 1;
   z-index: 100;
 }
@@ -55,8 +55,15 @@ export const Entrance = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  animation: ${entranceAnimation} 3s ease-in 1;
+  animation: ${entranceAnimation} 5s ease-in 1;
   img {
-    width: 20%;
+    position: relative;
+    right: 7%;
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    img {
+      right: 7%;
+    }
   }
 `

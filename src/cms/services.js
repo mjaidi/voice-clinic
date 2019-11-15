@@ -22,7 +22,7 @@ export const services = {
     {
       label: "Position (ordre d'affichage)",
       name: "order",
-      widget: "integer",
+      widget: "number",
       required: true,
     },
     {

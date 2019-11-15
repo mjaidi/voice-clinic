@@ -5,6 +5,7 @@ import {
   borderRadius,
   background,
   accentMain,
+  accentSecondary,
 } from "../components/Layout/variables"
 
 export const Title = styled.h2`
@@ -64,7 +65,7 @@ export const Services = styled.div`
   .service-card {
     transition: all 0.5s;
     border-radius: ${borderRadius};
-    border: 3px solid ${accentMain};
+    border: 3px solid ${accentSecondary};
     height: 100%;
     background: white;
     padding: 1.5rem 0.75rem;
@@ -74,7 +75,7 @@ export const Services = styled.div`
       display: block;
       width: 0;
       height: 50%;
-      border-left: 3px solid ${accentMain};
+      border-left: 3px solid ${accentSecondary};
       position: absolute;
       left: calc(50% - 20px);
       top: 25%;

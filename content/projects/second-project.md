@@ -1,7 +1,7 @@
 ---
 seo_title: New Title
 seo_description: Some description
-title: Second project
+title: Projet 2
 description: >-
   Fusce ac tincidunt ex. In tempus elit dolor, id ultrices nibh faucibus quis.
   Pellentesque a pulvinar sem. Donec dapibus pellentesque mi, ac egestas nisi
@@ -19,6 +19,5 @@ description: >-
   id suscipit ullamcorper. Proin molestie nulla eget accumsan imperdiet. Nunc
   nec fringilla nunc, et pellentesque lorem.
 image: >-
-  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572689562/samples/sheep.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1573844340/Banner/WhatsApp_Image_2019-06-19_at_20.56.35_1_ynz51y.jpg
 ---
-

@@ -66,6 +66,7 @@ export default props => (
               internal: { description: { regex: "/content/services/" } }
             }
           }
+          sort: { order: ASC, fields: frontmatter___order }
         ) {
           edges {
             node {

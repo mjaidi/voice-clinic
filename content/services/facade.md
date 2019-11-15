@@ -9,6 +9,7 @@ description: >-
   ut nisl varius tristique. Fusce eu ante vitae metus ornare ultrices. Quisque
   sollicitudin quis massa ac viverra. Proin consectetur ante in turpis porttitor
   malesuada.
+order: 4
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1573584551/Photos/img918_nsw1e6.jpg
 icon: >-
@@ -29,4 +30,3 @@ categories:
         https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img202_jhomf3.jpg
     title: Façades
 ---
-

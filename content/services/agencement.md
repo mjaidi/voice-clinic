@@ -18,6 +18,7 @@ description: >-
   cursus purus sem, in varius ligula placerat sit amet. Nullam consectetur massa
   id suscipit ullamcorper. Proin molestie nulla eget accumsan imperdiet. Nunc
   nec fringilla nunc, et pellentesque lorem hello.
+order: 3
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img917_yi4njl.jpg
 icon: >-
@@ -136,4 +137,3 @@ categories:
         https://res.cloudinary.com/faludeco/image/upload/v1573584535/Photos/img591_m8an93.jpg
     title: Menuiserie Bois
 ---
-

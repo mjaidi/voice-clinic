@@ -35,7 +35,7 @@ const entranceAnimation = keyframes`
 
 }
 99% {
-  transform: scale(15);
+  transform: scale(12);
   opacity: 1;
   z-index: 100;
 }

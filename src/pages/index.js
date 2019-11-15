@@ -176,6 +176,7 @@ export const pageQuery = graphql`
       filter: {
         parent: { internal: { description: { regex: "/content/services/" } } }
       }
+      sort: { order: ASC, fields: frontmatter___order }
     ) {
       edges {
         node {

@@ -14,6 +14,7 @@ exports.createPages = ({ graphql, actions }) => {
               internal: { description: { regex: "/content/services/" } }
             }
           }
+          sort: { order: ASC, fields: frontmatter___order }
           limit: 1000
         ) {
           edges {

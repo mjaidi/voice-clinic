@@ -18,7 +18,7 @@ banner_gallery:
     subtitle: Spécialiste de la menuiserie métallurgique
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1573844455/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_29_qcqrv0.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1573844757/Banner/IMG_1144_ghqinw.jpg
     subtitle: Spécialiste de l'agencement
     title: First Sign
   - image: >-

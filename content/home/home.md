@@ -6,20 +6,24 @@ seo_description: >-
 logo: 'https://res.cloudinary.com/faludeco/image/upload/v1573584640/logo_sxxobi.png'
 banner_gallery:
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1573584551/Photos/img918_nsw1e6.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
     subtitle: Spécialiste des façade
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1573584548/Photos/img104_njdaqk.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1573844340/Banner/WhatsApp_Image_2019-06-19_at_20.56.35_1_ynz51y.jpg
     subtitle: Spécialiste des enseignes
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/a_90/v1573584543/Photos/img343_b7mx9n.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1573844439/Banner/WhatsApp_Image_2019-06-10_at_18.00.02_1_rrymax.jpg
     subtitle: Spécialiste de la menuiserie métallurgique
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1573584542/Photos/img403_qxc8zq.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1573844757/Banner/IMG_1144_ghqinw.jpg
     subtitle: Spécialiste de l'agencement
+    title: First Sign
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1573844533/Banner/Comptoir_Ele%CC%81fant_Vert1_j56eio.jpg
+    subtitle: Spécialiste de la menuiserie bois
     title: First Sign
 ---
 

@@ -9,14 +9,6 @@
 import React from "react"
 import GlobalContextProvider from "./src/context/GlobalContextProvider"
 
-const initialState = {
-  firstLoad: true,
-}
-
 export const wrapRootElement = ({ element }) => {
-  return (
-    <GlobalContextProvider initial={initialState}>
-      {element}
-    </GlobalContextProvider>
-  )
+  return <GlobalContextProvider>{element}</GlobalContextProvider>
 }

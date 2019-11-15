@@ -1,7 +1,7 @@
 ---
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img635_mipix5.jpg
-title: Qui sommes nous
+title: Notre Histoire
 text: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus orci,
   ultrices quis lacus sed, pellentesque pulvinar sem. Proin vitae ante et justo

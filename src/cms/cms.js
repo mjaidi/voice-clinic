@@ -9,7 +9,8 @@ CMS.init({
   config: {
     load_config_file: false,
     backend: {
-      name: "git-gateway",
+      name: "github",
+      repo: "mjaidi/falu-deco",
       branch: "master",
       squash_merges: true, // @NOTE Beta feature
     },

@@ -85,7 +85,7 @@ export const Services = styled.div`
       &:after {
         border: none;
         width: 50%;
-        border-top: 2px solid #da241c;
+        border-top: 2px solid ${accentSecondary};
         top: 210px;
         left: 25%;
       }

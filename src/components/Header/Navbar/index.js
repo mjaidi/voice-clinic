@@ -15,7 +15,15 @@ const Navbar = ({ data, location }) => (
     <PhoneNumber>
       <FontAwesomeIcon icon={faPhone} />
 
-      {data.contact.nodes[0].frontmatter.phone}
+      <a
+        href={
+          "tel: +212" +
+          data.contact.nodes[0].frontmatter.phone.replace(/\D/g, "").substr(1)
+        }
+      >
+        {" "}
+        {data.contact.nodes[0].frontmatter.phone}
+      </a>
     </PhoneNumber>
   </Wrapper>
 )

@@ -76,7 +76,6 @@ const ContactForm = props => {
                   "Votre demande a été envoyé avec succès! Nous vous contacterons dans les plus brefs délais"
                 )
                 setIsLoading(false)
-
                 resetForm({})
               })
               .catch(err => {

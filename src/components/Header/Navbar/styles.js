@@ -32,6 +32,10 @@ export const PhoneNumber = styled.div`
   padding: 0.7rem 1.5rem;
   background: ${accentMain};
   color: ${light};
+
+  a {
+    color: ${light};
+  }
   border-radius: 25px;
   position: absolute;
   right: 0rem;

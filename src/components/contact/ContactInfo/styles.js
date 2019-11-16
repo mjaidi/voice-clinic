@@ -9,6 +9,9 @@ import {
 export const ContactInfo = styled.div`
   background: ${accentMain};
   color: white;
+  a {
+    color: white;
+  }
   font-size: 20px;
   font-weight: regular;
   padding: 3rem;

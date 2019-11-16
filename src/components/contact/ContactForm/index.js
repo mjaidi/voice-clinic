@@ -11,9 +11,7 @@ const ContactForm = props => {
   const [feedbackMsg, setFeedbackMsg] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   let inputEl = useRef(null)
-  function handleLabelClick() {
-    inputEl.current.click()
-  }
+
   const encode = data => {
     const formData = new FormData()
     Object.keys(data).forEach(k => {
@@ -54,15 +52,15 @@ const ContactForm = props => {
             if (!values.message) {
               errors.message = "Obligatoire"
             }
+            if (values.file && values.file.size > 1000000) {
+              errors.file =
+                "Fichier supérieur a 1Mb - veuillez en séléctionner un autre"
+            }
             return errors
           }}
-          onSubmit={async (
-            values,
-            { isSubmitting, setSubmitting, resetForm }
-          ) => {
-            let formData = encode(values)
+          onSubmit={async (values, { resetForm }) => {
             setIsLoading(true)
-
+            let formData = encode(values)
             const axiosOptions = {
               url: props.location.pathname,
               method: "post",
@@ -77,14 +75,12 @@ const ContactForm = props => {
                 setFeedbackMsg(
                   "Votre demande a été envoyé avec succès! Nous vous contacterons dans les plus brefs délais"
                 )
-                setSubmitting(false)
                 setIsLoading(false)
 
                 resetForm({})
               })
               .catch(err => {
                 setFeedbackMsg("Une erreur c'est produite!")
-                setSubmitting(false)
                 setIsLoading(false)
               })
           }}
@@ -96,7 +92,6 @@ const ContactForm = props => {
             handleChange,
             handleBlur,
             handleSubmit,
-            isSubmitting,
             setFieldValue,
           }) => (
             <form
@@ -144,8 +139,11 @@ const ContactForm = props => {
               <div className="form-group">
                 <label>Ajouter un fichier:</label>
                 <br />
-                <label className="fileLabel" onClick={handleLabelClick}>
-                  {values.file.name || "Nouveau Fichier"}
+                <label
+                  className="fileLabel"
+                  onClick={() => inputEl.current.click()}
+                >
+                  {values.file.name || "Nouveau Fichier (max 1Mb)"}
                 </label>
 
                 <input
@@ -158,6 +156,7 @@ const ContactForm = props => {
                   }
                   onChange={event => {
                     setFieldValue("file", event.currentTarget.files[0])
+                    touched.file = true
                   }}
                   onBlur={handleBlur}
                 />

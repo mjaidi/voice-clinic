@@ -58,31 +58,11 @@ categories:
     title: Menuiserie Bois
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img917_yi4njl.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1573844533/Banner/Comptoir_Ele%CC%81fant_Vert1_j56eio.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img915_azbuno.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1574074038/Banner/Comptoir_Ele%CC%81fant_Vert2_d29zxq.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584551/Photos/img921_h3w6kl.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img621_bc8pq1.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img637_kmbjbn.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img636_gy2o6v.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img356_hzaww1.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img357_p5hmib.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img680_u60bmr.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img665_timzey.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img490_qv5sbu.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img506_rgz8yh.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img503_zzgieo.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1573844757/Banner/IMG_1144_ghqinw.jpg
     title: Corian
   - images:
       - >-

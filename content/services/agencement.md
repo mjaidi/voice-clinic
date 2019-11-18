@@ -22,7 +22,7 @@ order: 3
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1573844455/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_29_qcqrv0.jpg
 icon: >-
-  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1573209045/hymaqxjuljlneeeqa9ft.png
+  https://res.cloudinary.com/faludeco/image/upload/v1574082627/icons/Sans_titre-2_yzjtuw.psd
 categories:
   - images:
       - >-

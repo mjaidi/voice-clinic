@@ -20,7 +20,7 @@ description: >-
   nec fringilla nunc, et pellentesque lorem.
 order: 1
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573584549/Photos/img73_h3crt6.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1574081900/Enseignes/CFG_Bank2_cvdhbn.jpg
 icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574081669/icons/enseignes_edpei9.jpg
 categories:

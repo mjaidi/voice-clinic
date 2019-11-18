@@ -31,7 +31,7 @@ client_gallery:
       https://res.cloudinary.com/faludeco/image/upload/v1573630842/Clients/barid_zgoun4.png
     name: Barid Bank
   - logo: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1573630904/Clients/samir_gohdoz.webp
+      https://res.cloudinary.com/faludeco/image/upload/v1574108315/Clients/samir-usine-maroc-raffinerie-energie_xkh4vb.png
     name: Samir
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573630968/Clients/man_ifrjuu.png
@@ -52,7 +52,7 @@ client_gallery:
       https://res.cloudinary.com/faludeco/image/upload/v1573631713/Clients/Segafredo_Zanetti-logo-DE758A0FDF-seeklogo.com_w25lg7.png
     name: Segafredo
   - logo: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1573631713/Clients/kitea_ty34lw.png
+      https://res.cloudinary.com/faludeco/image/upload/v1574108314/Clients/Logo_kitea_t9hr9y.png
     name: Kitea
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573631715/Clients/fiat_ob3sf5.png
@@ -64,7 +64,7 @@ client_gallery:
       https://res.cloudinary.com/faludeco/image/upload/v1574106746/Clients/poste-maroc-logo_zy9lf0.png
     name: LA POSTE
   - logo: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574105447/Notre%20Histoire/5bbc5e00c4c36_qpebxr.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1574108314/Clients/5a1d2fbc4ac6b00ff574e29a_cj13ml.png
     name: DECATHLON
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1574106746/Clients/snrt-maroc-logo-416197313D-seeklogo.com_mvxytb.png
@@ -99,5 +99,8 @@ client_gallery:
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1574106744/Clients/LOGO_CARRE-1_l8hfrh.png
     name: CARRE EDEN
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574108314/Clients/logo-Orange_zq4xod.png
+    name: ORANGE
 ---
 

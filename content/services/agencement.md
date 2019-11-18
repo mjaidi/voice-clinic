@@ -115,6 +115,6 @@ categories:
         https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img709_nt0mx9.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584540/Photos/img710_hxawt4.jpg
-    title: Habillages Murals
+    title: Habillages Muraux
 ---
 

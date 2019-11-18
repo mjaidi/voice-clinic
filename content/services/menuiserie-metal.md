@@ -13,7 +13,7 @@ order: 2
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574073658/Banner/WhatsApp_Image_2019-06-10_at_18.00.01_nbkgmj.jpg
 icon: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573633129/icons/steem_ev4kov.png
+  https://res.cloudinary.com/faludeco/image/upload/v1574084837/icons/steel-icon_pbsk3a.jpg
 categories:
   - images:
       - >-

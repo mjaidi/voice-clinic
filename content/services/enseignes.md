@@ -1,7 +1,7 @@
 ---
 seo_title: Enseignes
 seo_description: >-
-  Spécialiste des enseignes en tout genre, signalétique intérieur, enseignes
+  Spécialiste des enseignes en tout genre, signalétiques intérieures, enseignes
   drapeau, totems, enseignes lumineuses ...
 title: Enseignes
 description: >-
@@ -30,6 +30,20 @@ categories:
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584548/Photos/img58_kweuvo.jpg
     title: Enseignes Lumineuses
+  - images:
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584547/Photos/img147_itqjcl.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584547/Photos/img146_qjj9pz.jpg
+    title: Totems
+  - images:
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img312_ysgefv.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img313_nykr9n.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img314_vukkwo.jpg
+    title: Signalétiques Intérieures
   - images:
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584549/Photos/img73_h3crt6.jpg
@@ -62,19 +76,5 @@ categories:
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img327_hrg0o3.jpg
     title: Vitrauphanie
-  - images:
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584547/Photos/img147_itqjcl.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584547/Photos/img146_qjj9pz.jpg
-    title: Totems
-  - images:
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img312_ysgefv.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img313_nykr9n.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img314_vukkwo.jpg
-    title: Signalétiques Intérieurs
 ---
 

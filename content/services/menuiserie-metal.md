@@ -1,7 +1,7 @@
 ---
-seo_title: Menuiserie Métallurgique
-seo_description: "Spécialiste de la menuiserie métallurgique, acie, aluminium, verre, fenêtres"
-title: Menuiserie Métallurgique
+seo_title: Menuiserie Métallique
+seo_description: 'Spécialiste de la menuiserie métallique, acie, aluminium, verre, fenêtres'
+title: Menuiserie Métallique
 description: >-
   Fusce ac tincidunt ex. In tempus elit dolor, id ultrices nibh faucibus quis.
   Pellentesque a pulvinar sem. Donec dapibus pellentesque mi, ac egestas nisi
@@ -11,7 +11,7 @@ description: >-
   malesuada.
 order: 2
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img916_cuftsr.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1574073658/Banner/WhatsApp_Image_2019-06-10_at_18.00.01_nbkgmj.jpg
 icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1573633129/icons/steem_ev4kov.png
 categories:
@@ -28,3 +28,4 @@ categories:
         https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img386_sarrz5.jpg
     title: Menuiserie métallique
 ---
+

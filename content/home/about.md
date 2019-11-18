@@ -1,6 +1,6 @@
 ---
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1574103151/Notre%20Histoire/1482318387-IMG_LD_Gradnja_Gradjevinski_radovi_06_xknjyk.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1574103998/Notre%20Histoire/gettyimages-928743880-2048x2048_oxpkjo.jpg
 title: Notre Histoire
 text: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus orci,

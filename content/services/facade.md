@@ -1,6 +1,6 @@
 ---
 seo_title: Façades
-seo_description: Spécialiste des façades
+seo_description: Spécialiste des Façades
 title: Façades
 description: >-
   Fusce ac tincidunt ex. In tempus elit dolor, id ultrices nibh faucibus quis.

@@ -1,7 +1,7 @@
 ---
-seo_title: New Title
+seo_title: UMNIA BANK - Façade
 seo_description: Some description
-title: Projet 2
+title: UMNIA BANK - Façade
 description: >-
   Fusce ac tincidunt ex. In tempus elit dolor, id ultrices nibh faucibus quis.
   Pellentesque a pulvinar sem. Donec dapibus pellentesque mi, ac egestas nisi

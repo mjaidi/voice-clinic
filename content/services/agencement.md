@@ -20,7 +20,7 @@ description: >-
   nec fringilla nunc, et pellentesque lorem hello.
 order: 3
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/a_auto_right/a_360/v1574085732/Banner/IMG_0789_euxwdb.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1573844757/Banner/IMG_1144_ghqinw.jpg
 icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574083793/icons/Sans_titre-2_xgcsaf.jpg
 categories:

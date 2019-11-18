@@ -60,5 +60,47 @@ client_gallery:
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573631713/Clients/Hublot-logo-positive_irhgaf.png
     name: Hublot
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105448/Notre%20Histoire/eyJidWNrZXQiOiJpbWFnZS1taW1jaXR5Iiwia2V5IjoiMTI3MzY4MTM2NFwvNTAxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjgwLCJoZWlnaHQiOjE4NiwiZml0IjoiY292ZXIifX19_tiwpcw.jpg
+    name: LA POSTE
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105447/Notre%20Histoire/5bbc5e00c4c36_qpebxr.jpg
+    name: DECATHLON
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105447/Notre%20Histoire/download_gzs4oy.jpg
+    name: SNRT
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105448/Notre%20Histoire/marjane-holding_z7csce.jpg
+    name: MARJANE
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105449/Notre%20Histoire/IDFS_eftbqi.png
+    name: DUTY FREE
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105449/Notre%20Histoire/Logo_BTIBank_RVB_fmziiq.png
+    name: Bti BANK
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105449/Notre%20Histoire/SOCOTEC-LOGO_phocdk.png
+    name: SOCOTEC
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105447/Notre%20Histoire/download-2_qk9ysc.jpg
+    name: LA PRAIRIE
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105448/Notre%20Histoire/SAHAM-Assistance_hzzscb.jpg
+    name: SAHAM ASSISTANCE
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105448/Notre%20Histoire/Cartier-logo_lgsaom.png
+    name: CARTIER
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105448/Notre%20Histoire/CBRE_logo.56c1f36df2ed3_otqzqy.jpg
+    name: CBRE
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105447/Notre%20Histoire/download-3_b0to6a.jpg
+    name: ALFA ROMEO
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105446/Notre%20Histoire/12540514_944106635637294_8355439835311580060_n_hrgkiq.jpg
+    name: SPORT PLUS
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574105448/Notre%20Histoire/eyJidWNrZXQiOiJpbWFnZS1taW1jaXR5Iiwia2V5IjoiMTI3MzY4MTM4MFwvMTg0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjgwLCJoZWlnaHQiOjE4NiwiZml0IjoiY292ZXIifX19_y2gjb1.png
+    name: CARRE EDEN
 ---
 

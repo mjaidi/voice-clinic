@@ -1,6 +1,6 @@
 ---
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1574103998/Notre%20Histoire/gettyimages-928743880-2048x2048_oxpkjo.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1574104454/Notre%20Histoire/gettyimages-928743880-2048x2048_larjhg.jpg
 title: Notre Histoire
 text: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus orci,

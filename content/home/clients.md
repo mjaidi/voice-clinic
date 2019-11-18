@@ -67,9 +67,6 @@ client_gallery:
       https://res.cloudinary.com/faludeco/image/upload/v1573631472/Clients/air_france_xkrp0f.png
     name: Air France
   - logo: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574108314/Clients/logo-Orange_zq4xod.png
-    name: ORANGE
-  - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1574108315/Clients/samir-usine-maroc-raffinerie-energie_xkh4vb.png
     name: Samir
   - logo: >-
@@ -102,5 +99,8 @@ client_gallery:
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1574106744/Clients/CBRE_Group_logo.svg_fbxxby.png
     name: CBRE
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574108314/Clients/logo-Orange_zq4xod.png
+    name: ORANGE
 ---
 

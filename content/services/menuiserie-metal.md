@@ -33,15 +33,13 @@ categories:
     title: Inox
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574074741/Banner/Escalier_PR_Media_wickqb.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574073658/Banner/WhatsApp_Image_2019-06-10_at_18.00.01_nbkgmj.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573844455/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_29_qcqrv0.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1574110827/Banner/Escalier_PR_Media_zclm68.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1574087967/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_19_j1gaeg.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1574076370/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_18_assbtk.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1574073658/Banner/WhatsApp_Image_2019-06-10_at_18.00.01_nbkgmj.jpg
     title: Travaux Métalliques
 ---
 

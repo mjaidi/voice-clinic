@@ -15,19 +15,17 @@ image: >-
 icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574083803/icons/Sans_titre-2_copie_o095ex.jpg
 categories:
-  - images:
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584551/Photos/img918_nsw1e6.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img215_sbf14c.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584545/Photos/img229_va7wn0.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584547/Photos/img216_bkdhak.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img201_kwyafa.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img202_jhomf3.jpg
-    title: Façades
+  - images: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574078690/Banner/jeep_dljvky.jpg
+    title: Alucobond
+  - images: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
+    title: Menuiserie Aluminium
+  - images: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
+    title: Murs Rideaux
+  - images: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574074227/Banner/FAUCHON1_dynroa.jpg
+    title: Habillage Métallique
 ---
 

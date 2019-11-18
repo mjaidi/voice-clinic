@@ -14,7 +14,7 @@ banner_gallery:
     subtitle: Spécialiste des Enseignes
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574073658/Banner/WhatsApp_Image_2019-06-10_at_18.00.01_nbkgmj.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1574074227/Banner/FAUCHON1_dynroa.jpg
     subtitle: Spécialiste de la Menuiserie Métallique
     title: First Sign
   - image: >-
@@ -22,7 +22,7 @@ banner_gallery:
     subtitle: Spécialiste de l'Agencement
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574074111/Banner/165142_ogr5is.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1574074267/Banner/IMG_0438_ap7oiw.jpg
     subtitle: Spécialiste de la Menuiserie Bois
     title: First Sign
 ---

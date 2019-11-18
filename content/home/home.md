@@ -14,7 +14,7 @@ banner_gallery:
     subtitle: Spécialiste des Enseignes
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574074741/Banner/Escalier_PR_Media_wickqb.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1574074227/Banner/FAUCHON1_dynroa.jpg
     subtitle: Spécialiste de la Menuiserie Métallique
     title: First Sign
   - image: >-

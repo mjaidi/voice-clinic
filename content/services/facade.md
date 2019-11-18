@@ -29,15 +29,9 @@ categories:
     title: Menuiserie Aluminium
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574076639/Banner/Umnia-Bank-78_h4sklj.jpg
-    title: Murs Rideaux
-  - images:
-      - >-
         https://res.cloudinary.com/faludeco/image/upload/v1574074227/Banner/FAUCHON1_dynroa.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1574074741/Banner/Escalier_PR_Media_wickqb.jpg
-    title: Habillage Métallique
+    title: Habillages Métalliques
 ---
 

@@ -20,7 +20,7 @@ categories:
         https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img916_cuftsr.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img548_ktpigc.jpg
-    title: Menuiserie aluminium
+    title: Menuiserie Aluminium
   - images:
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1574087647/Banner/Alfa_Romeo1_kmxaye.jpg

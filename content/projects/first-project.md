@@ -1,7 +1,7 @@
 ---
-seo_title: New Title
+seo_title: Marina Shopping Center
 seo_description: Some description
-title: Projet 1
+title: Marina Shopping Center
 description: >-
   Fusce ac tincidunt ex. In tempus elit dolor, id ultrices nibh faucibus quis.
   Pellentesque a pulvinar sem. Donec dapibus pellentesque mi, ac egestas nisi
@@ -17,5 +17,6 @@ description: >-
   id suscipit ullamcorper. Proin molestie nulla eget accumsan imperdiet. Nunc
   nec fringilla nunc, et pellentesque lorem.
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1574076370/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_18_assbtk.jpg
 ---
+

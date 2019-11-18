@@ -20,10 +20,70 @@ description: >-
   nec fringilla nunc, et pellentesque lorem hello.
 order: 3
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img917_yi4njl.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1573844455/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_29_qcqrv0.jpg
 icon: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1573209045/hymaqxjuljlneeeqa9ft.png
 categories:
+  - images:
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img608_n6ofhd.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584545/Photos/img607_c0efbz.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584542/Photos/img403_qxc8zq.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img725_zgnk7u.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img505_xtw0xm.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img504_y1fx2r.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img578_owi9az.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img577_ek4hjy.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img576_ajoyn1.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img726_wfoac4.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img562_i2hdmn.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img593_hbsk1r.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img561_u1cbjx.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img592_hwnfwk.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584535/Photos/img591_m8an93.jpg
+    title: Menuiserie Bois
+  - images:
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img917_yi4njl.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img915_azbuno.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584551/Photos/img921_h3w6kl.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img621_bc8pq1.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img637_kmbjbn.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img636_gy2o6v.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img356_hzaww1.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img357_p5hmib.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img680_u60bmr.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img665_timzey.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img490_qv5sbu.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img506_rgz8yh.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img503_zzgieo.jpg
+    title: Corian
   - images:
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img917_yi4njl.jpg
@@ -76,64 +136,5 @@ categories:
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584540/Photos/img710_hxawt4.jpg
     title: Habillage Murs
-  - images:
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img917_yi4njl.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img915_azbuno.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584551/Photos/img921_h3w6kl.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img621_bc8pq1.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img637_kmbjbn.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img636_gy2o6v.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img356_hzaww1.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img357_p5hmib.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img680_u60bmr.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img665_timzey.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img490_qv5sbu.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img506_rgz8yh.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img503_zzgieo.jpg
-    title: Décoration
-  - images:
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img608_n6ofhd.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584545/Photos/img607_c0efbz.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584542/Photos/img403_qxc8zq.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img725_zgnk7u.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img505_xtw0xm.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img504_y1fx2r.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img578_owi9az.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img577_ek4hjy.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img576_ajoyn1.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img726_wfoac4.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img562_i2hdmn.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img593_hbsk1r.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img561_u1cbjx.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img592_hwnfwk.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584535/Photos/img591_m8an93.jpg
-    title: Menuiserie Bois
 ---
+

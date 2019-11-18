@@ -22,7 +22,7 @@ banner_gallery:
     subtitle: Spécialiste de l'Agencement
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1573844533/Banner/Comptoir_Ele%CC%81fant_Vert1_j56eio.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1574074111/Banner/165142_ogr5is.jpg
     subtitle: Spécialiste de la Menuiserie Bois
     title: First Sign
 ---

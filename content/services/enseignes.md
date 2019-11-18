@@ -22,7 +22,7 @@ order: 1
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1573584549/Photos/img73_h3crt6.jpg
 icon: >-
-  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1573209537/voci4zpqfxdyp5nl5tsv.png
+  https://res.cloudinary.com/faludeco/image/upload/v1574081669/icons/enseignes_edpei9.jpg
 categories:
   - images:
       - >-
@@ -77,3 +77,4 @@ categories:
         https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img314_vukkwo.jpg
     title: Signalétique Intérieur
 ---
+

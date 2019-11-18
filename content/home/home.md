@@ -10,7 +10,7 @@ banner_gallery:
     subtitle: Spécialiste des Façades
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574073740/Banner/CDM_mosw7e.jpg
+      https://res.cloudinary.com/faludeco/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1574075560/Banner/CFG_Bank2_vmhzzi.jpg
     subtitle: Spécialiste des Enseignes
     title: First Sign
   - image: >-

@@ -20,7 +20,7 @@ description: >-
   nec fringilla nunc, et pellentesque lorem hello.
 order: 3
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573844455/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_29_qcqrv0.jpg
+  https://res.cloudinary.com/faludeco/image/upload/a_auto_right/a_360/v1574085732/Banner/IMG_0789_euxwdb.jpg
 icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574083793/icons/Sans_titre-2_xgcsaf.jpg
 categories:

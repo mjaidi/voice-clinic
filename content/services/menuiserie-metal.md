@@ -17,12 +17,6 @@ icon: >-
 categories:
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img916_cuftsr.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img548_ktpigc.jpg
-    title: Menuiserie Aluminium
-  - images:
-      - >-
         https://res.cloudinary.com/faludeco/image/upload/v1574087647/Banner/Alfa_Romeo1_kmxaye.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1574087587/Banner/WhatsApp_Image_2019-06-10_at_18.00.02_asagdh.jpg
@@ -48,6 +42,6 @@ categories:
         https://res.cloudinary.com/faludeco/image/upload/v1574087967/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_19_j1gaeg.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1574076370/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_18_assbtk.jpg
-    title: Travaux Metallique
+    title: Travaux Métalliques
 ---
 

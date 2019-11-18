@@ -61,13 +61,13 @@ categories:
         https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img299_vf6ey2.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img327_hrg0o3.jpg
-    title: Enseignes
+    title: Vitrauphanie
   - images:
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584547/Photos/img147_itqjcl.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584547/Photos/img146_qjj9pz.jpg
-    title: Totem
+    title: Totems
   - images:
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img312_ysgefv.jpg
@@ -75,6 +75,6 @@ categories:
         https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img313_nykr9n.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img314_vukkwo.jpg
-    title: Signalétique Intérieur
+    title: Signalétiques Intérieurs
 ---
 

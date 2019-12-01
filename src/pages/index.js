@@ -17,6 +17,7 @@ import {
 } from "../page_styles/index_page"
 import Grid from "../components/common/grid"
 import GridItem from "../components/common/gridItem"
+import ScrollAnimation from "react-animate-on-scroll"
 
 const IndexPage = props => {
   const { data } = props
@@ -25,8 +26,16 @@ const IndexPage = props => {
   const services = data.services.edges
   const clients = data.clients.nodes[0].frontmatter
   const instagram = data.insta.edges.filter(i => i.node.localFile !== null)
+
   const carouselImgs = homePageData.banner_gallery.map(g => {
     return { headline: g.title, subline: g.subtitle, url: g.image }
+  })
+  const instagramImgs = instagram.map(i => {
+    return {
+      headline: "",
+      subline: i.node.caption,
+      url: i.node.localFile.childImageSharp.fixed.src,
+    }
   })
 
   return (
@@ -37,21 +46,23 @@ const IndexPage = props => {
       />
       <Carousel images={carouselImgs} />
       <Container>
-        <About>
-          <Grid>
-            <GridItem lgColumns={10} lgNbColumns={4} margin={15}>
-              <img src={aboutData.image} alt="about" />
-            </GridItem>
-            <GridItem lgColumns={10} lgNbColumns={6} margin={15}>
-              <Title>{aboutData.title}</Title>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: aboutData.text,
-                }}
-              />
-            </GridItem>
-          </Grid>
-        </About>
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2}>
+          <About>
+            <Grid>
+              <GridItem lgColumns={10} lgNbColumns={4} margin={15}>
+                <img src={aboutData.image} alt="about" />
+              </GridItem>
+              <GridItem lgColumns={10} lgNbColumns={6} margin={15}>
+                <Title>{aboutData.title}</Title>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: aboutData.text,
+                  }}
+                />
+              </GridItem>
+            </Grid>
+          </About>
+        </ScrollAnimation>
       </Container>
       <TriangleClip textured />
       <Container textured>
@@ -61,24 +72,30 @@ const IndexPage = props => {
             {services.map(({ node }) => {
               return (
                 <GridItem lgColumns={2} mdColumns={1} key={node.fields.slug}>
-                  <Link to={`services${node.fields.slug}`}>
-                    <div className="service-card">
-                      <Grid>
-                        <GridItem lgColumns={2}>
-                          <img
-                            src={node.frontmatter.icon}
-                            alt={node.frontmatter.title}
-                          />
-                          <h4>{node.frontmatter.title}</h4>
-                        </GridItem>
-                        <GridItem lgColumns={2}>
-                          {node.frontmatter.categories.map(c => (
-                            <p key={c.title}>{c.title}</p>
-                          ))}
-                        </GridItem>
-                      </Grid>
-                    </div>
-                  </Link>
+                  <ScrollAnimation
+                    animateIn="fadeIn"
+                    animateOnce={true}
+                    duration={2}
+                  >
+                    <Link to={`services${node.fields.slug}`}>
+                      <div className="service-card">
+                        <Grid>
+                          <GridItem lgColumns={2}>
+                            <img
+                              src={node.frontmatter.icon}
+                              alt={node.frontmatter.title}
+                            />
+                            <h4>{node.frontmatter.title}</h4>
+                          </GridItem>
+                          <GridItem lgColumns={2}>
+                            {node.frontmatter.categories.map(c => (
+                              <p key={c.title}>{c.title}</p>
+                            ))}
+                          </GridItem>
+                        </Grid>
+                      </div>
+                    </Link>
+                  </ScrollAnimation>
                 </GridItem>
               )
             })}
@@ -88,28 +105,42 @@ const IndexPage = props => {
       <TriangleClip direction="bottom" textured />
       <Container>
         <Instagram>
-          <LightgalleryProvider>
-            <Title>Nouveautés</Title>
-            <Grid>
-              {instagram.map((i, index) => {
-                return (
-                  <GridItem key={index}>
-                    <div className="insta-card">
-                      <LightgalleryItem
-                        group="all"
-                        src={i.node.localFile.childImageSharp.fixed.src}
+          <Title>Nouveautés</Title>
+
+          <div className="desktop-display">
+            <LightgalleryProvider>
+              <Grid>
+                {instagram.map((i, index) => {
+                  return (
+                    <GridItem key={index}>
+                      <ScrollAnimation
+                        animateIn="fadeIn"
+                        animateOnce={true}
+                        duration={2}
                       >
-                        <Img fixed={i.node.localFile.childImageSharp.fixed} />
-                        <div className="overlay">
-                          <p>{i.node.caption}</p>
+                        <div className="insta-card">
+                          <LightgalleryItem
+                            group="all"
+                            src={i.node.localFile.childImageSharp.fixed.src}
+                          >
+                            <Img
+                              fixed={i.node.localFile.childImageSharp.fixed}
+                            />
+                            <div className="overlay">
+                              <p>{i.node.caption}</p>
+                            </div>
+                          </LightgalleryItem>
                         </div>
-                      </LightgalleryItem>
-                    </div>
-                  </GridItem>
-                )
-              })}
-            </Grid>
-          </LightgalleryProvider>
+                      </ScrollAnimation>
+                    </GridItem>
+                  )
+                })}
+              </Grid>
+            </LightgalleryProvider>
+          </div>
+          <div className="mobile-display">
+            <Carousel images={instagramImgs} contact={false} height="70vh" />
+          </div>
         </Instagram>
       </Container>
       <TriangleClip textured />
@@ -124,7 +155,13 @@ const IndexPage = props => {
                 smColumns={3}
                 key={JSON.stringify(c.logo)}
               >
-                <img src={c.logo} alt={c.name}></img>
+                <ScrollAnimation
+                  animateIn="fadeIn"
+                  animateOnce={true}
+                  duration={2}
+                >
+                  <img src={c.logo} alt={c.name}></img>
+                </ScrollAnimation>
               </GridItem>
             ))}
           </Grid>

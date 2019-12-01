@@ -59,9 +59,11 @@ const Carousel = props => {
                   <h4>{image.subline}</h4>
                 </div>
               )}
-              <Link to="/contact">
-                <Button>Vous avez un projet?</Button>
-              </Link>
+              {props.contact && (
+                <Link to="/contact">
+                  <Button>Vous avez un projet?</Button>
+                </Link>
+              )}
             </div>
           </div>
         ))}
@@ -94,6 +96,7 @@ const Carousel = props => {
 
 Carousel.defaultProps = {
   imageChangeInterval: 5000,
+  contact: true,
   images: [
     {
       headline: "London",

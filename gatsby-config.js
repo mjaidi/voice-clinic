@@ -77,11 +77,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `First Sign Site Web`,
+        short_name: `First Sign`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#DA241C`,
+        theme_color: `#DA241C`,
         display: `minimal-ui`,
         icon: `content/assets/logo.png`, // This path is relative to the root of the site.
       },

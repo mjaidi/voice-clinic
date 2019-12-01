@@ -41,7 +41,7 @@ const Image = ({ name }) => {
   )
 }
 Image.defaultProps = {
-  name: `gatsby-astronaut`,
+  name: `logo`,
 }
 
 Image.propTypes = {

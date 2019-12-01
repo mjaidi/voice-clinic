@@ -9,6 +9,7 @@ import Grid from "../components/common/grid"
 import GridItem from "../components/common/gridItem"
 import PageHeader from "../components/common/pageHeader"
 import { ProjectCard } from "../page_styles/projects"
+import ScrollAnimation from "react-animate-on-scroll"
 
 const Project = props => {
   const [expandCard, setExpandCard] = useState({ cardIndex: 0, status: false })
@@ -35,44 +36,50 @@ const Project = props => {
                 mdColumns={2}
                 margin={20}
               >
-                <ProjectCard
-                  show={expandCard.cardIndex === index && expandCard.status}
+                <ScrollAnimation
+                  animateIn="fadeIn"
+                  duration={2}
+                  animateOnce={true}
                 >
-                  <img
-                    src={p.node.frontmatter.image}
-                    alt={p.node.frontmatter.title}
-                  />
-                  <h3
-                    style={{
-                      marginBottom: 15,
-                    }}
+                  <ProjectCard
+                    show={expandCard.cardIndex === index && expandCard.status}
                   >
-                    {title}
-                  </h3>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: p.node.frontmatter.description,
-                    }}
-                  />
-                  <h5
-                    className="expand"
-                    onClick={event =>
-                      setExpandCard({ cardIndex: index, status: true })
-                    }
-                  >
-                    <FontAwesomeIcon icon={faCaretDown} />
-                    Voir plus
-                  </h5>
-                  <h5
-                    className="contract"
-                    onClick={event =>
-                      setExpandCard({ cardIndex: index, status: false })
-                    }
-                  >
-                    <FontAwesomeIcon icon={faCaretUp} />
-                    Voir moins
-                  </h5>
-                </ProjectCard>
+                    <img
+                      src={p.node.frontmatter.image}
+                      alt={p.node.frontmatter.title}
+                    />
+                    <h3
+                      style={{
+                        marginBottom: 15,
+                      }}
+                    >
+                      {title}
+                    </h3>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: p.node.frontmatter.description,
+                      }}
+                    />
+                    <h5
+                      className="expand"
+                      onClick={event =>
+                        setExpandCard({ cardIndex: index, status: true })
+                      }
+                    >
+                      <FontAwesomeIcon icon={faCaretDown} />
+                      Voir plus
+                    </h5>
+                    <h5
+                      className="contract"
+                      onClick={event =>
+                        setExpandCard({ cardIndex: index, status: false })
+                      }
+                    >
+                      <FontAwesomeIcon icon={faCaretUp} />
+                      Voir moins
+                    </h5>
+                  </ProjectCard>
+                </ScrollAnimation>
               </GridItem>
             )
           })}

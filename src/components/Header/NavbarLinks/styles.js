@@ -29,6 +29,11 @@ export const Wrapper = styled.div`
   .navbarLink {
     position: relative;
     display: inline-block;
+    svg {
+      margin-left: 5px;
+      color: ${dark};
+      cursor: pointer;
+    }
   }
 
   ${({ desktop }) =>
@@ -60,11 +65,22 @@ export const Wrapper = styled.div`
 			flex-direction: column;
 
 			.navbarLink {
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
           padding-bottom: 0.5rem;
           padding-top: 0.5rem;
 
-
+          &:after {
+            content: " ";
+            width: 80%;
+            border-bottom: 2px dashed ${accentMain};
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+          }
+          svg {
+            margin-left: 20px;
+            font-size: 20px;
+          }
 					&:last-child {
 							margin-bottom: unset;
 					}
@@ -109,7 +125,6 @@ export const Menu = styled.ul`
       background: none;
       a {
         font-size: 15px;
-
       }
     &.active {
       position: relative;

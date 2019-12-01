@@ -110,6 +110,9 @@ export const Services = styled.div`
 `
 
 export const Instagram = styled.div`
+  .mobile-display {
+    display: none;
+  }
   padding-top: 3rem;
   padding-bottom: 10rem;
   .insta-card {
@@ -167,6 +170,14 @@ export const Instagram = styled.div`
       text-align: center;
       overflow: hidden;
       font-weight: bold;
+    }
+  }
+  @media (max-width: 900px) {
+    .desktop-display {
+      display: none;
+    }
+    .mobile-display {
+      display: block;
     }
   }
 `

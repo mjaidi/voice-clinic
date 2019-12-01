@@ -16,6 +16,7 @@ import Header from "../Header"
 import Footer from "../Footer"
 import { Global, Entrance } from "./globalStyles"
 import logo from "../../../content/assets/logo.svg"
+import "animate.css/animate.min.css"
 
 const Layout = ({ children, location }) => {
   const dispatch = useContext(GlobalDispatchContext)
@@ -31,7 +32,6 @@ const Layout = ({ children, location }) => {
           <img src={logo} alt="logo"></img>
         </Entrance>
       )}
-
       <Header location={location} />
       <div>
         <main>{children}</main>

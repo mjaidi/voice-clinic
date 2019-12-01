@@ -95,8 +95,14 @@ export const home = {
       file: "content/home/contact.md",
       fields: [
         {
-          label: "Numéro Téléphone",
+          label: "Numéro Téléphone Affiché",
           name: "phone",
+          widget: "string",
+          required: true,
+        },
+        {
+          label: "Numéro Téléphone Appeler",
+          name: "phone_call",
           widget: "string",
           required: true,
         },

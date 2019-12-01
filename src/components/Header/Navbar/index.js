@@ -17,8 +17,8 @@ const Navbar = ({ data, location }) => (
 
       <a
         href={
-          "tel: +212" +
-          data.contact.nodes[0].frontmatter.phone.replace(/\D/g, "").substr(1)
+          "tel: +" +
+          data.contact.nodes[0].frontmatter.phone_call.replace(/\D/g, "")
         }
       >
         {" "}
@@ -55,6 +55,7 @@ export default props => (
           nodes {
             frontmatter {
               phone
+              phone_call
             }
           }
         }

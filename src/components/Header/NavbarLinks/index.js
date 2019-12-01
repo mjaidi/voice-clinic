@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import { Wrapper, Menu } from "./styles"
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const NavbarLinks = ({ data, desktop, location }) => {
   const [activeMenu, setActiveMenu] = useState("")
@@ -20,6 +22,10 @@ const NavbarLinks = ({ data, desktop, location }) => {
         >
           Services
         </Link>
+        <FontAwesomeIcon
+          icon={faCaretDown}
+          onClick={event => setActiveMenu("services")}
+        />
         <Menu
           desktop={desktop}
           className={activeMenu === "services" ? "active" : ""}

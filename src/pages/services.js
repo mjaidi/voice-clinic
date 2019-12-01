@@ -12,6 +12,7 @@ import {
   background,
 } from "../components/Layout/variables"
 import TriangleClip from "../components/common/triangleClip.js"
+import ScrollAnimation from "react-animate-on-scroll"
 
 const Services = props => {
   const { data } = props
@@ -29,55 +30,59 @@ const Services = props => {
         {services.map((p, index) => {
           const title = p.node.frontmatter.title || p.node.fields.slug
           return (
-            <div key={p.node.fields.slug}>
-              {index !== 0 && (
-                <TriangleClip
-                  color={index % 2 === 1 ? accentSecondaryLight : background}
+            <ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
+              <div key={p.node.fields.slug}>
+                {index !== 0 && (
+                  <TriangleClip
+                    color={index % 2 === 1 ? accentSecondaryLight : background}
+                    textured={index % 2 === 1 ? true : false}
+                  ></TriangleClip>
+                )}
+                <ServicesCard
+                  background={
+                    index % 2 === 1 ? accentSecondaryLight : background
+                  }
                   textured={index % 2 === 1 ? true : false}
-                ></TriangleClip>
-              )}
-              <ServicesCard
-                background={index % 2 === 1 ? accentSecondaryLight : background}
-                textured={index % 2 === 1 ? true : false}
-              >
-                <img
-                  src={p.node.frontmatter.image}
-                  alt={p.node.frontmatter.title}
-                  className={index % 2 === 0 ? "show top" : "hide top"}
-                ></img>
-                <div className="services-content">
-                  <h3
-                    style={{
-                      marginBottom: 15,
-                    }}
-                  >
-                    {title}
-                  </h3>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: p.node.frontmatter.description,
-                    }}
-                  />
-                  <Link to={`services${p.node.fields.slug}`}>
-                    <Button background={accentSecondary}>
-                      En savoir plus...
-                    </Button>
-                  </Link>
-                </div>
-                <img
-                  src={p.node.frontmatter.image}
-                  alt={p.node.frontmatter.title}
-                  className={index % 2 === 1 ? "show bottom" : "hide bottom"}
-                ></img>
-              </ServicesCard>
-              {index !== services.length - 1 && (
-                <TriangleClip
-                  color={index % 2 === 1 ? accentSecondaryLight : background}
-                  textured={index % 2 === 1 ? true : false}
-                  direction="bottom"
-                ></TriangleClip>
-              )}
-            </div>
+                >
+                  <img
+                    src={p.node.frontmatter.image}
+                    alt={p.node.frontmatter.title}
+                    className={index % 2 === 0 ? "show top" : "hide top"}
+                  ></img>
+                  <div className="services-content">
+                    <h3
+                      style={{
+                        marginBottom: 15,
+                      }}
+                    >
+                      {title}
+                    </h3>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: p.node.frontmatter.description,
+                      }}
+                    />
+                    <Link to={`services${p.node.fields.slug}`}>
+                      <Button background={accentSecondary}>
+                        En savoir plus...
+                      </Button>
+                    </Link>
+                  </div>
+                  <img
+                    src={p.node.frontmatter.image}
+                    alt={p.node.frontmatter.title}
+                    className={index % 2 === 1 ? "show bottom" : "hide bottom"}
+                  ></img>
+                </ServicesCard>
+                {index !== services.length - 1 && (
+                  <TriangleClip
+                    color={index % 2 === 1 ? accentSecondaryLight : background}
+                    textured={index % 2 === 1 ? true : false}
+                    direction="bottom"
+                  ></TriangleClip>
+                )}
+              </div>
+            </ScrollAnimation>
           )
         })}
       </ServicesWrapper>

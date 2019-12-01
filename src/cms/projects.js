@@ -26,5 +26,19 @@ export const projects = {
       required: true,
       allow_multiple: false,
     },
+    {
+      label: "Images Projet",
+      name: "project_gallery",
+      widget: "list",
+      fields: [
+        {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          allow_multiple: false,
+          required: true,
+        },
+      ],
+    },
   ],
 }

@@ -20,5 +20,15 @@ description: >-
   nec fringilla nunc, et pellentesque lorem.
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1573844757/Banner/IMG_1144_ghqinw.jpg
+project_gallery:
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574073740/Banner/CDM_mosw7e.jpg
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574074227/Banner/FAUCHON1_dynroa.jpg
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1573844757/Banner/IMG_1144_ghqinw.jpg
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574074999/Banner/IMG_0438_jzlt3a.jpg
 ---
-

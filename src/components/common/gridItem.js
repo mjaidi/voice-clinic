@@ -29,6 +29,7 @@ const GridItemStyled = styled.div`
             props.props.smNbColumns}% - ${2 * props.props.margin}px);`
         : `width: calc(100% - ${2 * props.props.margin}px);`}
   }
+  transition: width 0.9s linear;
 `
 
 GridItem.defaultProps = {

@@ -46,6 +46,12 @@ export const ProjectCard = styled.div`
       transform: scale(1.1);
     }
   }
+  .gallery-img {
+    height: 120px;
+    @media (max-width: 600px) {
+      height: 90px;
+    }
+  }
   .contract {
     display: ${props => (props.show ? "block" : "none")};
     color: ${accentMain};

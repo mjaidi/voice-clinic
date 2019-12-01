@@ -18,5 +18,9 @@ description: >-
   nec fringilla nunc, et pellentesque lorem.
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574077159/Banner/Marina-Shopping-660x295_rg0g5u.jpg
+project_gallery:
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574073740/Banner/CDM_mosw7e.jpg
 ---
-

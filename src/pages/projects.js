@@ -10,6 +10,7 @@ import GridItem from "../components/common/gridItem"
 import PageHeader from "../components/common/pageHeader"
 import { ProjectCard } from "../page_styles/projects"
 import ScrollAnimation from "react-animate-on-scroll"
+import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
 
 const Project = props => {
   const [expandCard, setExpandCard] = useState({ cardIndex: 0, status: false })
@@ -32,8 +33,12 @@ const Project = props => {
             return (
               <GridItem
                 key={p.node.fields.slug}
-                lgColumns={2}
-                mdColumns={2}
+                lgColumns={
+                  expandCard.cardIndex === index && expandCard.status ? 1 : 2
+                }
+                mdColumns={
+                  expandCard.cardIndex === index && expandCard.status ? 1 : 2
+                }
                 margin={20}
               >
                 <ScrollAnimation
@@ -48,6 +53,7 @@ const Project = props => {
                       src={p.node.frontmatter.image}
                       alt={p.node.frontmatter.title}
                     />
+
                     <h3
                       style={{
                         marginBottom: 15,
@@ -55,6 +61,23 @@ const Project = props => {
                     >
                       {title}
                     </h3>
+                    {expandCard.cardIndex === index && expandCard.status && (
+                      <LightgalleryProvider>
+                        <Grid>
+                          {p.node.frontmatter.project_gallery.map(i => (
+                            <GridItem lgColumns={6} mdColumns={4} smColumns={3}>
+                              <LightgalleryItem group="all" src={i.image}>
+                                <img
+                                  src={i.image}
+                                  alt={p.node.frontmatter.title}
+                                  class="gallery-img"
+                                />
+                              </LightgalleryItem>
+                            </GridItem>
+                          ))}
+                        </Grid>
+                      </LightgalleryProvider>
+                    )}
                     <p
                       dangerouslySetInnerHTML={{
                         __html: p.node.frontmatter.description,
@@ -112,6 +135,9 @@ export const pageQuery = graphql`
             title
             description
             image
+            project_gallery {
+              image
+            }
           }
         }
       }

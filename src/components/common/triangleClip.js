@@ -9,6 +9,7 @@ const TriangleClip = props => (
 const TriangleClipStyled = styled.div`
   background-color: ${props => props.props.color};
   background-image: url(${props => (props.props.textured ? texture : "")});
+  background-size: 200px;
 
   height: ${props => props.props.height || 5}rem;
   transform: ${props =>

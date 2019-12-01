@@ -59,9 +59,16 @@ export const ServiceNavigation = styled.ul`
   justify-content: space-between;
   list-style: none;
   padding: 0;
+  li {
+    color: ${accentMain};
+    font-weight: bold;
+    padding: 0.75rem;
+  }
   p {
-    padding-top: 1rem;
-    border-top: 1px solid;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 1px dashed;
+    border-bottom: 1px dashed;
     text-align: justify;
   }
 `

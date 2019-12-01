@@ -10,6 +10,7 @@ const Container = props => (
 const ContainerStyled = styled.section`
   background-color: ${props => props.props.color};
   background-image: url(${props => (props.props.textured ? texture : "")});
+  background-size: 200px;
   .inner-container {
     margin: 0 auto;
     max-width: 1200px;

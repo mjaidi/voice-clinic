@@ -14,7 +14,7 @@ export const ContactInfo = styled.div`
   }
   font-size: 20px;
   font-weight: regular;
-  padding: 3rem;
+  padding: 3rem 2rem;
   min-height: 20rem;
   font-family: ${headerFont};
   box-shadow: ${shadowMain};

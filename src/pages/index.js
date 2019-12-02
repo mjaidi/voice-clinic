@@ -1,17 +1,16 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Container from "../components/common/container"
 import TriangleClip from "../components/common/triangleClip.js"
 import Carousel from "../components/Carousel"
-import Img from "gatsby-image"
+import CarouselCard from "../components/CarouselCard"
 import {
   About,
   Services,
-  Instagram,
+  ProjetsPhares,
   Clients,
   Title,
 } from "../page_styles/index_page"
@@ -32,8 +31,7 @@ const IndexPage = props => {
   })
   const instagramImgs = instagram.map(i => {
     return {
-      headline: "",
-      subline: i.node.caption,
+      headline: i.node.caption,
       url: i.node.localFile.childImageSharp.fixed.src,
     }
   })
@@ -104,47 +102,42 @@ const IndexPage = props => {
       </Container>
       <TriangleClip direction="bottom" textured />
       <Container>
-        <Instagram>
-          <Title>Nouveautés</Title>
-
-          <div className="desktop-display">
-            <LightgalleryProvider>
-              <Grid>
-                {instagram.map((i, index) => {
-                  return (
-                    <GridItem key={index}>
-                      <ScrollAnimation
-                        animateIn="fadeIn"
-                        animateOnce={true}
-                        duration={2}
-                      >
-                        <div className="insta-card">
-                          <LightgalleryItem
-                            group="all"
-                            src={i.node.localFile.childImageSharp.fixed.src}
-                          >
-                            <Img
-                              fixed={i.node.localFile.childImageSharp.fixed}
-                            />
-                            <div className="overlay">
-                              <p>{i.node.caption}</p>
-                            </div>
-                          </LightgalleryItem>
-                        </div>
-                      </ScrollAnimation>
-                    </GridItem>
-                  )
-                })}
-              </Grid>
-            </LightgalleryProvider>
-          </div>
-          <div className="mobile-display">
-            <Carousel images={instagramImgs} contact={false} height="70vh" />
-          </div>
-        </Instagram>
+        <ProjetsPhares>
+          <Title>Projets Phares</Title>
+          <Grid>
+            {aboutData.best_gallery.map((i, index) => {
+              return (
+                <GridItem key={index}>
+                  <ScrollAnimation
+                    animateIn="fadeIn"
+                    animateOnce={true}
+                    duration={2}
+                  >
+                    <div className="projets-card">
+                      <img src={i.image} alt={i.title}></img>
+                      <div className="overlay">
+                        <p>{i.title}</p>
+                      </div>
+                    </div>
+                  </ScrollAnimation>
+                </GridItem>
+              )
+            })}
+          </Grid>
+        </ProjetsPhares>
       </Container>
       <TriangleClip textured />
       <Container textured>
+        <div style={{ paddingTop: "2rem" }}>
+          <Title>Nouveautés</Title>
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2}>
+            <CarouselCard images={instagramImgs} />
+          </ScrollAnimation>
+        </div>
+      </Container>
+      <TriangleClip direction="bottom" textured />
+
+      <Container>
         <Clients>
           <Title>Nos Clients</Title>
           <Grid justifyContent="left">
@@ -203,6 +196,10 @@ export const pageQuery = graphql`
     ) {
       nodes {
         frontmatter {
+          best_gallery {
+            image
+            title
+          }
           image
           text
           title

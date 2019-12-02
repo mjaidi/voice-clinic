@@ -63,6 +63,11 @@ export const ServiceNavigation = styled.ul`
     color: ${accentMain};
     font-weight: bold;
     padding: 0.75rem;
+    font-size: 20px;
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.5s;
+    }
   }
   p {
     padding-top: 1.5rem;

@@ -92,7 +92,7 @@ export const Services = styled.div`
     }
     &:hover {
       box-shadow: ${shadowMain};
-      transform: scale(1.02);
+      transform: scale(1.07);
     }
     img {
       width: 100%;
@@ -109,13 +109,10 @@ export const Services = styled.div`
   }
 `
 
-export const Instagram = styled.div`
-  .mobile-display {
-    display: none;
-  }
+export const ProjetsPhares = styled.div`
   padding-top: 3rem;
   padding-bottom: 10rem;
-  .insta-card {
+  .projets-card {
     border-radius: ${borderRadius};
     height: 100%;
     height: 20rem;
@@ -170,14 +167,6 @@ export const Instagram = styled.div`
       text-align: center;
       overflow: hidden;
       font-weight: bold;
-    }
-  }
-  @media (max-width: 900px) {
-    .desktop-display {
-      display: none;
-    }
-    .mobile-display {
-      display: block;
     }
   }
 `

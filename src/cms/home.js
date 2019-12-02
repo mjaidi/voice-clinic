@@ -64,6 +64,22 @@ export const home = {
           widget: "markdown",
           required: true,
         },
+        {
+          label: "Projets Phares",
+          name: "best_gallery",
+          widget: "list",
+          fields: [
+            { label: "Titre", name: "title", widget: "string", required: true },
+
+            {
+              label: "Image",
+              name: "image",
+              widget: "image",
+              allow_multiple: false,
+              required: true,
+            },
+          ],
+        },
       ],
     },
     {

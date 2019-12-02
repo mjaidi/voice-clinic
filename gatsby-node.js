@@ -40,8 +40,13 @@ exports.createPages = ({ graphql, actions }) => {
     console.log(result)
     services.forEach((service, index) => {
       const previous =
-        index === services.length - 1 ? null : services[index + 1].node
-      const next = index === 0 ? null : services[index - 1].node
+        index === services.length - 1
+          ? services[0].node
+          : services[index + 1].node
+      const next =
+        index === 0
+          ? services[services.length - 1].node
+          : services[index - 1].node
 
       createPage({
         path: `services${service.node.fields.slug}`,

@@ -46,7 +46,7 @@ export const CarouselImage = styled.div`
     text-align: center;
     letter-spacing: 2px;
     padding: 1rem 0;
-    text-shadow: 1px 1px 19px rgba(0, 0, 0, 1);
+    text-shadow: 10px 10px 19px rgba(0, 0, 0, 1);
     h2 {
       margin: 0;
       font-size: 50px;

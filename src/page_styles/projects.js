@@ -48,6 +48,12 @@ export const ProjectCard = styled.div`
   }
   .gallery-img {
     height: 120px;
+    border-radius: ${borderRadius};
+    cursor: pointer;
+    transition: 0.5s all;
+    &:hover {
+      transform: scale(1.07);
+    }
     @media (max-width: 600px) {
       height: 90px;
     }

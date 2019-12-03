@@ -64,17 +64,25 @@ const Project = props => {
                     {expandCard.cardIndex === index && expandCard.status && (
                       <LightgalleryProvider>
                         <Grid>
-                          {p.node.frontmatter.project_gallery.map(i => (
-                            <GridItem lgColumns={6} mdColumns={4} smColumns={3}>
-                              <LightgalleryItem group="all" src={i.image}>
-                                <img
-                                  src={i.image}
-                                  alt={p.node.frontmatter.title}
-                                  class="gallery-img"
-                                />
-                              </LightgalleryItem>
-                            </GridItem>
-                          ))}
+                          {p.node.frontmatter.project_gallery.map(
+                            (i, index) => (
+                              <GridItem
+                                lgColumns={6}
+                                mdColumns={4}
+                                smColumns={3}
+                                key={index}
+                                hidden={index > 5}
+                              >
+                                <LightgalleryItem group="all" src={i.image}>
+                                  <img
+                                    src={i.image}
+                                    alt={p.node.frontmatter.title}
+                                    class="gallery-img"
+                                  />
+                                </LightgalleryItem>
+                              </GridItem>
+                            )
+                          )}
                         </Grid>
                       </LightgalleryProvider>
                     )}

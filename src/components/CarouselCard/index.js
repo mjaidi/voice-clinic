@@ -45,7 +45,7 @@ const CardCarousel = props => {
                   : ""
               }`}
             >
-              <LightgalleryItem group="all" src={image.url}>
+              <LightgalleryItem group="1" src={image.url}>
                 <img src={image.url} alt="client" />
                 <div className="overlay">
                   <p>{image.headline}</p>
@@ -62,7 +62,7 @@ const CardCarousel = props => {
                 index === imageIndex ? "current" : ""
               } `}
             >
-              <LightgalleryItem group="all" src={image.url}>
+              <LightgalleryItem group="2" src={image.url}>
                 <img src={image.url} alt="client" />
                 <div className="overlay">
                   <p>{image.headline}</p>
@@ -82,7 +82,7 @@ const CardCarousel = props => {
                   : ""
               }`}
             >
-              <LightgalleryItem group="all" src={image.url}>
+              <LightgalleryItem group="3" src={image.url}>
                 <img src={image.url} alt="client" />
                 <div className="overlay">
                   <p>{image.headline}</p>

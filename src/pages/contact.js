@@ -8,12 +8,13 @@ import Grid from "../components/common/grid"
 import GridItem from "../components/common/gridItem"
 import ContactForm from "../components/contact/ContactForm"
 import ContactInfo from "../components/contact/ContactInfo"
-// import { ContactWrapper } from "../page_styles/contact"
+
+import contactTitleImg from "../../content/assets/contact.jpeg"
 
 const Contact = props => {
   return (
     <Layout location="/contact" title="Contactez Nous">
-      <PageHeader title="Demande de devis"></PageHeader>
+      <PageHeader title="Demande de devis" image={contactTitleImg}></PageHeader>
 
       <Container paddingTop="3rem" textured>
         <SEO title="Demande de Devis" />

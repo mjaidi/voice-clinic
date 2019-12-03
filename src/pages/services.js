@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import ScrollAnimation from "react-animate-on-scroll"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -12,7 +13,8 @@ import {
   background,
 } from "../components/Layout/variables"
 import TriangleClip from "../components/common/triangleClip.js"
-import ScrollAnimation from "react-animate-on-scroll"
+
+import servicesTitleImg from "../../content/assets/services.jpeg"
 
 const Services = props => {
   const { data } = props
@@ -21,10 +23,7 @@ const Services = props => {
 
   return (
     <Layout location="/services" title={siteTitle}>
-      <PageHeader
-        title="Nos Services"
-        image="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-      ></PageHeader>
+      <PageHeader title="Nos Services" image={servicesTitleImg}></PageHeader>
       <SEO title="Nos Services" />
       <ServicesWrapper>
         {services.map((p, index) => {
@@ -50,13 +49,7 @@ const Services = props => {
                     className={index % 2 === 0 ? "show top" : "hide top"}
                   ></img>
                   <div className="services-content">
-                    <h3
-                      style={{
-                        marginBottom: 15,
-                      }}
-                    >
-                      {title}
-                    </h3>
+                    <h3>{title}</h3>
                     <p
                       dangerouslySetInnerHTML={{
                         __html: p.node.frontmatter.description,

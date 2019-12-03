@@ -1,12 +1,17 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import ScrollAnimation from "react-animate-on-scroll"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
+
+import Grid from "../components/common/grid"
+import GridItem from "../components/common/gridItem"
 import Container from "../components/common/container"
 import TriangleClip from "../components/common/triangleClip.js"
 import Carousel from "../components/Carousel"
 import CarouselCard from "../components/CarouselCard"
+
 import {
   About,
   Services,
@@ -14,17 +19,15 @@ import {
   Clients,
   Title,
 } from "../page_styles/index_page"
-import Grid from "../components/common/grid"
-import GridItem from "../components/common/gridItem"
-import ScrollAnimation from "react-animate-on-scroll"
 
 const IndexPage = props => {
-  const { data } = props
-  const homePageData = data.home.nodes[0].frontmatter
-  const aboutData = data.about.nodes[0].frontmatter
-  const services = data.services.edges
-  const clients = data.clients.nodes[0].frontmatter
-  const instagram = data.insta.edges.filter(i => i.node.localFile !== null)
+  const homePageData = props.data.home.nodes[0].frontmatter
+  const aboutData = props.data.about.nodes[0].frontmatter
+  const services = props.data.services.edges
+  const clients = props.data.clients.nodes[0].frontmatter
+  const instagram = props.data.insta.edges.filter(
+    i => i.node.localFile !== null
+  )
 
   const carouselImgs = homePageData.banner_gallery.map(g => {
     return { headline: g.title, subline: g.subtitle, url: g.image }
@@ -42,7 +45,10 @@ const IndexPage = props => {
         title={homePageData.seo_title}
         description={homePageData.seo_description}
       />
+      {/* Main Banner Carousel */}
       <Carousel images={carouselImgs} />
+
+      {/* Our History Section */}
       <Container>
         <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2}>
           <About>
@@ -62,6 +68,8 @@ const IndexPage = props => {
           </About>
         </ScrollAnimation>
       </Container>
+
+      {/* Services Cards */}
       <TriangleClip textured />
       <Container textured>
         <Services>
@@ -101,6 +109,8 @@ const IndexPage = props => {
         </Services>
       </Container>
       <TriangleClip direction="bottom" textured />
+
+      {/* Projets Phares Cards */}
       <Container>
         <ProjetsPhares>
           <Title>Projets Phares</Title>
@@ -126,6 +136,8 @@ const IndexPage = props => {
           </Grid>
         </ProjetsPhares>
       </Container>
+
+      {/* Nouveautés Carousel */}
       <TriangleClip textured />
       <Container textured>
         <div style={{ paddingTop: "2rem" }}>
@@ -137,6 +149,7 @@ const IndexPage = props => {
       </Container>
       <TriangleClip direction="bottom" textured />
 
+      {/* Clients Section */}
       <Container>
         <Clients>
           <Title>Nos Clients</Title>

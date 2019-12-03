@@ -29,6 +29,7 @@ export const ServicesCard = styled.div`
     h3 {
       font-family: ${headerFont};
       text-transform: uppercase;
+      margin-bottom: 2rem;
     }
     p {
       white-space: pre-wrap;

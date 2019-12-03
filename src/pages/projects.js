@@ -1,7 +1,10 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
+import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
+import ScrollAnimation from "react-animate-on-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons"
+
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Container from "../components/common/container"
@@ -9,8 +12,8 @@ import Grid from "../components/common/grid"
 import GridItem from "../components/common/gridItem"
 import PageHeader from "../components/common/pageHeader"
 import { ProjectCard } from "../page_styles/projects"
-import ScrollAnimation from "react-animate-on-scroll"
-import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
+
+import projectsTitleImg from "../../content/assets/projects.jpeg"
 
 const Project = props => {
   const [expandCard, setExpandCard] = useState({ cardIndex: 0, status: false })
@@ -20,10 +23,7 @@ const Project = props => {
 
   return (
     <Layout location="/projects" title={siteTitle}>
-      <PageHeader
-        title="Nos Projets"
-        image="https://images.unsplash.com/photo-1558464678-2f1570e8d60e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=955&q=80"
-      ></PageHeader>
+      <PageHeader title="Nos Projets" image={projectsTitleImg}></PageHeader>
 
       <Container>
         <SEO title="Tous nos projets" description="Liste de nos projets" />
@@ -54,13 +54,7 @@ const Project = props => {
                       alt={p.node.frontmatter.title}
                     />
 
-                    <h3
-                      style={{
-                        marginBottom: 15,
-                      }}
-                    >
-                      {title}
-                    </h3>
+                    <h3>{title}</h3>
                     {expandCard.cardIndex === index && expandCard.status && (
                       <LightgalleryProvider>
                         <Grid>

@@ -20,6 +20,7 @@ export const ProjectCard = styled.div`
     text-align: center;
     font-size: 25px;
     text-transform: uppercase;
+    margin-bottom: 2rem;
   }
   p {
     white-space: pre-wrap;

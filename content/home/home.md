@@ -14,7 +14,7 @@ banner_gallery:
     subtitle: Spécialiste des Enseignes
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574074227/Banner/FAUCHON1_dynroa.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1576059956/Banner/FAUCHONCASABLANCA_014_g9hnwc.jpg
     subtitle: Spécialiste de la Menuiserie Métallique
     title: First Sign
   - image: >-

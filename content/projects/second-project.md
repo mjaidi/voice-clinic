@@ -19,6 +19,6 @@ description: >-
   id suscipit ullamcorper. Proin molestie nulla eget accumsan imperdiet. Nunc
   nec fringilla nunc, et pellentesque lorem.
 image: >-
-  https://res.cloudinary.com/faludeco/video/upload/v1578477520/Projets/Animated_GIF-original_bo3c25.mp4
+  https://res.cloudinary.com/faludeco/image/upload/v1578479045/Projets/32_p9usdl.jpg
 ---
 

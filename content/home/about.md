@@ -1,6 +1,5 @@
 ---
-image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1574104454/Notre%20Histoire/gettyimages-928743880-2048x2048_larjhg.jpg
+image: 'https://res.cloudinary.com/faludeco/image/upload/v1573584640/logo_sxxobi.png'
 title: Notre Histoire
 text: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus orci,
@@ -28,24 +27,5 @@ text: >-
   placerat quam, a convallis felis quam nec nulla. Curabitur et mollis purus.
   Integer sed pharetra turpis, sit amet accumsan ligula. Vivamus bibendum ligula
   nec commodo imperdiet.
-best_gallery:
-  - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
-    title: First Sign
-  - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574073740/Banner/CDM_mosw7e.jpg
-    title: First Sign
-  - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574074227/Banner/FAUCHON1_dynroa.jpg
-    title: First Sign
-  - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1573844757/Banner/IMG_1144_ghqinw.jpg
-    title: First Sign
-  - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574074999/Banner/IMG_0438_jzlt3a.jpg
-    title: First Sign
-  - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574074999/Banner/IMG_0438_jzlt3a.jpg
-    title: First Sign
 ---
 

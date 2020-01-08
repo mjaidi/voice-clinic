@@ -19,10 +19,6 @@ description: >-
   id suscipit ullamcorper. Proin molestie nulla eget accumsan imperdiet. Nunc
   nec fringilla nunc, et pellentesque lorem.
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1574076639/Banner/Umnia-Bank-78_h4sklj.jpg
-project_gallery:
-  - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
-  - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574073740/Banner/CDM_mosw7e.jpg
+  https://res.cloudinary.com/faludeco/video/upload/v1578477520/Projets/Animated_GIF-original_bo3c25.mp4
 ---
+

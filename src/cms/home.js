@@ -65,7 +65,7 @@ export const home = {
           required: true,
         },
         {
-          label: "Projets Phares",
+          label: "Réalisations",
           name: "best_gallery",
           widget: "list",
           fields: [

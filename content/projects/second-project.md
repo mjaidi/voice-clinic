@@ -20,5 +20,8 @@ description: >-
   nec fringilla nunc, et pellentesque lorem.
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1578568369/Projets/IMG-20171128-WA0003_qzgrey.jpg
+project_gallery:
+  - image: >-
+       https://res.cloudinary.com/faludeco/image/upload/v1578568369/Projets/IMG-20171128-WA0003_qzgrey.jpg
 ---
 

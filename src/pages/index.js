@@ -113,7 +113,7 @@ const IndexPage = props => {
       {/* Projets Phares Cards */}
       <Container>
         <ProjetsPhares>
-          <Title>Projets Phares</Title>
+          <Title>Réalisations</Title>
           <Grid>
             {aboutData.best_gallery.map((i, index) => {
               return (

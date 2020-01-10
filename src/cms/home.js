@@ -21,6 +21,7 @@ export const home = {
           label: "Banner Images",
           name: "banner_gallery",
           widget: "list",
+          default: [""],
           fields: [
             { label: "Titre", name: "title", widget: "string", required: true },
             {
@@ -68,6 +69,7 @@ export const home = {
           label: "Réalisations",
           name: "best_gallery",
           widget: "list",
+          default: [""],
           fields: [
             { label: "Titre", name: "title", widget: "string", required: true },
 

@@ -30,11 +30,13 @@ export const projects = {
       label: "Images Projet",
       name: "project_gallery",
       widget: "list",
+      default: [""],
       fields: [
         {
           label: "Image",
           name: "image",
           widget: "image",
+          default: [""],
           allow_multiple: false,
           required: true,
         },

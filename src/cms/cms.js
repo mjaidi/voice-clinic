@@ -11,7 +11,6 @@ CMS.init({
     backend: {
       name: "git-gateway",
       branch: "master",
-      squash_merges: true, // @NOTE Beta feature
     },
     media_library: {
       name: "cloudinary",

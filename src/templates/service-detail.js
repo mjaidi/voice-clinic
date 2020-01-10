@@ -79,7 +79,7 @@ const ServiceDetailTemplate = props => {
 
         <CategoryHeader>
           {categoryTitle}
-          <span className="lowercase">{service.frontmatter.title}</span>
+          <span className="uppercase">{service.frontmatter.title}</span>
         </CategoryHeader>
 
         <CategorySelector>

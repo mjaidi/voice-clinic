@@ -42,6 +42,7 @@ const Services = props => {
                     index % 2 === 1 ? accentSecondaryLight : background
                   }
                   textured={index % 2 === 1 ? true : false}
+                  className={index % 2 === 1 ? "" : "padded"}
                 >
                   <img
                     src={p.node.frontmatter.image}

@@ -11,10 +11,12 @@ export const ServicesCard = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 7rem 0;
+  padding: 5rem 0;
   background-color: ${props => props.background || background};
   background-image: url(${props => (props.textured ? texture : "")});
-
+  &.padded {
+    padding: 2rem 0;
+  }
   img {
     width: 30%;
     object-fit: cover;

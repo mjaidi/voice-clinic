@@ -48,8 +48,8 @@ export const CategoryHeader = styled.h2`
   font-family: ${headerFont};
   color: ${accentMain};
   margin: 2rem auto;
-  .lowercase {
-    text-transform: lowercase;
+  .uppercase {
+    text-transform: capitalize;
   }
 `
 

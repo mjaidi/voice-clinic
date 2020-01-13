@@ -5,19 +5,15 @@ seo_description: >-
   décoration
 title: Agencement
 description: >-
-  Fusce ac tincidunt ex. In tempus elit dolor, id ultrices nibh faucibus quis.
-  Pellentesque a pulvinar sem. Donec dapibus pellentesque mi, ac egestas nisi
-  vulputate non. Phasellus eu nisl sed ligula mattis tristique. Ut aliquet justo
-  ut nisl varius tristique. Fusce eu ante vitae metus ornare ultrices. Quisque
-  sollicitudin quis massa ac viverra. Proin consectetur ante in turpis porttitor
-  malesuada.
+  Notre pôle Agencement a pour objectif de créer des espaces à l'image de
+  l'entreprise en accord avec son histoire, ses valeurs et son identité. 
 
 
-  Fusce lacinia faucibus tortor a fermentum. Donec volutpat lorem pharetra dui
-  aliquam malesuada. Curabitur in maximus eros, in posuere nulla. Vestibulum
-  cursus purus sem, in varius ligula placerat sit amet. Nullam consectetur massa
-  id suscipit ullamcorper. Proin molestie nulla eget accumsan imperdiet. Nunc
-  nec fringilla nunc, et pellentesque lorem hello.
+  Travaux d'Agencement comprend : \
+
+  Travaux de Menuiserie Bois - Corian - Plexiglass - Cloisons Vitrées -
+  Habillages Muraux - Mobilier ( Comptoirs / Portes / Placards / Bureaux /
+  Tables et autres)
 order: 3
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1573844757/Banner/IMG_1144_ghqinw.jpg

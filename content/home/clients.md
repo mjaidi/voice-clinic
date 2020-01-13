@@ -4,6 +4,9 @@ client_gallery:
       https://res.cloudinary.com/faludeco/image/upload/v1574106745/Clients/logo1_kagyuu.png
     name: BMCE bank
   - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1578905163/Clients/Banque-Populaire-Logo_lk91bs.jpg
+    name: BANQUE POPULAIRE
+  - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573630545/Clients/atti_nsya7j.png
     name: 'Attijariwafa bank '
   - logo: >-
@@ -19,7 +22,7 @@ client_gallery:
       https://res.cloudinary.com/faludeco/image/upload/v1573630703/Clients/umnia_usqsno.png
     name: Umnia bank
   - logo: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574105449/Notre%20Histoire/Logo_BTIBank_RVB_fmziiq.png
+      https://res.cloudinary.com/faludeco/image/upload/v1574105449/Clients/Logo_BTIBank_RVB_fmziiq.png
     name: Bti BANK
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573630842/Clients/barid_zgoun4.png
@@ -70,13 +73,13 @@ client_gallery:
       https://res.cloudinary.com/faludeco/image/upload/v1574108315/Clients/samir-usine-maroc-raffinerie-energie_xkh4vb.png
     name: Samir
   - logo: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574105448/Notre%20Histoire/Cartier-logo_lgsaom.png
+      https://res.cloudinary.com/faludeco/image/upload/v1574105448/Clients/Cartier-logo_lgsaom.png
     name: CARTIER
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573631713/Clients/Hublot-logo-positive_irhgaf.png
     name: Hublot
   - logo: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574105449/Notre%20Histoire/IDFS_eftbqi.png
+      https://res.cloudinary.com/faludeco/image/upload/v1574105449/Clients/IDFS_eftbqi.png
     name: DUTY FREE
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573631713/Clients/fauchon_mtmbxe.png
@@ -91,7 +94,7 @@ client_gallery:
       https://res.cloudinary.com/faludeco/image/upload/v1574106746/Clients/snrt-maroc-logo-416197313D-seeklogo.com_mvxytb.png
     name: SNRT
   - logo: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574105449/Notre%20Histoire/SOCOTEC-LOGO_phocdk.png
+      https://res.cloudinary.com/faludeco/image/upload/v1574105449/Clients/SOCOTEC-LOGO_phocdk.png
     name: SOCOTEC
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1574106745/Clients/logo_smj0of.png
@@ -102,8 +105,5 @@ client_gallery:
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1574108314/Clients/logo-Orange_zq4xod.png
     name: ORANGE
-  - logo: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1578905163/Clients/Banque-Populaire-Logo_lk91bs.jpg
-    name: BANQUE POPULAIRE
 ---
 

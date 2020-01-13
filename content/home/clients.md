@@ -102,5 +102,8 @@ client_gallery:
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1574108314/Clients/logo-Orange_zq4xod.png
     name: ORANGE
+  - logo: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1578905163/Clients/Banque-Populaire-Logo_lk91bs.jpg
+    name: BANQUE POPULAIRE
 ---
 

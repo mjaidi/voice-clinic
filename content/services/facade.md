@@ -3,12 +3,15 @@ seo_title: Façades
 seo_description: Spécialiste des Façades
 title: Façades
 description: >-
-  Fusce ac tincidunt ex. In tempus elit dolor, id ultrices nibh faucibus quis.
-  Pellentesque a pulvinar sem. Donec dapibus pellentesque mi, ac egestas nisi
-  vulputate non. Phasellus eu nisl sed ligula mattis tristique. Ut aliquet justo
-  ut nisl varius tristique. Fusce eu ante vitae metus ornare ultrices. Quisque
-  sollicitudin quis massa ac viverra. Proin consectetur ante in turpis porttitor
-  malesuada.
+  Notre Pôle d'habillage de Façade consiste à valoriser l'aspect visuel du
+  bâtiment ou magasin tout en agissant contre les intempéries afin de maintenir
+  une façade durable. 
+
+
+  Types d'habillage de Façade :\
+
+  Mur Rideau - Menuiserie Aluminium - Alucobond - Habillage Métallique -
+  Habillage Corian et autres.
 order: 4
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574078690/Banner/jeep_dljvky.jpg

@@ -46,7 +46,7 @@ client_gallery:
       https://res.cloudinary.com/faludeco/image/upload/v1573630789/Clients/saham_fsl2cj.png
     name: Saham assurances
   - logo: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1574106744/Clients/logo-saham-assistance_q31tie.png
+      https://res.cloudinary.com/faludeco/image/upload/v1578955656/Clients/Logo_SAHAM_Assistance_copie_f1ksvi.jpg
     name: SAHAM ASSISTANCE
   - logo: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573630968/Clients/man_ifrjuu.png

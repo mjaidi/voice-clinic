@@ -3,7 +3,7 @@ seo_title: Façades
 seo_description: Spécialiste des Façades
 title: Façades
 description: >-
-  Notre Pôle d'habillage de Façade consiste à valoriser l'aspect visuel du
+  Notre pôle d'habillage de Façade consiste à valoriser l'aspect visuel du
   bâtiment ou magasin tout en agissant contre les intempéries afin de maintenir
   une façade durable. 
 

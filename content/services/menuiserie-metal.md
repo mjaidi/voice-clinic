@@ -3,7 +3,7 @@ seo_title: Menuiserie Métallique
 seo_description: 'Spécialiste de la menuiserie métallique, acie, aluminium, verre, fenêtres'
 title: Menuiserie Métallique
 description: >-
-  Travaux de Menuiserie Métallique comprend :\
+  **Travaux de Menuiserie Métallique comprend :**
 
   Standes - Kiosques - Travaux Inox - Portails Métalliques - Habillage Murale -
   Séparations et bien d'autres.

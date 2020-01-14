@@ -9,8 +9,6 @@ project_gallery:
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1578944313/Projets/CIH/image01_k9nxm9.jpg
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1578944313/Projets/CIH/image01_k9nxm9.jpg
-  - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1578943964/Projets/CIH/image03_ltt0qj.jpg
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573844757/Projets/CIH/IMG_1144_ghqinw.jpg

@@ -9,7 +9,7 @@ description: >-
   Séparations et bien d'autres.
 order: 4
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573584540/Photos/img416_iqvu7u.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img329_pxqs3i.jpg
 icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574084837/icons/steel-icon_pbsk3a.jpg
 categories:

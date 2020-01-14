@@ -69,7 +69,7 @@ export const ServiceNavigation = styled.ul`
       transform: scale(1.2);
     }
   }
-  p {
+  .text-container {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-top: 1px dashed;

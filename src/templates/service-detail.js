@@ -1,6 +1,9 @@
 import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
+import remark from "remark"
+import recommended from "remark-preset-lint-recommended"
+import remarkHtml from "remark-html"
 
 import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
@@ -70,9 +73,14 @@ const ServiceDetailTemplate = props => {
               </Link>
             )}
           </li>
-          <p
+          <div
+            class="text-container"
             dangerouslySetInnerHTML={{
-              __html: service.frontmatter.description,
+              __html: remark()
+                .use(recommended)
+                .use(remarkHtml)
+                .processSync(service.frontmatter.description)
+                .toString(),
             }}
           />
         </ServiceNavigation>

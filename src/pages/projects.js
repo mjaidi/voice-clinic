@@ -4,6 +4,9 @@ import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
 import ScrollAnimation from "react-animate-on-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons"
+import remark from "remark"
+import recommended from "remark-preset-lint-recommended"
+import remarkHtml from "remark-html"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -80,9 +83,13 @@ const Project = props => {
                         </Grid>
                       </LightgalleryProvider>
                     )}
-                    <p
+                    <div
                       dangerouslySetInnerHTML={{
-                        __html: p.node.frontmatter.description,
+                        __html: remark()
+                          .use(recommended)
+                          .use(remarkHtml)
+                          .processSync(p.node.frontmatter.description)
+                          .toString(),
                       }}
                     />
                     <h5

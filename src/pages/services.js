@@ -1,6 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
+import remark from "remark"
+import recommended from "remark-preset-lint-recommended"
+import remarkHtml from "remark-html"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -51,9 +54,13 @@ const Services = props => {
                   ></img>
                   <div className="services-content">
                     <h3>{title}</h3>
-                    <p
+                    <div
                       dangerouslySetInnerHTML={{
-                        __html: p.node.frontmatter.description,
+                        __html: remark()
+                          .use(recommended)
+                          .use(remarkHtml)
+                          .processSync(p.node.frontmatter.description)
+                          .toString(),
                       }}
                     />
                     <Link to={`services${p.node.fields.slug}`}>

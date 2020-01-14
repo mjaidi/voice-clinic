@@ -1,6 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
+import remark from "remark"
+import recommended from "remark-preset-lint-recommended"
+import remarkHtml from "remark-html"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -23,6 +26,12 @@ import {
 const IndexPage = props => {
   const homePageData = props.data.home.nodes[0].frontmatter
   const aboutData = props.data.about.nodes[0].frontmatter
+  const aboutText = remark()
+    .use(recommended)
+    .use(remarkHtml)
+    .processSync(aboutData.text)
+    .toString()
+
   const services = props.data.services.edges
   const clients = props.data.clients.nodes[0].frontmatter
   const instagram = props.data.insta.edges.filter(
@@ -58,11 +67,7 @@ const IndexPage = props => {
               </GridItem>
               <GridItem lgColumns={10} lgNbColumns={6} margin={15}>
                 <Title>{aboutData.title}</Title>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: aboutData.text,
-                  }}
-                />
+                <div dangerouslySetInnerHTML={{ __html: aboutText }} />
               </GridItem>
             </Grid>
           </About>

@@ -7,5 +7,10 @@ description: >-
   Zerktouni
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574078690/Banner/jeep_dljvky.jpg
+project_gallery:
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574078690/Banner/jeep_dljvky.jpg
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1574078690/Banner/jeep_dljvky.jpg
 ---
 

@@ -9,7 +9,7 @@ description: >-
   l'entreprise en accord avec son histoire, ses valeurs et son identité. 
 
 
-  **Travaux d'Agencement comprend : **
+  **Travaux d'Agencement comprennent :** 
 
   Travaux de Menuiserie Bois - Corian - Plexiglass - Cloisons Vitrées -
   Habillages Muraux - Mobilier ( Comptoirs / Portes / Placards / Bureaux /

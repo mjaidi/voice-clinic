@@ -10,7 +10,7 @@ description: >-
   l'enseigne et son identité au grand public.
 
 
-  Types de Signalétique :\
+  **Types de Signalétique :**
 
   Enseigne Lumineuse - Totem - Enseigne Drapeau - Signalétique Intérieure -
   Vitrauphanie - et bien d'autres.

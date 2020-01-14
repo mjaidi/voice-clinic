@@ -46,11 +46,9 @@ export const About = styled.div`
   img {
     max-width: 100%;
     margin-right: 2rem;
+    position: relative;
+    top: 2.5rem;
     box-shadow: ${shadowMain};
-  }
-  p {
-    white-space: pre-wrap;
-    text-align: justify;
   }
 `
 

@@ -1,5 +1,10 @@
 import styled from "styled-components"
-import { accentMain, headerFont } from "../components/Layout/variables"
+import {
+  accentMain,
+  accentMainLight,
+  headerFont,
+  borderRadius,
+} from "../components/Layout/variables"
 
 export const GalleryItem = styled.div`
   height: 20rem;
@@ -33,11 +38,16 @@ export const CategorySelector = styled.ul`
   li {
     font-weight: bold;
     margin: 10px;
+    background: ${accentMainLight};
+    padding: 0.75rem 1.5rem;
+    border-radius: ${borderRadius};
     &.active {
-      color: ${accentMain};
+      color: white;
+      background: ${accentMain};
     }
     &:hover {
-      color: ${accentMain};
+      color: white;
+      background: ${accentMain};
       cursor: pointer;
     }
   }
@@ -70,8 +80,9 @@ export const ServiceNavigation = styled.ul`
     }
   }
   .text-container {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-top: 1px dashed;
     border-bottom: 1px dashed;
     text-align: justify;

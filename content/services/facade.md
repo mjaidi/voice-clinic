@@ -8,7 +8,7 @@ description: >-
   une façade durable. 
 
 
-  Types d'habillage de Façade :\
+  **Types d'habillage de Façade :**
 
   Mur Rideau - Menuiserie Aluminium - Alucobond - Habillage Métallique -
   Habillage Corian et autres.

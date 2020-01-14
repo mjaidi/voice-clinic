@@ -5,15 +5,15 @@ seo_description: >-
   drapeau, totems, enseignes lumineuses ...
 title: Enseignes
 description: >-
-  _Notre pôle Signalétique consiste à créer un élément visuel informatif,
+  Notre pôle Signalétique consiste à créer un élément visuel informatif,
   publicitaire et décoratif afin d'améliorer la visibilité et d'exposer
-  l'enseigne et son identité au grand public._
+  l'enseigne et son identité au grand public.
 
 
-  _Types de Signalétique :_
+  **Types de Signalétique :**
 
-  _Enseigne Lumineuse - Totem - Enseigne Drapeau - Signalétique Intérieure -
-  Vitrauphanie - et bien d'autres._
+  Enseigne Lumineuse - Totem - Enseigne Drapeau - Signalétique Intérieure -
+  Vitrauphanie - et bien d'autres.
 order: 1
 image: >-
   https://res.cloudinary.com/faludeco/image/upload/v1578947692/Services/Enseignes/Enseignes%20Lumineuses/CFG_Bank2_gxumj6.jpg

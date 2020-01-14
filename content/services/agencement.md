@@ -9,14 +9,14 @@ description: >-
   l'entreprise en accord avec son histoire, ses valeurs et son identité. 
 
 
-  **Travaux d'Agencement comprend : **
+  **Travaux d'Agencement comprennent :** 
 
   Travaux de Menuiserie Bois - Corian - Plexiglass - Cloisons Vitrées -
   Habillages Muraux - Mobilier ( Comptoirs / Portes / Placards / Bureaux /
   Tables et autres)
-order: 3
+order: 2
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573844757/Banner/IMG_1144_ghqinw.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1578944313/Banner/image01_k9nxm9.jpg
 icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574083793/icons/Sans_titre-2_xgcsaf.jpg
 categories:

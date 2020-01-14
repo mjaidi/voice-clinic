@@ -4,6 +4,7 @@ import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery"
 import remark from "remark"
 import recommended from "remark-preset-lint-recommended"
 import remarkHtml from "remark-html"
+import pluralize from "pluralize"
 
 import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
@@ -87,7 +88,12 @@ const ServiceDetailTemplate = props => {
 
         <CategoryHeader>
           {categoryTitle}
-          <span className="uppercase">{service.frontmatter.title}</span>
+          <span className="uppercase">
+            {service.frontmatter.title
+              .split(" ")
+              .map(s => pluralize(s))
+              .join(" ")}
+          </span>
         </CategoryHeader>
 
         <CategorySelector>

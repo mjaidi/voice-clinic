@@ -16,7 +16,7 @@ description: >-
   Vitrauphanie - et bien d'autres.
 order: 1
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1578947692/Services/Enseignes/Enseignes%20Lumineuses/CFG_Bank2_gxumj6.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1573584545/Photos/img272_ckqca5.jpg
 icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574081669/icons/enseignes_edpei9.jpg
 categories:

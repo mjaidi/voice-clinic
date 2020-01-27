@@ -16,7 +16,7 @@ description: >-
   Tables et autres)
 order: 2
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1578944313/Banner/image01_k9nxm9.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1578990721/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_26_ktbdvg.jpg
 icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574083793/icons/Sans_titre-2_xgcsaf.jpg
 categories:

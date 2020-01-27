@@ -22,7 +22,7 @@ banner_gallery:
     subtitle: Spécialiste de la Menuiserie Bois
     title: First Sign
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1578990575/Banner/FAUCHONCASABLANCA_005-693x1024_1_tovohx.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1574087647/Banner/Alfa_Romeo1_kmxaye.jpg
     subtitle: Spécialiste de la Menuiserie Métallique
     title: First Sign
 ---

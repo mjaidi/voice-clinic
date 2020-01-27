@@ -14,7 +14,7 @@ description: >-
   Habillage Corian et autres.
 order: 3
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img202_jhomf3.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1580145987/Services/Facades/Habillage%20M%C3%A9tallique/Segafredo_03_x3h0ze.jpg
 icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1574083803/icons/Sans_titre-2_copie_o095ex.jpg
 categories:

@@ -6,7 +6,7 @@ seo_description: >-
 logo: 'https://res.cloudinary.com/faludeco/image/upload/v1573584640/logo_sxxobi.png'
 banner_gallery:
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1578944313/Banner/image01_k9nxm9.jpg
+      https://res.cloudinary.com/faludeco/image/upload/v1578944313/Projets/CIH/image01_k9nxm9.jpg
     subtitle: Spécialiste de l'Agencement
     title: First Sign
   - image: >-

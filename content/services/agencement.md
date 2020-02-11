@@ -22,95 +22,123 @@ icon: >-
 categories:
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img608_n6ofhd.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440920/Services/Agencement/Menuiserie%20Bois/image01_k9nxm9_k6gfsi.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584545/Photos/img607_c0efbz.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440914/Services/Agencement/Menuiserie%20Bois/image03_ltt0qj_lmmvsx.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584542/Photos/img403_qxc8zq.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440904/Services/Agencement/Menuiserie%20Bois/IMG_0790_mssscc.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img725_zgnk7u.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440885/Services/Agencement/Menuiserie%20Bois/WhatsApp_Image_2019-07-02_at_10.50.33_2_pcbvik_o8x3nl.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img505_xtw0xm.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440881/Services/Agencement/Menuiserie%20Bois/WhatsApp_Image_2019-06-11_at_08.20.11_26_ktbdvg_mkcfvy.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img504_y1fx2r.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440876/Services/Agencement/Menuiserie%20Bois/WhatsApp_Image_2019-06-11_at_08.20.11_16_pyufg6_ah7aqn.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img578_owi9az.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440872/Services/Agencement/Menuiserie%20Bois/WhatsApp_Image_2020-02-06_at_09.23.06_11_lzeerm.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img577_ek4hjy.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440869/Services/Agencement/Menuiserie%20Bois/WhatsApp_Image_2020-02-05_at_11.03.38_11_lkyorx.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img576_ajoyn1.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440867/Services/Agencement/Menuiserie%20Bois/WhatsApp_Image_2020-02-05_at_11.03.38_2_mkv3pw.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img726_wfoac4.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440864/Services/Agencement/Menuiserie%20Bois/img772_hlsalm_wkn8ji.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img562_i2hdmn.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440863/Services/Agencement/Menuiserie%20Bois/img771_ehonai_lkv6on.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img593_hbsk1r.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440860/Services/Agencement/Menuiserie%20Bois/img757_wotyib_r0lgzw.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img561_u1cbjx.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440857/Services/Agencement/Menuiserie%20Bois/img741_zpgyzi_rhl64z.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img592_hwnfwk.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581440855/Services/Agencement/Menuiserie%20Bois/img725_zgnk7u_bcvzki.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584535/Photos/img591_m8an93.jpg
-    title: Menuiserie Bois
+        https://res.cloudinary.com/faludeco/image/upload/v1581440853/Services/Agencement/Menuiserie%20Bois/img710_hxawt4_gxq14r.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581440852/Services/Agencement/Menuiserie%20Bois/img709_nt0mx9_tzaf37.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581440850/Services/Agencement/Menuiserie%20Bois/img695_gb6mla_eyq3bd.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581440849/Services/Agencement/Menuiserie%20Bois/img548_ktpigc_crbwqd.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581440844/Services/Agencement/Menuiserie%20Bois/img694_lzpyb9_muhxym.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581440943/Services/Agencement/Menuiserie%20Bois/20190722_153539_lfkirm.jpg
+    title: Habillages Muraux
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573844533/Banner/Comptoir_Ele%CC%81fant_Vert1_j56eio.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581441417/Services/Agencement/Corian/20190722_152047_gqk5b9.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574074038/Banner/Comptoir_Ele%CC%81fant_Vert2_d29zxq.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581441415/Services/Agencement/Corian/20190722_152429_cmgwqw.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573844757/Banner/IMG_1144_ghqinw.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581441352/Services/Agencement/Corian/20190722_152101_n49xg1.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581441313/Services/Agencement/Corian/img489_cuv1w4_qqcrmt.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581441306/Services/Agencement/Corian/WhatsApp_Image_2020-02-06_at_09.23.06_8_nqmtro.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581441302/Services/Agencement/Corian/WhatsApp_Image_2020-01-28_at_13.17.49_gepebv.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581441299/Services/Agencement/Corian/img727_cbdzkd_rmihme.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581441298/Services/Agencement/Corian/img533_np10fc_e2be6x.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581441294/Services/Agencement/Corian/img490_qv5sbu_ubjo5n.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581441293/Services/Agencement/Corian/img446_fgiov3_hz5edm.jpg
     title: Corian
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584550/Photos/img917_yi4njl.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581441708/Services/Agencement/Comptoirs/20190626_115847_tdwsjq.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584540/Photos/img431_r4zmos.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581441672/Services/Agencement/Comptoirs/Comptoir_El%C3%A9fant_Vert2_d29zxq_ftg3in.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img460_fqazvu.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581441670/Services/Agencement/Comptoirs/img476_uddhmh_hlq0lv.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img461_kyfy7c.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581441667/Services/Agencement/Comptoirs/img474_vld2pa_c0y5yh.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img459_vkvpd0.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581441662/Services/Agencement/Comptoirs/img461_kyfy7c_vzozrc.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img476_uddhmh.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581441654/Services/Agencement/Comptoirs/img460_fqazvu_sjuqtg.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img475_p52ohq.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img474_vld2pa.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img727_cbdzkd.jpg
-    title: Meubles
+        https://res.cloudinary.com/faludeco/image/upload/v1581441647/Services/Agencement/Comptoirs/img459_vkvpd0_isvf2k.jpg
+    title: Comptoirs
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584536/Photos/img757_wotyib.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442373/Services/Agencement/Meubles/20181009_165512_nirvyx.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584535/Photos/img756_xocioy.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442202/Services/Agencement/Meubles/IMG_0438_jzlt3a_trau3f.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img740_ds8yjo.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442197/Services/Agencement/Meubles/IMG_8814_p3wsof.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img741_zpgyzi.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442179/Services/Agencement/Meubles/20190722_151735_vh7mre.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img743_uaj2vv.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442168/Services/Agencement/Meubles/WhatsApp_Image_2020-02-05_at_11.03.38_12_athq7x.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img742_vf3qsi.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442164/Services/Agencement/Meubles/20190722_152429_zv52it.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img503_zzgieo.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442136/Services/Agencement/Meubles/WhatsApp_Image_2019-12-10_at_14.26.24_wri5o8.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img504_y1fx2r.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442146/Services/Agencement/Meubles/WhatsApp_Image_2020-02-05_at_14.39.06_scnyep.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584537/Photos/img548_ktpigc.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442141/Services/Agencement/Meubles/WhatsApp_Image_2020-02-05_at_11.03.38_9_qmumfz.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img694_lzpyb9.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442134/Services/Agencement/Meubles/img607_c0efbz_todm8i.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584538/Photos/img505_xtw0xm.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442129/Services/Agencement/Meubles/img591_m8an93_jsvnhw.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img696_ajwo3e.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442127/Services/Agencement/Meubles/img577_ek4hjy_maophy.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img695_gb6mla.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442123/Services/Agencement/Meubles/img576_ajoyn1_ozdys3.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584539/Photos/img709_nt0mx9.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581442121/Services/Agencement/Meubles/img547_zggbls_rcboek.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584540/Photos/img710_hxawt4.jpg
-    title: Habillages Muraux
+        https://res.cloudinary.com/faludeco/image/upload/v1581442117/Services/Agencement/Meubles/img561_u1cbjx_lq8xw0.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581442112/Services/Agencement/Meubles/img506_rgz8yh_qopwoq.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581442111/Services/Agencement/Meubles/IMG_8772_bi9ax1.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581442107/Services/Agencement/Meubles/IMG_8822_sexjhj.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581442026/Services/Agencement/Meubles/DSCN5676_ihiwzq.jpg
+    title: Meubles
 ---
 

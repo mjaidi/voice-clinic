@@ -48,37 +48,9 @@ categories:
     title: Menuiserie Aluminium
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443443/Services/Facades/Habillage%20M%C3%A9tallique/Alfa_Romeo1_kmxaye_j7dw3e.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443403/Services/Facades/Habillage%20M%C3%A9tallique/WhatsApp_Image_2019-06-11_at_08.20.11_19_j1gaeg_gaaj64.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443399/Services/Facades/Habillage%20M%C3%A9tallique/WhatsApp_Image_2020-02-06_at_09.23.06_16_qhc82u.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443397/Services/Facades/Habillage%20M%C3%A9tallique/WhatsApp_Image_2019-06-11_at_08.11.37_1_opxkbu_l8cvnz.jpg
-      - >-
         https://res.cloudinary.com/faludeco/image/upload/v1581443398/Services/Facades/Habillage%20M%C3%A9tallique/FAUCHONCASABLANCA_005-693x1024_1_tovohx_k2aec2.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443391/Services/Facades/Habillage%20M%C3%A9tallique/WhatsApp_Image_2020-02-06_at_09.23.06_14_wwkvcj.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443388/Services/Facades/Habillage%20M%C3%A9tallique/img329_pxqs3i_bdjezn.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443387/Services/Facades/Habillage%20M%C3%A9tallique/WhatsApp_Image_2020-02-06_at_09.23.06_9_mh5ed1.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443385/Services/Facades/Habillage%20M%C3%A9tallique/img418_sejy4u_u6qugx.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443384/Services/Facades/Habillage%20M%C3%A9tallique/WhatsApp_Image_2020-02-04_at_11.40.19_1_stydkl.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443382/Services/Facades/Habillage%20M%C3%A9tallique/img417_fiy8gy_doqkdy.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443378/Services/Facades/Habillage%20M%C3%A9tallique/img416_iqvu7u_g593wq.jpg
-      - >-
         https://res.cloudinary.com/faludeco/image/upload/v1581443373/Services/Facades/Habillage%20M%C3%A9tallique/FAUCHONCASABLANCA_014_g9hnwc_ugvhvg.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443371/Services/Facades/Habillage%20M%C3%A9tallique/img402_krmnla_zpweda.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443369/Services/Facades/Habillage%20M%C3%A9tallique/Escalier_PR_Media_zclm68_ycrurp.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1581443365/Services/Facades/Habillage%20M%C3%A9tallique/img76_bj8qxb_qhgvzx.jpg
       - >-
         https://res.cloudinary.com/faludeco/image/upload/v1580145987/Services/Facades/Habillage%20M%C3%A9tallique/Segafredo_03_x3h0ze.jpg
       - >-

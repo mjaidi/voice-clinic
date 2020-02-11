@@ -122,35 +122,19 @@ categories:
     title: Signalétiques Intérieures
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584549/Photos/img73_h3crt6.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581439197/Services/Enseignes/Vitrauphanie/P2110095_vjrzhh.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584549/Photos/img90_zsbghz.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581439196/Services/Enseignes/Vitrauphanie/P1020386_t44j0t.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584549/Photos/img89_ug1334.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581439116/Services/Enseignes/Vitrauphanie/WhatsApp_Image_2020-02-06_at_09.23.06_4_vznmla.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584548/Photos/img57_jvjc4n.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581439113/Services/Enseignes/Vitrauphanie/WhatsApp_Image_2020-02-06_at_09.23.06_3_mdwvke.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584548/Photos/img131_v1m5lt.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581439113/Services/Enseignes/Vitrauphanie/WhatsApp_Image_2020-02-06_at_09.23.06_5_dkaeoe.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584547/Photos/img103_pb1hba.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581439111/Services/Enseignes/Vitrauphanie/WhatsApp_Image_2019-09-24_at_14.43.27_-_Copie_satehh.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584547/Photos/img117_yjqdfk.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584548/Photos/img145_r0lvrl.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584549/Photos/img13_prw82w.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584546/Photos/img202_jhomf3.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584545/Photos/img258_adkqzi.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584545/Photos/img271_erfztc.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584545/Photos/img272_ckqca5.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img299_vf6ey2.jpg
-      - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1573584543/Photos/img327_hrg0o3.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581439107/Services/Enseignes/Vitrauphanie/WhatsApp_Image_2019-09-24_at_14.43.26_-_Copie_ir8ia6.jpg
     title: Vitrauphanie
 ---
 

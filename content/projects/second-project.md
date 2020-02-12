@@ -6,7 +6,7 @@ description: >-
   Installation du Mur Rideau et Habillage façade en Corian et Alucobond pour le
   Siège UMNIA Bank
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1578568369/Projets/IMG-20171128-WA0003_qzgrey.jpg
+  https://res.cloudinary.com/faludeco/image/upload/v1578995042/Projets/Umnia/32_dqwcdx.jpg
 project_gallery:
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1578993824/Projets/Umnia/0_i6jvhb.png

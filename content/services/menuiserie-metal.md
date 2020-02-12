@@ -35,21 +35,23 @@ categories:
     title: Kiosques / Stands
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574087502/Banner/WhatsApp_Image_2019-06-11_at_08.11.37_xosdhc.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581499430/Services/Menuiserie%20Metallique/Inox/WhatsApp_Image_2019-06-11_at_08.11.37_xosdhc_hahdj8.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574087501/Banner/WhatsApp_Image_2019-06-11_at_08.11.37_1_opxkbu.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581499430/Services/Menuiserie%20Metallique/Inox/WhatsApp_Image_2019-06-11_at_08.11.37_1_opxkbu_egb4ss.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574087501/Banner/WhatsApp_Image_2019-06-11_at_08.11.36_ct5owb.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581499429/Services/Menuiserie%20Metallique/Inox/WhatsApp_Image_2019-06-11_at_08.11.36_ct5owb_r2xnrc.jpg
     title: Inox
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574110827/Banner/Escalier_PR_Media_zclm68.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581499529/Services/Menuiserie%20Metallique/Travaux%20M%C3%A9talliques/FAUCHONCASABLANCA_005-693x1024_1_tovohx_u73zyb.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574087967/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_19_j1gaeg.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581499528/Services/Menuiserie%20Metallique/Travaux%20M%C3%A9talliques/WhatsApp_Image_2020-02-06_at_09.23.06_16_k2wlsd.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574076370/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_18_assbtk.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581499527/Services/Menuiserie%20Metallique/Travaux%20M%C3%A9talliques/WhatsApp_Image_2019-06-11_at_08.20.11_19_j1gaeg_hin106.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574073658/Banner/WhatsApp_Image_2019-06-10_at_18.00.01_nbkgmj.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581499524/Services/Menuiserie%20Metallique/Travaux%20M%C3%A9talliques/img329_pxqs3i_yrihyn.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581499523/Services/Menuiserie%20Metallique/Travaux%20M%C3%A9talliques/Escalier_PR_Media_zclm68_qzoouh.jpg
     title: Travaux Métalliques
 ---
 

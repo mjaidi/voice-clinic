@@ -15,11 +15,23 @@ icon: >-
 categories:
   - images:
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574087647/Banner/Alfa_Romeo1_kmxaye.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581499362/Services/Menuiserie%20Metallique/Kiosques-Stands/Alfa_Romeo1_kmxaye_prsasv.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574087587/Banner/WhatsApp_Image_2019-06-10_at_18.00.02_asagdh.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581499342/Services/Menuiserie%20Metallique/Kiosques-Stands/WhatsApp_Image_2019-06-10_at_18.00.02_asagdh_ayphme.jpg
       - >-
-        https://res.cloudinary.com/faludeco/image/upload/v1574087661/Banner/CFG_Bank4_gnjy1b.jpg
+        https://res.cloudinary.com/faludeco/image/upload/v1581499341/Services/Menuiserie%20Metallique/Kiosques-Stands/WhatsApp_Image_2019-09-13_at_13.06.13_shpzbu.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581499338/Services/Menuiserie%20Metallique/Kiosques-Stands/img402_krmnla_haf45e.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581499337/Services/Menuiserie%20Metallique/Kiosques-Stands/img76_bj8qxb_bcg545.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581499337/Services/Menuiserie%20Metallique/Kiosques-Stands/WhatsApp_Image_2020-02-05_at_11.03.38_5_pd53kx.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581499336/Services/Menuiserie%20Metallique/Kiosques-Stands/img418_sejy4u_a6kqxm.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581499332/Services/Menuiserie%20Metallique/Kiosques-Stands/img75_jdzly3_wtpk9h.jpg
+      - >-
+        https://res.cloudinary.com/faludeco/image/upload/v1581499332/Services/Menuiserie%20Metallique/Kiosques-Stands/img44_dk0ajw_ubumss.jpg
     title: Kiosques / Stands
   - images:
       - >-

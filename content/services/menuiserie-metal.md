@@ -9,9 +9,9 @@ description: >-
   Séparations et bien d'autres.
 order: 4
 image: >-
-  https://res.cloudinary.com/faludeco/image/upload/v1573584541/Photos/img387_vvdn6x.jpg
-icon: >-
   https://res.cloudinary.com/faludeco/image/upload/v1581499529/Services/Menuiserie%20Metallique/Travaux%20M%C3%A9talliques/FAUCHONCASABLANCA_005-693x1024_1_tovohx_u73zyb.jpg
+icon: >-
+  https://res.cloudinary.com/faludeco/image/upload/v1574084837/icons/steel-icon_pbsk3a.jpg
 categories:
   - images:
       - >-

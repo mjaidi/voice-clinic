@@ -31,30 +31,48 @@ text: >-
 best_gallery:
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
-    title: First Sign
+    title: UMNIA BANK
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1578990575/Banner/FAUCHONCASABLANCA_005-693x1024_1_tovohx.jpg
-    title: First Sign
+    title: FAUCHON
   - image: >-
-      https://res.cloudinary.com/faludeco/image/upload/v1578944313/Banner/image01_k9nxm9.jpg
-    title: First Sign
+      https://res.cloudinary.com/faludeco/image/upload/v1581499536/Services/Menuiserie%20Metallique/Travaux%20M%C3%A9talliques/Segafredo_03_fmxdvm.jpg
+    title: SEGAFREDO
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1574073658/Banner/WhatsApp_Image_2019-06-10_at_18.00.01_nbkgmj.jpg
-    title: First Sign
+    title: SOCOTEC
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1578944390/Banner/image02_dt5qdz.jpg
-    title: First Sign
+    title: CREDIT DU MAROC
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1574074038/Banner/Comptoir_Ele%CC%81fant_Vert2_d29zxq.jpg
-    title: First Sign
+    title: ELEPHANT VERT
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1578990721/Banner/WhatsApp_Image_2019-06-11_at_08.20.11_26_ktbdvg.jpg
-    title: First Sign
+    title: MARINA SHOPPING
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573844439/Banner/WhatsApp_Image_2019-06-10_at_18.00.02_1_rrymax.jpg
-    title: First Sign
+    title: DUTY FREE SHOP
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573584544/Photos/img299_vf6ey2.jpg
-    title: First Sign
+    title: HUBLOT
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1581499537/Services/Menuiserie%20Metallique/Travaux%20M%C3%A9talliques/WhatsApp_Image_2020-02-06_at_09.23.06_14_xriois.jpg
+    title: MARINA SHOPPING
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1581440920/Services/Agencement/Habillage%20Murals/image01_k9nxm9_k6gfsi.jpg
+    title: CIH
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1581440876/Services/Agencement/Habillage%20Murals/WhatsApp_Image_2019-06-11_at_08.20.11_16_pyufg6_ah7aqn.jpg
+    title: MARINA SHOPPING
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1581432403/Services/Enseignes/Enseignes%20Lumineuses/DSCN8433_qv0jrr.jpg
+    title: MYSTERE
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1581437321/Services/Enseignes/Totem/unnamed_jzftpj.jpg
+    title: JEEP
+  - image: >-
+      https://res.cloudinary.com/faludeco/image/upload/v1581432221/Services/Enseignes/Enseignes%20Lumineuses/DSCN9988_bq9b5g.jpg
+    title: BANQUE POPULAIRE
 ---
 

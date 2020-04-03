@@ -4,19 +4,13 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `First Sign`,
-    description: `First Sign est un spécialiste de l'amménagement intérieur, façades, menuiserie métallurgique et enseignes en tout genre.`,
+    title: `Voice Clinic`,
+    description: `-`,
     author: `@mjaidi`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `first.sign`,
-      },
-    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

@@ -34,19 +34,12 @@ const IndexPage = props => {
 
   const services = props.data.services.edges
   const clients = props.data.clients.nodes[0].frontmatter
-  const instagram = props.data.insta.edges.filter(
-    i => i.node.localFile !== null
-  )
+
 
   const carouselImgs = homePageData.banner_gallery.map(g => {
     return { headline: g.title, subline: g.subtitle, url: g.image }
   })
-  const instagramImgs = instagram.map(i => {
-    return {
-      headline: i.node.caption,
-      url: i.node.localFile.childImageSharp.fixed.src,
-    }
-  })
+
 
   return (
     <Layout location="/">
@@ -142,17 +135,6 @@ const IndexPage = props => {
         </ProjetsPhares>
       </Container>
 
-      {/* Nouveautés Carousel */}
-      <TriangleClip textured />
-      <Container textured>
-        <div style={{ paddingTop: "2rem" }}>
-          <Title>Nouveautés</Title>
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2}>
-            <CarouselCard images={instagramImgs} />
-          </ScrollAnimation>
-        </div>
-      </Container>
-      <TriangleClip direction="bottom" textured />
 
       {/* Clients Section */}
       <Container>
@@ -245,20 +227,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    insta: allInstaNode {
-      edges {
-        node {
-          caption
-          localFile {
-            childImageSharp {
-              fixed {
-                ...GatsbyImageSharpFixed
-              }
-            }
-          }
-        }
-      }
-    }
+
     clients: allMdx(
       filter: {
         parent: {

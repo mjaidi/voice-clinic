@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { light, accentMain } from "../../Layout/variables"
+import { light, accentMain } from "../../variables.js"
 
 export const Wrapper = styled.div`
   padding: 0.3rem 0;
@@ -23,6 +23,7 @@ export const Logo = styled.img`
   padding: 0;
   margin: 0;
   right: 25rem;
+  width: 7rem;
   @media (max-width: 900px) {
     max-height: 3rem;
   }

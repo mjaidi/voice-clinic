@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { accentMain } from "../Layout/variables"
+import { accentMain } from "../variables"
 export const Wrapper = styled.div`
   width: 100%;
   background: ${accentMain};

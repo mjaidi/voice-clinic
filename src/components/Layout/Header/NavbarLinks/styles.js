@@ -6,10 +6,10 @@ import {
   accentMainLight,
   background,
   shadowMain,
-} from "../../Layout/variables"
+} from "../../variables"
 export const Wrapper = styled.div`
   position: absolute;
-  left: 7rem;
+  left: 10rem;
   a {
     color: ${dark};
     text-decoration: none;

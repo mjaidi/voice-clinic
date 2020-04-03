@@ -1,12 +1,12 @@
 import { seo } from "./seo"
 
 export const home = {
-  label: "Home",
+  label: "Acceuil",
   name: "home",
   files: [
     {
-      name: "banner",
-      label: "Banner",
+      name: "main",
+      label: "Main",
       file: "content/home/home.md",
       fields: [
         ...seo,
@@ -17,33 +17,11 @@ export const home = {
           allow_multiple: false,
           required: true,
         },
-        {
-          label: "Banner Images",
-          name: "banner_gallery",
-          widget: "list",
-          default: [""],
-          fields: [
-            { label: "Titre", name: "title", widget: "string", required: true },
-            {
-              label: "Sous-Titre",
-              name: "subtitle",
-              widget: "string",
-              required: false,
-            },
-            {
-              label: "Image",
-              name: "image",
-              widget: "image",
-              allow_multiple: false,
-              required: true,
-            },
-          ],
-        },
       ],
     },
     {
       name: "about",
-      label: "About",
+      label: "Qui nous sommes",
       file: "content/home/about.md",
       fields: [
         {
@@ -66,8 +44,8 @@ export const home = {
           required: true,
         },
         {
-          label: "Réalisations",
-          name: "best_gallery",
+          label: "Notre Equipe",
+          name: "our_team",
           widget: "list",
           default: [""],
           fields: [
@@ -76,29 +54,6 @@ export const home = {
             {
               label: "Image",
               name: "image",
-              widget: "image",
-              allow_multiple: false,
-              required: true,
-            },
-          ],
-        },
-      ],
-    },
-    {
-      name: "clients",
-      label: "Clients",
-      file: "content/home/clients.md",
-      fields: [
-        {
-          label: "Logos Clients",
-          name: "client_gallery",
-          widget: "list",
-          fields: [
-            { label: "Nom", name: "name", widget: "string", required: false },
-
-            {
-              label: "Logo",
-              name: "logo",
               widget: "image",
               allow_multiple: false,
               required: true,

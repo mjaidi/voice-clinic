@@ -14,10 +14,10 @@ import contactTitleImg from "../../content/assets/contact.jpeg"
 const Contact = props => {
   return (
     <Layout location="/contact" title="Contactez Nous">
-      <PageHeader title="Demande de devis" image={contactTitleImg}></PageHeader>
+      <PageHeader title="Contactez Nous" image={contactTitleImg}></PageHeader>
 
       <Container paddingTop="3rem" textured>
-        <SEO title="Demande de Devis" />
+        <SEO title="Contactez Nous" />
 
         <Grid>
           <GridItem lgColumns={6} lgNbColumns={2}>

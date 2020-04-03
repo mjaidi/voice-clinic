@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { background, shadowMain } from "../Layout/variables"
+import { background, shadowMain } from "../variables"
 export const Wrapper = styled.div`
   width: 100%;
   position: sticky;

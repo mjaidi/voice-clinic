@@ -11,17 +11,8 @@ import SEO from "../components/seo"
 import Grid from "../components/common/grid"
 import GridItem from "../components/common/gridItem"
 import Container from "../components/common/container"
-import TriangleClip from "../components/common/triangleClip.js"
-import Carousel from "../components/Carousel"
-import CarouselCard from "../components/CarouselCard"
 
-import {
-  About,
-  Services,
-  ProjetsPhares,
-  Clients,
-  Title,
-} from "../page_styles/index_page"
+import { About, ProjetsPhares, Clients, Title } from "../page_styles/index_page"
 
 const IndexPage = props => {
   const homePageData = props.data.home.nodes[0].frontmatter
@@ -32,23 +23,12 @@ const IndexPage = props => {
     .processSync(aboutData.text)
     .toString()
 
-  const services = props.data.services.edges
-  const clients = props.data.clients.nodes[0].frontmatter
-
-
-  const carouselImgs = homePageData.banner_gallery.map(g => {
-    return { headline: g.title, subline: g.subtitle, url: g.image }
-  })
-
-
   return (
     <Layout location="/">
       <SEO
         title={homePageData.seo_title}
         description={homePageData.seo_description}
       />
-      {/* Main Banner Carousel */}
-      <Carousel images={carouselImgs} />
 
       {/* Our History Section */}
       <Container>
@@ -67,53 +47,12 @@ const IndexPage = props => {
         </ScrollAnimation>
       </Container>
 
-      {/* Services Cards */}
-      <TriangleClip textured />
-      <Container textured>
-        <Services>
-          <Title>Nos Services</Title>
-          <Grid>
-            {services.map(({ node }) => {
-              return (
-                <GridItem lgColumns={2} mdColumns={1} key={node.fields.slug}>
-                  <ScrollAnimation
-                    animateIn="fadeIn"
-                    animateOnce={true}
-                    duration={2}
-                  >
-                    <Link to={`services${node.fields.slug}`}>
-                      <div className="service-card">
-                        <Grid>
-                          <GridItem lgColumns={2}>
-                            <img
-                              src={node.frontmatter.icon}
-                              alt={node.frontmatter.title}
-                            />
-                            <h4>{node.frontmatter.title}</h4>
-                          </GridItem>
-                          <GridItem lgColumns={2}>
-                            {node.frontmatter.categories.map(c => (
-                              <p key={c.title}>{c.title}</p>
-                            ))}
-                          </GridItem>
-                        </Grid>
-                      </div>
-                    </Link>
-                  </ScrollAnimation>
-                </GridItem>
-              )
-            })}
-          </Grid>
-        </Services>
-      </Container>
-      <TriangleClip direction="bottom" textured />
-
-      {/* Projets Phares Cards */}
+      {/* Notre Equipe */}
       <Container>
         <ProjetsPhares>
-          <Title>Autres Réalisations</Title>
+          <Title>Notre Equipe</Title>
           <Grid>
-            {aboutData.best_gallery.map((i, index) => {
+            {aboutData.our_team.map((i, index) => {
               return (
                 <GridItem key={index}>
                   <ScrollAnimation
@@ -134,32 +73,6 @@ const IndexPage = props => {
           </Grid>
         </ProjetsPhares>
       </Container>
-
-
-      {/* Clients Section */}
-      <Container>
-        <Clients>
-          <Title>Nos Clients</Title>
-          <Grid justifyContent="left">
-            {clients.client_gallery.map((c, index) => (
-              <GridItem
-                lgColumns={7}
-                mdColumns={5}
-                smColumns={3}
-                key={JSON.stringify(c.logo)}
-              >
-                <ScrollAnimation
-                  animateIn="fadeIn"
-                  animateOnce={true}
-                  duration={2}
-                >
-                  <img src={c.logo} alt={c.name}></img>
-                </ScrollAnimation>
-              </GridItem>
-            ))}
-          </Grid>
-        </Clients>
-      </Container>
     </Layout>
   )
 }
@@ -177,11 +90,6 @@ export const pageQuery = graphql`
     ) {
       nodes {
         frontmatter {
-          banner_gallery {
-            image
-            subtitle
-            title
-          }
           seo_title
           seo_description
         }
@@ -196,51 +104,13 @@ export const pageQuery = graphql`
     ) {
       nodes {
         frontmatter {
-          best_gallery {
+          our_team {
             image
             title
           }
           image
           text
           title
-        }
-      }
-    }
-    services: allMdx(
-      filter: {
-        parent: { internal: { description: { regex: "/content/services/" } } }
-      }
-      sort: { order: ASC, fields: frontmatter___order }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            icon
-            categories {
-              title
-            }
-          }
-        }
-      }
-    }
-
-    clients: allMdx(
-      filter: {
-        parent: {
-          internal: { description: { regex: "/content/home/clients.md/" } }
-        }
-      }
-    ) {
-      nodes {
-        frontmatter {
-          client_gallery {
-            logo
-            name
-          }
         }
       }
     }

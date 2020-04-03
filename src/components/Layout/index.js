@@ -6,32 +6,25 @@
  */
 
 import PropTypes from "prop-types"
-import {
-  GlobalDispatchContext,
-  GlobalStateContext,
-} from "../../context/GlobalContextProvider"
-import React, { useContext } from "react"
+// import {
+//   GlobalDispatchContext,
+//   GlobalStateContext,
+// } from "../../context/GlobalContextProvider"
+import React from "react"
 
-import Header from "../Header"
-import Footer from "../Footer"
-import { Global, Entrance } from "./globalStyles"
-import logo from "../../../content/assets/logo.svg"
-import "animate.css/animate.min.css"
+import Header from "./Header"
+import Footer from "./Footer"
+import { Global } from "./globalStyles"
 
 const Layout = ({ children, location }) => {
-  const dispatch = useContext(GlobalDispatchContext)
-  const state = useContext(GlobalStateContext)
-  if (state.firstLoad) {
-    setTimeout(() => dispatch({ type: "TOOGLE_FIRST_LOAD" }), 3000)
-  }
+  // const dispatch = useContext(GlobalDispatchContext)
+  // const state = useContext(GlobalStateContext)
+  // if (state.firstLoad) {
+  //   setTimeout(() => dispatch({ type: "TOOGLE_FIRST_LOAD" }), 3000)
+  // }
   return (
     <>
       <Global />
-      {state.firstLoad && (
-        <Entrance>
-          <img src={logo} alt="logo"></img>
-        </Entrance>
-      )}
       <Header location={location} />
       <div>
         <main>{children}</main>

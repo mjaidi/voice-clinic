@@ -28,7 +28,7 @@ text: >-
   First Sign privilégie la qualité des prestations dans le respect de nos
   engagements. Notre entreprise apporte des solutions créatives, innovantes et
   pérennes afin de satisfaire au mieux les besoins du client.
-best_gallery:
+our_team:
   - image: >-
       https://res.cloudinary.com/faludeco/image/upload/v1573844267/Banner/WhatsApp_Image_2019-06-10_at_18.00.00_1_yxy5kn.jpg
     title: UMNIA BANK
@@ -75,4 +75,3 @@ best_gallery:
       https://res.cloudinary.com/faludeco/image/upload/v1581432221/Services/Enseignes/Enseignes%20Lumineuses/DSCN9988_bq9b5g.jpg
     title: BANQUE POPULAIRE
 ---
-

@@ -33,24 +33,11 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/projects`,
-        name: `projects`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/content/home`,
         name: `home`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/services`,
-        name: `services`,
-      },
-    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -77,8 +64,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `First Sign Site Web`,
-        short_name: `First Sign`,
+        name: `Site web Clinique des voix`,
+        short_name: `Clinique des voix`,
         start_url: `/`,
         background_color: `#DA241C`,
         theme_color: `#DA241C`,
@@ -92,7 +79,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/contact/`, `/services/*`, "/projects/", "index"],
+        precachePages: [`/contact/`, "index"],
       },
     },
   ],

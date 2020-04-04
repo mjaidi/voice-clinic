@@ -1,12 +1,13 @@
 import styled from "styled-components"
-import { background, shadowMain } from "../variables"
+import { accentMain, shadowMain } from "../variables"
 export const Wrapper = styled.div`
   width: 100%;
   position: sticky;
   top: 0;
-  background: ${background};
+  background: ${accentMain};
   box-shadow: ${shadowMain};
   z-index: 20;
+  padding: 0.5rem 0;
 `
 
 export const Overlay = styled.div`

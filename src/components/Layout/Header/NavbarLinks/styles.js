@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import {
+  light,
   dark,
   headerFont,
-  accentMain,
   accentMainLight,
   background,
   shadowMain,
@@ -11,19 +11,19 @@ export const Wrapper = styled.div`
   position: absolute;
   left: 10rem;
   a {
-    color: ${dark};
+    color: ${light};
     text-decoration: none;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
     font-family: ${headerFont};
     &:hover {
-      color: ${accentMain};
+      color: ${dark};
     }
   }
 
   .active {
-    color: ${accentMain};
+    color: ${dark};
   }
 
   .navbarLink {
@@ -31,7 +31,7 @@ export const Wrapper = styled.div`
     display: inline-block;
     svg {
       margin-left: 5px;
-      color: ${dark};
+      color: ${light};
       cursor: pointer;
     }
   }
@@ -72,7 +72,7 @@ export const Wrapper = styled.div`
           &:after {
             content: " ";
             width: 80%;
-            border-bottom: 2px dashed ${accentMain};
+            border-bottom: 2px dashed ${dark};
             position: absolute;
             bottom: -5px;
             left: 0;
@@ -109,10 +109,10 @@ export const Menu = styled.ul`
     display: block;
   }
   li {
-    color: ${dark};
+    color: ${light};
     padding: 0.5rem;
     a:hover {
-      color: ${dark};
+      color: ${light};
     }
     &:hover {
       background: ${accentMainLight};

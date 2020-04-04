@@ -9,14 +9,14 @@ import GridItem from "../components/common/gridItem"
 import ContactForm from "../components/contact/ContactForm"
 import ContactInfo from "../components/contact/ContactInfo"
 
-import contactTitleImg from "../../content/assets/contact.jpeg"
+import contactTitleImg from "../../content/assets/mindefulness.svg"
 
 const Contact = props => {
   return (
     <Layout location="/contact" title="Contactez Nous">
       <PageHeader title="Contactez Nous" image={contactTitleImg}></PageHeader>
 
-      <Container paddingTop="3rem" textured>
+      <Container paddingTop="3rem">
         <SEO title="Contactez Nous" />
 
         <Grid>

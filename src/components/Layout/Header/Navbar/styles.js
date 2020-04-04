@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { light, accentMain } from "../../variables.js"
 
 export const Wrapper = styled.div`
   padding: 0.3rem 0;
@@ -26,24 +25,5 @@ export const Logo = styled.img`
   width: 7rem;
   @media (max-width: 900px) {
     max-height: 3rem;
-  }
-`
-
-export const PhoneNumber = styled.div`
-  padding: 0.7rem 1.5rem;
-  background: ${accentMain};
-  color: ${light};
-
-  a {
-    color: ${light};
-  }
-  border-radius: 25px;
-  position: absolute;
-  right: 0rem;
-  svg {
-    margin-right: 1rem;
-  }
-  @media (max-width: 900px) {
-    display: none;
   }
 `

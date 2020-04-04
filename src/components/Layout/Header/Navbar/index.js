@@ -1,10 +1,8 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPhone } from "@fortawesome/free-solid-svg-icons"
 
 import NavbarLinks from "../NavbarLinks"
-import { Wrapper, Logo, PhoneNumber } from "./styles"
+import { Wrapper, Logo } from "./styles"
 
 const Navbar = ({ data, location }) => (
   <Wrapper>
@@ -12,19 +10,6 @@ const Navbar = ({ data, location }) => (
       <Logo src={data.home.nodes[0].frontmatter.logo} alt="logo" />
     </Link>
     <NavbarLinks desktop location={location} />
-    <PhoneNumber>
-      <FontAwesomeIcon icon={faPhone} />
-
-      <a
-        href={
-          "tel: +" +
-          data.contact.nodes[0].frontmatter.phone_call.replace(/\D/g, "")
-        }
-      >
-        {" "}
-        {data.contact.nodes[0].frontmatter.phone}
-      </a>
-    </PhoneNumber>
   </Wrapper>
 )
 

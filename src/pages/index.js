@@ -11,8 +11,9 @@ import SEO from "../components/seo"
 import Grid from "../components/common/grid"
 import GridItem from "../components/common/gridItem"
 import Container from "../components/common/container"
+import PageHeader from "../components/common/pageHeader"
 
-import { About, ProjetsPhares, Clients, Title } from "../page_styles/index_page"
+import { About, ProjetsPhares, Title } from "../page_styles/index_page"
 
 const IndexPage = props => {
   const homePageData = props.data.home.nodes[0].frontmatter
@@ -29,6 +30,7 @@ const IndexPage = props => {
         title={homePageData.seo_title}
         description={homePageData.seo_description}
       />
+      <PageHeader title="Clinique des voix"></PageHeader>
 
       {/* Our History Section */}
       <Container>
@@ -45,33 +47,6 @@ const IndexPage = props => {
             </Grid>
           </About>
         </ScrollAnimation>
-      </Container>
-
-      {/* Notre Equipe */}
-      <Container>
-        <ProjetsPhares>
-          <Title>Notre Equipe</Title>
-          <Grid>
-            {aboutData.our_team.map((i, index) => {
-              return (
-                <GridItem key={index}>
-                  <ScrollAnimation
-                    animateIn="fadeIn"
-                    animateOnce={true}
-                    duration={2}
-                  >
-                    <div className="projets-card">
-                      <img src={i.image} alt={i.title}></img>
-                      <div className="overlay">
-                        <p>{i.title}</p>
-                      </div>
-                    </div>
-                  </ScrollAnimation>
-                </GridItem>
-              )
-            })}
-          </Grid>
-        </ProjetsPhares>
       </Container>
     </Layout>
   )

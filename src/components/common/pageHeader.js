@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { headerFont } from "../Layout/variables"
+import defaultImg from "../../../content/assets/mindefulness.svg"
 
 const PageHeader = props => (
   <PageHeaderStyled props={props}>
@@ -12,8 +13,8 @@ const PageHeader = props => (
 const PageHeaderStyled = styled.section`
   background: linear-gradient(
       165deg,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(96, 96, 96, 0.3) 100%
+      rgba(200, 200, 200, 0.3) 0%,
+      rgba(225, 225, 225, 0.3) 100%
     ),
     url(${props => props.props.image});
   width: 100%;
@@ -35,8 +36,7 @@ const PageHeaderStyled = styled.section`
 
 PageHeader.defaultProps = {
   title: "Titre",
-  image:
-    "https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2690&q=80",
+  image: defaultImg,
 }
 
 export default PageHeader

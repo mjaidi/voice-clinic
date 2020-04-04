@@ -1,15 +1,14 @@
 import styled from "styled-components"
 import {
   light,
-  dark,
   headerFont,
+  accentSecondary,
   accentMainLight,
   background,
   shadowMain,
+  borderRadius,
 } from "../../variables"
 export const Wrapper = styled.div`
-  position: absolute;
-  left: 10rem;
   a {
     color: ${light};
     text-decoration: none;
@@ -17,13 +16,30 @@ export const Wrapper = styled.div`
     font-weight: 700;
     text-transform: uppercase;
     font-family: ${headerFont};
+    position: relative;
     &:hover {
-      color: ${dark};
+      &:after {
+        content: " ";
+        width: 100%;
+        height: 4px;
+        background: ${accentSecondary};
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+      }
     }
   }
 
   .active {
-    color: ${dark};
+    &:after {
+      content: " ";
+      width: 100%;
+      height: 4px;
+      background: ${accentSecondary};
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+    }
   }
 
   .navbarLink {
@@ -58,8 +74,19 @@ export const Wrapper = styled.div`
       padding: 3rem 1rem 3rem 3rem;
       a {
         font-size: 18px;
-
+        &.active {
+          &:after {
+            content: " ";
+            width: 100%;
+            height: 4px;
+            background: ${accentSecondary};
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+          }
+        }
       }
+
 
 			display: flex;
 			flex-direction: column;
@@ -69,14 +96,6 @@ export const Wrapper = styled.div`
           padding-bottom: 0.5rem;
           padding-top: 0.5rem;
 
-          &:after {
-            content: " ";
-            width: 80%;
-            border-bottom: 2px dashed ${dark};
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-          }
           svg {
             margin-left: 20px;
             font-size: 20px;
@@ -130,10 +149,10 @@ export const Menu = styled.ul`
       position: relative;
       top: 0;
       left: 5px;
-
       padding-bottom: 0.5rem;
       padding-top: 0.5rem;
-            box-shadow: none;
+      box-shadow: none;
+
     }
   `}
 `

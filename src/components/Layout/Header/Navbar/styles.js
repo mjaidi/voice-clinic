@@ -1,13 +1,15 @@
 import styled from "styled-components"
+import { light } from "../../variables"
 
 export const Wrapper = styled.div`
   padding: 0.3rem 0;
   display: flex;
   align-items: center;
   position: relative;
-
+  justify-content: flex-end;
+  height: 4rem;
   a {
-    color: #212121;
+    color: ${light};
   }
   max-width: 1280px;
   margin: 0 auto;
@@ -18,11 +20,13 @@ export const Wrapper = styled.div`
   }
 `
 export const Logo = styled.img`
-  max-height: 4rem;
+  height: 3.5rem;
   padding: 0;
   margin: 0;
   right: 25rem;
-  width: 7rem;
+  position: absolute;
+  left: 0;
+  top: 10px;
   @media (max-width: 900px) {
     max-height: 3rem;
   }

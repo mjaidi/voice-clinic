@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
 import remark from "remark"
 import recommended from "remark-preset-lint-recommended"
@@ -13,7 +13,7 @@ import GridItem from "../components/common/gridItem"
 import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
 
-import { About, ProjetsPhares, Title } from "../page_styles/index_page"
+import { About, Title } from "../page_styles/index_page"
 
 const IndexPage = props => {
   const homePageData = props.data.home.nodes[0].frontmatter
@@ -48,6 +48,9 @@ const IndexPage = props => {
           </About>
         </ScrollAnimation>
       </Container>
+
+      {/* Our team section */}
+      <Container></Container>
     </Layout>
   )
 }
@@ -79,10 +82,6 @@ export const pageQuery = graphql`
     ) {
       nodes {
         frontmatter {
-          our_team {
-            image
-            title
-          }
           image
           text
           title

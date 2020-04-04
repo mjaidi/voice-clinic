@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   background: ${accentMain};
   box-shadow: ${shadowMain};
   z-index: 20;
-  padding: 0.5rem 0;
 `
 
 export const Overlay = styled.div`

@@ -67,8 +67,8 @@ module.exports = {
         name: `Site web Clinique des voix`,
         short_name: `Clinique des voix`,
         start_url: `/`,
-        background_color: `#DA241C`,
-        theme_color: `#DA241C`,
+        background_color: `#0071B8`,
+        theme_color: `#0071B8`,
         display: `minimal-ui`,
         icon: `content/assets/logo.png`, // This path is relative to the root of the site.
       },

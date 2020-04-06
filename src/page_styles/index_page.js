@@ -48,3 +48,23 @@ export const About = styled.div`
     box-shadow: ${shadowMain};
   }
 `
+
+export const OurTeam = styled.div`
+  padding: 5rem 0;
+`
+export const TeamCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+  }
+  p {
+    text-align: center;
+  }
+`

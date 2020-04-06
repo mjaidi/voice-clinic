@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  justify-content: flex-end;
+  justify-content: center;
   height: 4rem;
   a {
     color: ${light};

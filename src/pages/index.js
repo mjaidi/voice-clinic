@@ -13,16 +13,18 @@ import GridItem from "../components/common/gridItem"
 import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
 
-import { About, Title } from "../page_styles/index_page"
+import { About, Title, OurTeam, TeamCard } from "../page_styles/index_page"
 
 const IndexPage = props => {
   const homePageData = props.data.home.nodes[0].frontmatter
   const aboutData = props.data.about.nodes[0].frontmatter
+  const ourTeam = props.data.about.nodes[0].frontmatter.our_team
   const aboutText = remark()
     .use(recommended)
     .use(remarkHtml)
     .processSync(aboutData.text)
     .toString()
+  console.log(ourTeam)
 
   return (
     <Layout location="/">
@@ -50,7 +52,23 @@ const IndexPage = props => {
       </Container>
 
       {/* Our team section */}
-      <Container></Container>
+      <Container>
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2}>
+          <OurTeam>
+            <Title>Notre Equipe</Title>
+            <Grid>
+              {ourTeam.map(t => (
+                <GridItem lgColumns={2} margin={15}>
+                  <TeamCard>
+                    <img src={t.image} alt="title" />
+                    <p>{t.title}</p>
+                  </TeamCard>
+                </GridItem>
+              ))}
+            </Grid>
+          </OurTeam>
+        </ScrollAnimation>
+      </Container>
     </Layout>
   )
 }
@@ -85,6 +103,10 @@ export const pageQuery = graphql`
           image
           text
           title
+          our_team {
+            image
+            title
+          }
         }
       }
     }

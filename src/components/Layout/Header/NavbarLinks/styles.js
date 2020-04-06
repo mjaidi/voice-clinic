@@ -4,9 +4,8 @@ import {
   headerFont,
   accentSecondary,
   accentMainLight,
-  background,
   shadowMain,
-  borderRadius,
+  accentMain,
 } from "../../variables"
 export const Wrapper = styled.div`
   a {
@@ -30,7 +29,7 @@ export const Wrapper = styled.div`
     }
   }
 
-  .active {
+  .active:not(ul) {
     &:after {
       content: " ";
       width: 100%;
@@ -106,7 +105,7 @@ export const Menu = styled.ul`
   left: 0;
   z-index: 20;
   min-width: 200px;
-  background: ${background};
+  background: ${accentMain};
   box-shadow: ${shadowMain};
   a {
     font-size: 13px;
@@ -122,9 +121,6 @@ export const Menu = styled.ul`
     padding: 0.5rem;
     a:hover {
       color: ${light};
-    }
-    &:hover {
-      background: ${accentMainLight};
     }
   }
   ${({ desktop }) =>

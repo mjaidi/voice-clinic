@@ -1,5 +1,3 @@
-import { seo } from "./seo"
-
 export const categories = {
   label: "Catégories",
   name: "categories",
@@ -10,7 +8,6 @@ export const categories = {
   slug: "{{slug}}",
   create: true,
   fields: [
-    ...seo,
     {
       label: "Icone",
       name: "icon",

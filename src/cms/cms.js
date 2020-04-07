@@ -1,9 +1,16 @@
+import React from "react"
 import CMS from "netlify-cms-app"
 import cloudinary from "netlify-cms-media-library-cloudinary"
 import { home } from "./home"
 import { posts } from "./posts"
 import { categories } from "./categories"
+
+import { PostsPageTemplate } from "../templates/posts_template"
+
 CMS.registerMediaLibrary(cloudinary)
+CMS.registerPreviewTemplate("posts-page", ({ entry }) => (
+  <PostsPageTemplate {...entry.toJS().data} />
+))
 
 CMS.init({
   config: {

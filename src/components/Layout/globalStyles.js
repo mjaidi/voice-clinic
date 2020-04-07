@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import { dark, background } from "./variables"
+
 export const Global = createGlobalStyle`
 html {
   font-family: 'Quicksand', sans-serif;

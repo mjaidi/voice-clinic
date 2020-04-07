@@ -7,6 +7,7 @@ module.exports = {
     title: `Voice Clinic`,
     description: `-`,
     author: `@mjaidi`,
+    siteUrl: "http://localhost:8000",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -70,6 +71,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        useAutoGen: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-153657442-1",
@@ -90,11 +97,11 @@ module.exports = {
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/contact/`, "index"],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     precachePages: [`/contact/`, "index"],
+    //   },
+    // },
   ],
 }

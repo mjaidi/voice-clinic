@@ -22,8 +22,6 @@ p {
 a {
   text-decoration: none;
   color: inherit;
-  &:hover {
-    color: inherit;
-  }
+
 }
 `

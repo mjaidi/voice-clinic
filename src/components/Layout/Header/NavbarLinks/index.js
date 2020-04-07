@@ -9,47 +9,56 @@ const NavbarLinks = ({ data, desktop, location }) => {
   console.log(location)
   return (
     <Wrapper desktop={desktop}>
-      <div className="navbarLink">
-        <Link to="/" className={location === "/" ? " active" : ""}>
-          Accueil
-        </Link>
-      </div>
-      <div className="navbarLink">
-        <a
-          href="#"
-          onMouseOver={event => setActiveMenu("categories")}
-          onFocus={event => setActiveMenu("categories")}
-          className={
-            location &&
-            location.pathname &&
-            location.pathname.match(/[posts|categories]/)
-              ? " active"
-              : ""
-          }
-        >
-          Self Help
-        </a>
-        <FontAwesomeIcon
-          icon={faCaretDown}
-          onClick={event => setActiveMenu("categories")}
-        />
-        <Menu
-          desktop={desktop}
-          className={activeMenu === "categories" ? "active" : ""}
-          onMouseLeave={event => setActiveMenu("")}
-        >
-          {data.categories.edges.map((e, index) => {
-            return (
-              <li key={index}>
-                <Link to={`categories${e.node.fields.slug}`}>
-                  {e.node.frontmatter.title}
-                </Link>
-              </li>
-            )
-          })}
-        </Menu>
-      </div>
-
+      {data.categories.edges.map(c => {
+        const posts = data.posts.edges.filter(
+          p => p.node.frontmatter.category === c.node.frontmatter.title
+        )
+        return (
+          <div className="navbarLink">
+            <Link
+              to={`categories${c.node.fields.slug}`}
+              onMouseOver={event =>
+                setActiveMenu(`categories${c.node.fields.slug}`)
+              }
+              onFocus={event =>
+                setActiveMenu(`categories${c.node.fields.slug}`)
+              }
+              className={
+                location &&
+                location.pathname &&
+                location.pathname.match(`categories${c.node.fields.slug}`)
+                  ? " active"
+                  : ""
+              }
+            >
+              {c.node.frontmatter.title}
+            </Link>
+            <FontAwesomeIcon
+              icon={faCaretDown}
+              onClick={event =>
+                setActiveMenu(`categories${c.node.fields.slug}`)
+              }
+            />
+            <Menu
+              desktop={desktop}
+              className={
+                activeMenu === `categories${c.node.fields.slug}` ? "active" : ""
+              }
+              onMouseLeave={event => setActiveMenu("")}
+            >
+              {posts.map((pi, index) => {
+                return (
+                  <li key={index}>
+                    <Link to={`posts${pi.node.fields.slug}`}>
+                      {pi.node.frontmatter.title}
+                    </Link>
+                  </li>
+                )
+              })}
+            </Menu>
+          </div>
+        )
+      })}
       <div className="navbarLink">
         <Link
           to="/contact"
@@ -80,6 +89,23 @@ export default props => (
               }
               frontmatter {
                 title
+              }
+            }
+          }
+        }
+        posts: allMdx(
+          filter: {
+            parent: { internal: { description: { regex: "/content/posts/" } } }
+          }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                category
               }
             }
           }

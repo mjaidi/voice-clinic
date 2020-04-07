@@ -3,8 +3,8 @@ import { Link, graphql } from "gatsby"
 import remark from "remark"
 import recommended from "remark-preset-lint-recommended"
 import remarkHtml from "remark-html"
-import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 
+import CustomBreadcrumb from "../components/common/customBreadcrumb"
 import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
 import { Content, PostLinks } from "../template_styles/posts_template"
@@ -41,7 +41,7 @@ const PostDetailTemplate = props => {
         title={post.frontmatter.title}
         image={post.frontmatter.featured_image}
       ></PageHeader>
-      <Breadcrumb crumbs={crumbs} crumbSeparator=" / " />
+      <CustomBreadcrumb crumbs={crumbs} crumbSeparator=" / " />
 
       <Container>
         <SEO

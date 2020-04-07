@@ -95,7 +95,7 @@ const ContactForm = props => {
             >
               <input type="hidden" name="form-name" value="Contact Form" />
               <div className="form-group">
-                <label for="email">Votre Email:</label>
+                <label htmlFor="email">Votre Email:</label>
                 <input
                   type="email"
                   name="email"
@@ -111,7 +111,7 @@ const ContactForm = props => {
                 </div>
               </div>
               <div className="form-group">
-                <label for="message">Descriptif de vos besoins:</label>
+                <label htmlFor="message">Descriptif de vos besoins:</label>
                 <textarea
                   type="message"
                   name="message"

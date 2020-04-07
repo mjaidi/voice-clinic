@@ -1,11 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 
 import Container from "../components/common/container"
 import Grid from "../components/common/grid"
 import GridItem from "../components/common/gridItem"
 import PageHeader from "../components/common/pageHeader"
+import CustomBreadcrumb from "../components/common/customBreadcrumb"
 import { Content, PostsCard } from "../template_styles/categories_template"
 import Layout from "../components/Layout"
 
@@ -28,7 +28,7 @@ const CategoryDetailTemplate = props => {
   return (
     <Layout location={props.location} title={siteTitle}>
       <PageHeader title={category.frontmatter.title}></PageHeader>
-      <Breadcrumb crumbs={crumbs} crumbSeparator=" / " />
+      <CustomBreadcrumb crumbs={crumbs} crumbSeparator=" / " />
       <Container>
         <Content>
           <Grid>
@@ -36,7 +36,10 @@ const CategoryDetailTemplate = props => {
               <GridItem lgColumns={2} margin={15}>
                 <Link to={`posts${p.node.fields.slug}`}>
                   <PostsCard>
-                    <img src={p.node.frontmatter.featured_image} alt="image" />
+                    <img
+                      src={p.node.frontmatter.featured_image}
+                      alt={p.node.frontmatter.title}
+                    />
                     <p>{p.node.frontmatter.title}</p>
                   </PostsCard>
                 </Link>

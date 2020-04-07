@@ -14,7 +14,6 @@ import React from "react"
 
 import Header from "./Header"
 import Footer from "./Footer"
-import "gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css"
 import { Global } from "./globalStyles"
 
 const Layout = ({ children, location }) => {

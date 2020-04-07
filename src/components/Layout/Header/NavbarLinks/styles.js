@@ -3,7 +3,6 @@ import {
   light,
   headerFont,
   accentSecondary,
-  accentMainLight,
   shadowMain,
   accentMain,
 } from "../../variables"
@@ -19,12 +18,12 @@ export const Wrapper = styled.div`
     &:hover {
       &:after {
         content: " ";
-        width: 100%;
+        width: calc(100% + 20px);
         height: 4px;
         background: ${accentSecondary};
         position: absolute;
         bottom: -7px;
-        left: 0;
+        left: -10px;
       }
     }
   }
@@ -32,12 +31,12 @@ export const Wrapper = styled.div`
   .active:not(ul) {
     &:after {
       content: " ";
-      width: 100%;
+      width: calc(100% + 20px);
       height: 4px;
       background: ${accentSecondary};
       position: absolute;
       bottom: -7px;
-      left: 0;
+      left: -10px;
     }
   }
 

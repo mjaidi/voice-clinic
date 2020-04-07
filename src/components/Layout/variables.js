@@ -11,6 +11,8 @@ export const mainFont = "'Quicksand', sans-serif"
 export const headerFont = "'PT Sans', sans-serif"
 
 export const shadowMain = "2px 5px 10px #ddd"
+export const shadowHover = "5px 20px 50px #ddd"
 export const borderRadius = "5px"
+
 export const mdBreakpoint = "900px"
 export const smBreakpoint = "650px"

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const NavbarLinks = ({ data, desktop, location }) => {
   const [activeMenu, setActiveMenu] = useState("")
-
+  console.log(location)
   return (
     <Wrapper desktop={desktop}>
       <div className="navbarLink">
@@ -15,7 +15,18 @@ const NavbarLinks = ({ data, desktop, location }) => {
         </Link>
       </div>
       <div className="navbarLink">
-        <a href="#" onMouseOver={event => setActiveMenu("categories")}>
+        <a
+          href="#"
+          onMouseOver={event => setActiveMenu("categories")}
+          onFocus={event => setActiveMenu("categories")}
+          className={
+            location &&
+            location.pathname &&
+            location.pathname.match(/[posts|categories]/)
+              ? " active"
+              : ""
+          }
+        >
           Self Help
         </a>
         <FontAwesomeIcon

@@ -1,7 +1,7 @@
 ---
-seo_title: Publication Open
-seo_description: Nouvelle publication Open
-title: 'Open Publication #1'
+seo_title: Mental body Scan
+seo_description: Mental body Scan
+title: Mental body scan
 status: Publié
 date: 2020-04-06T14:50:56.013Z
 featured_image: >-
@@ -64,5 +64,5 @@ content: >-
   tellus, tempus nec vehicula a, volutpat a velit. Integer eget neque metus.
   Integer risus enim, tincidunt tincidunt gravida at, maximus vitae nulla.
   Vestibulum ipsum metus, luctus id scelerisque ut, malesuada commodo purus.
-category: open
+category: Mindfullness
 ---

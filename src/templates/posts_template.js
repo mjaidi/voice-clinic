@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Link, graphql } from "gatsby"
 import remark from "remark"
 import recommended from "remark-preset-lint-recommended"
@@ -11,7 +11,13 @@ import { Content, PostLinks } from "../template_styles/posts_template"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
-const PostDetailTemplate = props => {
+export const PostDetailTemplate = ({ title, content, date, category }) => (
+  <Fragment>
+    <Content dangerouslySetInnerHTML={{ __html: content }}></Content>
+  </Fragment>
+)
+
+const PostDetail = props => {
   const post = props.data.posts.edges[0].node
   const siteTitle = props.data.site.siteMetadata.title
   const { previous, next } = props.pageContext
@@ -48,7 +54,12 @@ const PostDetailTemplate = props => {
           title={post.frontmatter.seo_title}
           description={post.frontmatter.seo_description}
         />
-        <Content dangerouslySetInnerHTML={{ __html: content }}></Content>
+        <PostDetailTemplate
+          title={post.frontmatter.title}
+          content={content}
+          category={post.frontmatter.category}
+          date={post.frontmatter.date}
+        />
         <PostLinks>
           <li>
             {previous && (
@@ -70,7 +81,7 @@ const PostDetailTemplate = props => {
   )
 }
 
-export default PostDetailTemplate
+export default PostDetail
 
 export const pageQuery = graphql`
   query postDetailBySlug($slug: String!) {

@@ -5,13 +5,12 @@ import { home } from "./home"
 import { posts } from "./posts"
 import { categories } from "./categories"
 
-// import { PostsPageTemplate } from "../templates/posts_template"
+import { PostsDetailTemplate } from "../templates/posts_template"
 
 CMS.registerMediaLibrary(cloudinary)
-// NEED TO CREATE A POSTPAGETEMPLATE THAT CAN BE USED BOTH FOR THE CMS PREVIEW AND FOR THE ACTUAL APP
-// CMS.registerPreviewTemplate("posts-page", ({ entry }) => (
-//   <PostsPageTemplate {...entry.toJS().data} />
-// ))
+CMS.registerPreviewTemplate("posts-page", ({ entry }) => (
+  <PostsDetailTemplate {...entry.toJS().data} />
+))
 
 CMS.init({
   config: {

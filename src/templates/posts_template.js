@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { Link, graphql } from "gatsby"
 import remark from "remark"
 import recommended from "remark-preset-lint-recommended"
@@ -10,12 +10,6 @@ import PageHeader from "../components/common/pageHeader"
 import { Content, PostLinks } from "../template_styles/posts_template"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-
-export const PostDetailTemplate = ({ title, content, date, category }) => (
-  <Fragment>
-    <Content dangerouslySetInnerHTML={{ __html: content }}></Content>
-  </Fragment>
-)
 
 const PostDetail = props => {
   const post = props.data.posts.edges[0].node
@@ -54,12 +48,8 @@ const PostDetail = props => {
           title={post.frontmatter.seo_title}
           description={post.frontmatter.seo_description}
         />
-        <PostDetailTemplate
-          title={post.frontmatter.title}
-          content={content}
-          category={post.frontmatter.category}
-          date={post.frontmatter.date}
-        />
+        <Content dangerouslySetInnerHTML={{ __html: content }}></Content>
+
         <PostLinks>
           <li>
             {previous && (

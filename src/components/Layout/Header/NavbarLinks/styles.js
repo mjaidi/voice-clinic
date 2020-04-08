@@ -1,10 +1,12 @@
 import styled from "styled-components"
 import {
   light,
+  dark,
   headerFont,
   accentSecondary,
   shadowMain,
-  accentMain,
+  accentMainLight,
+  background,
 } from "../../variables"
 export const Wrapper = styled.div`
   a {
@@ -104,12 +106,18 @@ export const Menu = styled.ul`
   left: 0;
   z-index: 20;
   min-width: 200px;
-  background: ${accentMain};
+  background: ${background};
   box-shadow: ${shadowMain};
   a {
     font-size: 13px;
     text-transform: none;
     font-weight: 500;
+    color: ${dark};
+    &:hover {
+      &:after {
+        content: none;
+      }
+    }
   }
 
   &.active {
@@ -118,8 +126,8 @@ export const Menu = styled.ul`
   li {
     color: ${light};
     padding: 0.5rem;
-    a:hover {
-      color: ${light};
+    &:hover {
+      background: ${accentMainLight};
     }
   }
   ${({ desktop }) =>

@@ -16,8 +16,8 @@ export const PostPreview = ({ entry, widgetFor, getAsset }) => {
       instructions={entry.getIn(["data", "instructions"])}
       video_title={entry.getIn(["data", "video_title"])}
       video={entry.getIn(["data", "video"])}
-      faq={entry.getIn(["data", "faq"])}
-      worksheets={entry.getIn(["data", "worksheets"])}
+      faq={entry.getIn(["data", "faq"]).toJS()}
+      worksheets={entry.getIn(["data", "worksheets"]).toJS()}
     />
   )
 }
@@ -41,6 +41,7 @@ const PostsTemplate = ({
   faq,
   worksheets,
 }) => {
+  console.log(faq)
   const formatedIntroduction = remark()
     .use(recommended)
     .use(remarkHtml)

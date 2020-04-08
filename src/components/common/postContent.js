@@ -21,8 +21,6 @@ const PostContent = ({
   worksheets,
   faq,
 }) => {
-  console.log(worksheets)
-  console.log(faq)
   return (
     <Fragment>
       <h3>1. Introduction</h3>

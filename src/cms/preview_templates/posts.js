@@ -13,6 +13,11 @@ export const PostPreview = ({ entry, widgetFor, getAsset }) => {
       category={entry.getIn(["data", "category"])}
       title={entry.getIn(["data", "title"])}
       featuredImage={getAsset(entry.getIn(["data", "featured_image"]))}
+      instructions={entry.getIn(["data", "instructions"])}
+      video_title={entry.getIn(["data", "video_title"])}
+      video={entry.getIn(["data", "video"])}
+      faq={entry.getIn(["data", "faq"])}
+      worksheets={entry.getIn(["data", "worksheets"])}
     />
   )
 }
@@ -25,11 +30,26 @@ PostPreview.propTypes = {
   getAsset: PropTypes.any,
 }
 
-const PostsTemplate = ({ introduction, category, title, featuredImage }) => {
+const PostsTemplate = ({
+  introduction,
+  category,
+  title,
+  featuredImage,
+  instructions,
+  video_title,
+  video,
+  faq,
+  worksheets,
+}) => {
   const formatedIntroduction = remark()
     .use(recommended)
     .use(remarkHtml)
     .processSync(introduction)
+    .toString()
+  const formatedInstructions = remark()
+    .use(recommended)
+    .use(remarkHtml)
+    .processSync(instructions)
     .toString()
   const iframe = document.querySelector(".Pane2 iframe")
   const iframeHeadElem = iframe.contentDocument.head
@@ -44,7 +64,14 @@ const PostsTemplate = ({ introduction, category, title, featuredImage }) => {
           <p className="category">
             <strong>Catégorie: </strong> {category}
           </p>
-          <PostContent introduction={formatedIntroduction} />
+          <PostContent
+            introduction={formatedIntroduction}
+            instructions={formatedInstructions}
+            video_title={video_title}
+            video={video}
+            faq={faq}
+            worksheets={worksheets}
+          />
         </div>
       </section>
     </StyleSheetManager>

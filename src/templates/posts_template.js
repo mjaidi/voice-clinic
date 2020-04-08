@@ -24,6 +24,11 @@ const PostDetail = props => {
     .use(remarkHtml)
     .processSync(post.frontmatter.introduction)
     .toString()
+  const instructions = remark()
+    .use(recommended)
+    .use(remarkHtml)
+    .processSync(post.frontmatter.instructions)
+    .toString()
   const crumbs = [
     { pathname: "/", crumbLabel: "Acceuil" },
     {
@@ -48,7 +53,14 @@ const PostDetail = props => {
           title={post.frontmatter.seo_title}
           description={post.frontmatter.seo_description}
         />
-        <PostContent introduction={introduction} />
+        <PostContent
+          introduction={introduction}
+          instructions={instructions}
+          video_title={post.frontmatter.video_title}
+          video={post.frontmatter.video}
+          faq={post.frontmatter.faq}
+          worksheets={post.frontmatter.worksheets}
+        />
         <PostLinks>
           <li>
             {previous && (
@@ -90,6 +102,18 @@ export const pageQuery = graphql`
             introduction
             featured_image
             category
+            instructions
+            video
+            video_title
+            worksheets {
+              title
+              description
+              document_pdf
+            }
+            faq {
+              question
+              answer
+            }
           }
         }
       }

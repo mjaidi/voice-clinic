@@ -31,7 +31,8 @@ introduction: >-
   maximus lobortis. In ut feugiat neque. Cras lacus justo, consectetur et turpis
   at, tempor cursus quam. Nam suscipit dui non pharetra blandit. Donec lacus
   nulla, molestie sed eleifend non, faucibus et elit.
-video: 'https://youtu.be/6p_yaNFSYao'
+video_title: 'Mindfulness video'
+video: 'https://www.youtube.com/embed/6p_yaNFSYao'
 instructions: >-
   #### HEADER LIPSUM
 
@@ -62,7 +63,7 @@ worksheets:
       Duis turpis ante, accumsan quis luctus sit amet, consequat in libero.
       Nulla imperdiet iaculis velit, nec maximus metus hendrerit in. Suspendisse
       euismod felis id tellus dictum, ac tristique neque efficitur. Vivamus
-      dapibus dapibus imperdiet. 
+      dapibus dapibus imperdiet.
     document_pdf: >-
       https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586361873/clinique/pdh2gbiyyypv9tkbc2mw.pdf
 faq:

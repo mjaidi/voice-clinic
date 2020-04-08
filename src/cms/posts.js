@@ -9,11 +9,6 @@ export const posts = {
   fields: [
     ...seo,
     {
-      label: "Titre",
-      name: "title",
-      widget: "string",
-    },
-    {
       label: "Statut",
       name: "status",
       widget: "select",
@@ -27,6 +22,20 @@ export const posts = {
       default: new Date(),
     },
     {
+      label: "Catégorie",
+      name: "category",
+      widget: "relation",
+      required: true,
+      collection: "categories",
+      searchFields: ["title"],
+      valueField: "title",
+    },
+    {
+      label: "Titre",
+      name: "title",
+      widget: "string",
+    },
+    {
       label: "Image de couverture",
       name: "featured_image",
       widget: "image",
@@ -36,15 +45,6 @@ export const posts = {
       label: "Contenu",
       name: "content",
       widget: "markdown",
-    },
-    {
-      label: "Catégorie",
-      name: "category",
-      widget: "relation",
-      required: true,
-      collection: "categories",
-      searchFields: ["title"],
-      valueField: "title",
     },
   ],
 }

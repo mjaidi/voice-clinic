@@ -124,8 +124,11 @@ export const Menu = styled.ul`
     display: block;
   }
   li {
-    color: ${light};
+    color: ${dark};
     padding: 0.5rem;
+    a {
+      color: ${dark};
+    }
     &:hover {
       background: ${accentMainLight};
     }

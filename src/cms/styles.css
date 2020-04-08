@@ -1,3 +1,16 @@
+html,
 body {
-    background: black
+    color: #444;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+img {
+    max-height: 400px;
+    margin: 0 auto;
+    object-fit: contain;
 }

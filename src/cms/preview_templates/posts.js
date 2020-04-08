@@ -1,5 +1,8 @@
 import React from "react"
-import PropTypes, { any } from "prop-types"
+import PropTypes from "prop-types"
+import remark from "remark"
+import recommended from "remark-preset-lint-recommended"
+import remarkHtml from "remark-html"
 
 export const PostPreview = ({ entry, widgetFor, getAsset }) => {
   return (
@@ -21,13 +24,27 @@ PostPreview.propTypes = {
 }
 
 const PostsTemplate = ({ content, category, title, featuredImage }) => {
+  const formatedContent = remark()
+    .use(recommended)
+    .use(remarkHtml)
+    .processSync(content)
+    .toString()
   return (
     <section className="section">
       <div className="container content">
-        <h1 className="title">{title}</h1>
-        <h5>Catégorie: {category}</h5>
-        <img src={featuredImage} alt="featured" />
-        {content}
+        <p className="category">
+          <strong>Catégorie: </strong> {category}
+        </p>
+        <div
+          className="pageHeader"
+          style={{
+            background: `linear-gradient( 165deg,rgba(200, 200, 200, 0.3) 0%,rgba(225, 225, 225, 0.3) 100%),url(${featuredImage});`,
+          }}
+        >
+          <h1 className="title">{title}</h1>
+        </div>
+
+        <div dangerouslySetInnerHTML={{ __html: formatedContent }}></div>
       </div>
     </section>
   )

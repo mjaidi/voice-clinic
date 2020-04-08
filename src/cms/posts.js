@@ -42,9 +42,39 @@ export const posts = {
       required: false,
     },
     {
-      label: "Contenu",
-      name: "content",
+      label: "Introduction",
+      name: "introduction",
       widget: "markdown",
+    },
+    {
+      label: "Vidéo",
+      name: "video",
+      widget: "string",
+      hint: "Mettre le lien youtube de la vidéo que vous voulez intégrer",
+    },
+    {
+      label: "Instructions",
+      name: "instructions",
+      widget: "markdown",
+    },
+    {
+      label: "Exercises",
+      name: "worksheets",
+      widget: "list",
+      fields: [
+        { label: "Titre", name: "title", widget: "string" },
+        { label: "Déscription", name: "description", widget: "text" },
+        { label: "Document PDF", name: "document_pdf", widget: "file" },
+      ],
+    },
+    {
+      label: "Quéstions Fréquentes",
+      name: "faq",
+      widget: "list",
+      fields: [
+        { label: "Question", name: "question", widget: "string" },
+        { label: "Réponse", name: "answer", widget: "text" },
+      ],
     },
   ],
 }

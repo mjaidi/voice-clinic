@@ -9,12 +9,12 @@ const NavbarLinks = ({ data, desktop, location }) => {
   console.log(location)
   return (
     <Wrapper desktop={desktop}>
-      {data.categories.edges.map(c => {
+      {data.categories.edges.map((c, i) => {
         const posts = data.posts.edges.filter(
           p => p.node.frontmatter.category === c.node.frontmatter.title
         )
         return (
-          <div className="navbarLink">
+          <div className="navbarLink" key={i}>
             <Link
               to={`categories${c.node.fields.slug}`}
               onMouseOver={event =>

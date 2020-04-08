@@ -58,9 +58,9 @@ const IndexPage = props => {
             <Title>Notre Equipe</Title>
             <Grid>
               {ourTeam.map(t => (
-                <GridItem lgColumns={2} margin={15}>
+                <GridItem lgColumns={2} margin={15} key={t.title}>
                   <TeamCard>
-                    <img src={t.image} alt="title" />
+                    <img src={t.image} alt={t.title} />
                     <p>{t.title}</p>
                   </TeamCard>
                 </GridItem>

@@ -7,9 +7,10 @@ import remarkHtml from "remark-html"
 import CustomBreadcrumb from "../components/common/customBreadcrumb"
 import Container from "../components/common/container"
 import PageHeader from "../components/common/pageHeader"
-import { Content, PostLinks } from "../template_styles/posts_template"
+import { PostLinks } from "../template_styles/posts_template"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
+import PostContent from "../components/common/postContent"
 
 const PostDetail = props => {
   const post = props.data.posts.edges[0].node
@@ -18,10 +19,10 @@ const PostDetail = props => {
   const category = props.data.categories.edges.find(
     c => c.node.frontmatter.title === post.frontmatter.category
   )
-  const content = remark()
+  const introduction = remark()
     .use(recommended)
     .use(remarkHtml)
-    .processSync(post.frontmatter.content)
+    .processSync(post.frontmatter.introduction)
     .toString()
   const crumbs = [
     { pathname: "/", crumbLabel: "Acceuil" },
@@ -34,7 +35,6 @@ const PostDetail = props => {
       crumbLabel: `${post.frontmatter.title}`,
     },
   ]
-  console.log(category)
   return (
     <Layout location={props.location} title={siteTitle}>
       <PageHeader
@@ -48,8 +48,7 @@ const PostDetail = props => {
           title={post.frontmatter.seo_title}
           description={post.frontmatter.seo_description}
         />
-        <Content dangerouslySetInnerHTML={{ __html: content }}></Content>
-
+        <PostContent introduction={introduction} />
         <PostLinks>
           <li>
             {previous && (
@@ -88,7 +87,7 @@ export const pageQuery = graphql`
             seo_title
             seo_description
             title
-            content
+            introduction
             featured_image
             category
           }

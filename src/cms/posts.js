@@ -47,6 +47,12 @@ export const posts = {
       widget: "markdown",
     },
     {
+      label: "Titre Vidéo",
+      name: "video_title",
+      widget: "string",
+      hint: "Mettre le titre de la vidéo que vous voulez intégrer",
+    },
+    {
       label: "Vidéo",
       name: "video",
       widget: "string",

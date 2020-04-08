@@ -4,7 +4,7 @@ import { home } from "./home"
 import { posts } from "./posts"
 import { categories } from "./categories"
 import { PostPreview } from "./preview_templates/posts"
-import styles from "./styles.css"
+import styles from "./preview_templates/styles.css"
 
 CMS.registerMediaLibrary(cloudinary)
 CMS.registerPreviewStyle(styles)

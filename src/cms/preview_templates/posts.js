@@ -32,19 +32,17 @@ const PostsTemplate = ({ content, category, title, featuredImage }) => {
   return (
     <section className="section">
       <div className="container content">
+        <div className="pageHeader">
+          <h1 className="title">{title}</h1>
+          <img src={featuredImage} alt="featured" />
+        </div>
         <p className="category">
           <strong>Catégorie: </strong> {category}
         </p>
         <div
-          className="pageHeader"
-          style={{
-            background: `linear-gradient( 165deg,rgba(200, 200, 200, 0.3) 0%,rgba(225, 225, 225, 0.3) 100%),url(${featuredImage});`,
-          }}
-        >
-          <h1 className="title">{title}</h1>
-        </div>
-
-        <div dangerouslySetInnerHTML={{ __html: formatedContent }}></div>
+          class="content"
+          dangerouslySetInnerHTML={{ __html: formatedContent }}
+        ></div>
       </div>
     </section>
   )

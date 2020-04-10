@@ -2,7 +2,7 @@ html,
 body {
     color: #444;
     font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: lighter;
 }
 
@@ -10,6 +10,15 @@ img {
     max-height: 400px;
     margin: 0 auto;
     object-fit: contain;
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -24,13 +33,13 @@ img {
 .pageHeader img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
 .pageHeader h1 {
     position: absolute;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     top: 30%;
     text-align: center;
     font-size: 40px;

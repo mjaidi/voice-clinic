@@ -45,22 +45,23 @@ const PostDetail = props => {
       <PageHeader
         title={post.frontmatter.title}
         image={post.frontmatter.featured_image}
+        blog
       ></PageHeader>
       <CustomBreadcrumb crumbs={crumbs} crumbSeparator=" / " />
 
+      <SEO
+        title={post.frontmatter.seo_title}
+        description={post.frontmatter.seo_description}
+      />
+      <PostContent
+        introduction={introduction}
+        instructions={instructions}
+        video_title={post.frontmatter.video_title}
+        video={post.frontmatter.video}
+        faq={post.frontmatter.faq}
+        worksheets={post.frontmatter.worksheets}
+      />
       <Container>
-        <SEO
-          title={post.frontmatter.seo_title}
-          description={post.frontmatter.seo_description}
-        />
-        <PostContent
-          introduction={introduction}
-          instructions={instructions}
-          video_title={post.frontmatter.video_title}
-          video={post.frontmatter.video}
-          faq={post.frontmatter.faq}
-          worksheets={post.frontmatter.worksheets}
-        />
         <PostLinks>
           <li>
             {previous && (

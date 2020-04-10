@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { headerFont } from "../Layout/variables"
+import { headerFont, smBreakpoint } from "../Layout/variables"
 import defaultImg from "../../../content/assets/mindefulness.svg"
 
 const PageHeader = props => (
@@ -11,16 +11,25 @@ const PageHeader = props => (
 )
 
 const PageHeaderStyled = styled.section`
-  background: linear-gradient(
+  background: ${props =>
+    props.props.blog
+      ? `linear-gradient(
+      165deg,
+      rgba(200, 200, 200, 0.5) 0%,
+      rgba(225, 225, 225, 0.5) 100%
+    ),
+    url(${props.props.image});`
+      : `linear-gradient(
       165deg,
       rgba(200, 200, 200, 0.3) 0%,
       rgba(225, 225, 225, 0.3) 100%
     ),
-    url(${props => props.props.image});
+    url(${props.props.image});`}
+
   width: 100%;
-  height: 300px;
+  height: ${props => (props.props.blog ? "400px" : "300px")};
   position: relative;
-  background-size: cover;
+  background-size: ${props => (props.props.blog ? "contain" : "cover")};
   background-position: center;
   h1 {
     position: absolute;
@@ -31,6 +40,9 @@ const PageHeaderStyled = styled.section`
     width: 100%;
     color: white;
     text-transform: uppercase;
+  }
+  @media (max-width: ${smBreakpoint}) {
+    height: 300px;
   }
 `
 

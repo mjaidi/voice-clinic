@@ -6,7 +6,7 @@ date: 2020-04-06T14:50:56.013Z
 category: Emotion
 title: Myths about emotions
 featured_image: >-
-  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968837/uowpmjm96spcigvmccno.jpg
+  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/frwxb5i2tdinulwarjuc.svg
 introduction: >-
   #### HEADER LIPSUM
 
@@ -31,8 +31,8 @@ introduction: >-
   maximus lobortis. In ut feugiat neque. Cras lacus justo, consectetur et turpis
   at, tempor cursus quam. Nam suscipit dui non pharetra blandit. Donec lacus
   nulla, molestie sed eleifend non, faucibus et elit.
-video_title: 'Mindfulness video'
-video: 'https://www.youtube.com/embed/6p_yaNFSYao'
+video_title:
+video:
 instructions: >-
   #### HEADER LIPSUM
 

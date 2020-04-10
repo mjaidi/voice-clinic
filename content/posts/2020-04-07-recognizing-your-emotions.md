@@ -6,7 +6,7 @@ date: 2020-04-06T14:50:56.013Z
 category: Emotion
 title: Recognizing your emotions
 featured_image: >-
-  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1572968837/uowpmjm96spcigvmccno.jpg
+  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/wpg6ibrcak41qtgree5v.svg
 introduction: >-
   #### HEADER LIPSUM
 
@@ -66,6 +66,14 @@ worksheets:
       dapibus dapibus imperdiet.
     document_pdf: >-
       https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586361873/clinique/pdh2gbiyyypv9tkbc2mw.pdf
+  - title: Document pdf exercise 2
+    description: >-
+      Duis turpis ante, accumsan quis luctus sit amet, consequat in libero.
+      Nulla imperdiet iaculis velit, nec maximus metus hendrerit in. Suspendisse
+      euismod felis id tellus dictum, ac tristique neque efficitur. Vivamus
+      dapibus dapibus imperdiet.
+    document_pdf: >-
+      https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586361873/clinique/pdh2gbiyyypv9tkbc2mw.pdf
 faq:
   - question: Lorem ipsum question 1?
     answer: >-
@@ -78,4 +86,16 @@ faq:
       justo, consectetur et turpis at, tempor cursus quam. Nam suscipit dui non
       pharetra blandit. Donec lacus nulla, molestie sed eleifend non, faucibus
       et elit.
+  - question: Lorem ipsum question 2?
+    answer: >-
+      Duis turpis ante, accumsan quis luctus sit amet, consequat in libero.
+      Nulla imperdiet iaculis velit, nec maximus metus hendrerit in. Suspendisse
+      euismod felis id tellus dictum, ac tristique neque efficitur. Vivamus
+      dapibus dapibus imperdiet.
+  - question: Lorem ipsum question 3?
+    answer: >-
+      Duis turpis ante, accumsan quis luctus sit amet, consequat in libero.
+      Nulla imperdiet iaculis velit, nec maximus metus hendrerit in. Suspendisse
+      euismod felis id tellus dictum, ac tristique neque efficitur. Vivamus
+      dapibus dapibus imperdiet.
 ---

@@ -7,6 +7,7 @@ export const PostLinks = styled.ul`
   justify-content: space-between;
   border-top: 1px solid;
   padding: 1rem 0;
+  margin-top: 0;
   @media (max-width: ${smBreakpoint}) {
     flex-direction: column;
     align-items: center;

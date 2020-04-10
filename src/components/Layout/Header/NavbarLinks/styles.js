@@ -138,13 +138,14 @@ export const Menu = styled.ul`
       ? ``
       : `
       background: none;
-      a {
+      li a {
+        color: ${light};
         font-size: 15px;
       }
     &.active {
       position: relative;
       top: 0;
-      left: 5px;
+      left: -10px;
       padding-bottom: 0.5rem;
       padding-top: 0.5rem;
       box-shadow: none;

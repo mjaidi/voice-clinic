@@ -1,5 +1,5 @@
 ---
 icon: >-
-  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1573209537/voci4zpqfxdyp5nl5tsv.png
-title: Mindfullness
+  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586854462/clinique/ofuihea3qzoibi9oaecc.svg
+title: Pleine Conscience
 ---

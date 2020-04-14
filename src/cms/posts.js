@@ -52,23 +52,27 @@ export const posts = {
           label: "Contenu",
           name: "text",
           widget: "markdown",
+          required: false,
         },
         {
           label: "Titre Vidéo",
           name: "video_title",
           widget: "string",
           hint: "Mettre le titre de la vidéo que vous voulez intégrer",
+          required: false,
         },
         {
           label: "Vidéo",
           name: "video",
           widget: "string",
           hint: "Mettre le lien youtube de la vidéo que vous voulez intégrer",
+          required: false,
         },
         {
           label: "Téléchargements",
           name: "downloads",
           widget: "list",
+          required: false,
           fields: [
             { label: "Titre", name: "title", widget: "string" },
             { label: "Déscription", name: "description", widget: "text" },
@@ -79,6 +83,7 @@ export const posts = {
           label: "Foire aux questions",
           name: "faq",
           widget: "list",
+          required: false,
           fields: [
             { label: "Question", name: "question", widget: "string" },
             { label: "Réponse", name: "answer", widget: "text" },

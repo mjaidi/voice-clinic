@@ -35,7 +35,7 @@ export const ArticleSummary = styled.div`
   @media (max-width: ${smBreakpoint}) {
     padding: 2rem 0.5rem;
     .summary-item {
-      width: 50%;
+      width: 100%;
       justify-content: flex-start;
       margin: 10px 0;
       font-size: 14px;

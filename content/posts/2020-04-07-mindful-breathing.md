@@ -3,7 +3,7 @@ seo_title: Gestion du stress
 seo_description: Gestion du stress
 status: Publié
 date: 2020-04-06T14:50:56.013Z
-category: Psyco-Education
+category: Psycho-Education
 title: Gestion du stress
 featured_image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/y615ow4dufapktjoji0j.svg

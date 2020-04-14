@@ -1,23 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
-import remark from "remark"
-import recommended from "remark-preset-lint-recommended"
-import remarkHtml from "remark-html"
 import PostContent from "../../components/common/postContent"
 import { StyleSheetManager } from "styled-components"
 
 export const PostPreview = ({ entry, widgetFor, getAsset }) => {
   return (
     <PostsTemplate
-      introduction={entry.getIn(["data", "introduction"])}
       category={entry.getIn(["data", "category"])}
       title={entry.getIn(["data", "title"])}
       featuredImage={getAsset(entry.getIn(["data", "featured_image"]))}
-      instructions={entry.getIn(["data", "instructions"])}
-      video_title={entry.getIn(["data", "video_title"])}
-      video={entry.getIn(["data", "video"])}
-      faq={entry.getIn(["data", "faq"]).toJS()}
-      worksheets={entry.getIn(["data", "worksheets"]).toJS()}
+      sections={entry.getIn(["data", "sections"]).toJS()}
     />
   )
 }
@@ -30,28 +22,7 @@ PostPreview.propTypes = {
   getAsset: PropTypes.any,
 }
 
-const PostsTemplate = ({
-  introduction,
-  category,
-  title,
-  featuredImage,
-  instructions,
-  video_title,
-  video,
-  faq,
-  worksheets,
-}) => {
-  console.log(faq)
-  const formatedIntroduction = remark()
-    .use(recommended)
-    .use(remarkHtml)
-    .processSync(introduction)
-    .toString()
-  const formatedInstructions = remark()
-    .use(recommended)
-    .use(remarkHtml)
-    .processSync(instructions)
-    .toString()
+const PostsTemplate = ({ category, title, featuredImage, sections }) => {
   const iframe = document.querySelector(".Pane2 iframe")
   const iframeHeadElem = iframe.contentDocument.head
   return (
@@ -65,14 +36,7 @@ const PostsTemplate = ({
           <p className="category">
             <strong>Catégorie: </strong> {category}
           </p>
-          <PostContent
-            introduction={formatedIntroduction}
-            instructions={formatedInstructions}
-            video_title={video_title}
-            video={video}
-            faq={faq}
-            worksheets={worksheets}
-          />
+          <PostContent sections={sections} />
         </div>
       </section>
     </StyleSheetManager>

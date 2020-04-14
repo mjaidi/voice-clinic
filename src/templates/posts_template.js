@@ -1,8 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import remark from "remark"
-import recommended from "remark-preset-lint-recommended"
-import remarkHtml from "remark-html"
 
 import CustomBreadcrumb from "../components/common/customBreadcrumb"
 import Container from "../components/common/container"
@@ -19,16 +16,6 @@ const PostDetail = props => {
   const category = props.data.categories.edges.find(
     c => c.node.frontmatter.title === post.frontmatter.category
   )
-  const introduction = remark()
-    .use(recommended)
-    .use(remarkHtml)
-    .processSync(post.frontmatter.introduction)
-    .toString()
-  const instructions = remark()
-    .use(recommended)
-    .use(remarkHtml)
-    .processSync(post.frontmatter.instructions)
-    .toString()
   const crumbs = [
     { pathname: "/", crumbLabel: "Acceuil" },
     {
@@ -53,14 +40,7 @@ const PostDetail = props => {
         title={post.frontmatter.seo_title}
         description={post.frontmatter.seo_description}
       />
-      <PostContent
-        introduction={introduction}
-        instructions={instructions}
-        video_title={post.frontmatter.video_title}
-        video={post.frontmatter.video}
-        faq={post.frontmatter.faq}
-        worksheets={post.frontmatter.worksheets}
-      />
+      <PostContent sections={post.frontmatter.sections} />
       <Container>
         <PostLinks>
           <li>
@@ -100,20 +80,22 @@ export const pageQuery = graphql`
             seo_title
             seo_description
             title
-            introduction
             featured_image
             category
-            instructions
-            video
-            video_title
-            worksheets {
+            sections {
               title
-              description
-              document_pdf
-            }
-            faq {
-              question
-              answer
+              text
+              video
+              video_title
+              downloads {
+                title
+                description
+                document_pdf
+              }
+              faq {
+                question
+                answer
+              }
             }
           }
         }

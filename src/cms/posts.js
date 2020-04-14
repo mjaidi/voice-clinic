@@ -34,6 +34,7 @@ export const posts = {
       label: "Titre",
       name: "title",
       widget: "string",
+      required: true,
     },
     {
       label: "Image de couverture",
@@ -42,44 +43,47 @@ export const posts = {
       required: false,
     },
     {
-      label: "Introduction",
-      name: "introduction",
-      widget: "markdown",
-    },
-    {
-      label: "Titre Vidéo",
-      name: "video_title",
-      widget: "string",
-      hint: "Mettre le titre de la vidéo que vous voulez intégrer",
-    },
-    {
-      label: "Vidéo",
-      name: "video",
-      widget: "string",
-      hint: "Mettre le lien youtube de la vidéo que vous voulez intégrer",
-    },
-    {
-      label: "Instructions",
-      name: "instructions",
-      widget: "markdown",
-    },
-    {
-      label: "Exercises",
-      name: "worksheets",
+      label: "Sections",
+      name: "sections",
       widget: "list",
       fields: [
-        { label: "Titre", name: "title", widget: "string" },
-        { label: "Déscription", name: "description", widget: "text" },
-        { label: "Document PDF", name: "document_pdf", widget: "file" },
-      ],
-    },
-    {
-      label: "Quéstions Fréquentes",
-      name: "faq",
-      widget: "list",
-      fields: [
-        { label: "Question", name: "question", widget: "string" },
-        { label: "Réponse", name: "answer", widget: "text" },
+        { label: "Titre", name: "title", widget: "string", required: true },
+        {
+          label: "Contenu",
+          name: "text",
+          widget: "markdown",
+        },
+        {
+          label: "Titre Vidéo",
+          name: "video_title",
+          widget: "string",
+          hint: "Mettre le titre de la vidéo que vous voulez intégrer",
+        },
+        {
+          label: "Vidéo",
+          name: "video",
+          widget: "string",
+          hint: "Mettre le lien youtube de la vidéo que vous voulez intégrer",
+        },
+        {
+          label: "Téléchargements",
+          name: "downloads",
+          widget: "list",
+          fields: [
+            { label: "Titre", name: "title", widget: "string" },
+            { label: "Déscription", name: "description", widget: "text" },
+            { label: "Document PDF", name: "document_pdf", widget: "file" },
+          ],
+        },
+        {
+          label: "Foire aux questions",
+          name: "faq",
+          widget: "list",
+          fields: [
+            { label: "Question", name: "question", widget: "string" },
+            { label: "Réponse", name: "answer", widget: "text" },
+          ],
+        },
       ],
     },
   ],

@@ -3,7 +3,7 @@ seo_title: Hygiène de vie
 seo_description: Hygiène de vie
 status: Publié
 date: 2020-04-06T14:50:56.013Z
-category: Psyco-Education
+category: Psycho-Education
 title: Gestion du traitement médicamenteux
 featured_image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/frwxb5i2tdinulwarjuc.svg

@@ -81,6 +81,7 @@ export default props => (
               internal: { description: { regex: "/content/categories/" } }
             }
           }
+          sort: { fields: frontmatter___order }
         ) {
           edges {
             node {

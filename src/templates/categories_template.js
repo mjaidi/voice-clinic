@@ -1,6 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import remark from "remark"
+import recommended from "remark-preset-lint-recommended"
+import remarkHtml from "remark-html"
+
 import Container from "../components/common/container"
 import Grid from "../components/common/grid"
 import GridItem from "../components/common/gridItem"
@@ -24,12 +28,22 @@ const CategoryDetailTemplate = props => {
     },
   ]
 
-  console.log(props.pageContext, crumbs)
+  const content = remark()
+    .use(recommended)
+    .use(remarkHtml)
+    .processSync(category.frontmatter.text)
+    .toString()
+
   return (
     <Layout location={props.location} title={siteTitle}>
-      <PageHeader title={category.frontmatter.title}></PageHeader>
+      <PageHeader
+        title={category.frontmatter.title}
+        image={category.frontmatter.icon}
+        blog
+      ></PageHeader>
       <CustomBreadcrumb crumbs={crumbs} crumbSeparator=" / " />
       <Container>
+        <div dangerouslySetInnerHTML={{ __html: content }}></div>
         <Content>
           <Grid>
             {posts.map(p => (
@@ -40,7 +54,7 @@ const CategoryDetailTemplate = props => {
                       src={p.node.frontmatter.featured_image}
                       alt={p.node.frontmatter.title}
                     />
-                    <p>{p.node.frontmatter.title}</p>
+                    <h4>{p.node.frontmatter.title}</h4>
                   </PostsCard>
                 </Link>
               </GridItem>
@@ -69,6 +83,8 @@ export const pageQuery = graphql`
             seo_title
             seo_description
             title
+            icon
+            text
           }
         }
       }

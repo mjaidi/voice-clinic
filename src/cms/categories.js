@@ -22,6 +22,11 @@ export const categories = {
       required: true,
     },
     {
+      label: "Positionement",
+      name: "order",
+      widget: "number",
+    },
+    {
       label: "Text",
       name: "text",
       widget: "markdown",

@@ -81,11 +81,7 @@ const ContactWrapper = ({ data }) => {
           smColumns={4}
           smNbColumns={4}
         >
-          <a
-            href="https://www.google.com/maps/place/33%C2%B033'14.0%22N+7%C2%B043'05.0%22W/@33.5538915,-7.7202387,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d33.5538874!4d-7.7180495"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="#" target="_blank" rel="noopener noreferrer">
             {contact.address}
           </a>
         </GridItem>

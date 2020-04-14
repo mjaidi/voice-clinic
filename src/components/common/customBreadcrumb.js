@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
-import { accentSecondary, headerFont } from "../Layout/variables"
+import { accentSecondary, headerFont, accentMain } from "../Layout/variables"
 
 const CustomBreadcrumb = props => {
   console.log(props)
@@ -15,14 +15,16 @@ const CustomBreadcrumb = props => {
 }
 
 const StyledBreadcrumb = styled.div`
-  padding: ${props => props.props.padding || "10px 0"};
+  padding: ${props => props.props.padding || "15px 0"};
   font-family: ${headerFont};
+  color: ${accentMain};
   ol {
     list-style: none;
     display: inline-flex;
-    padding-inline-start: 10px;
+    padding-inline-start: 15px;
     li {
-      margin: 0 5px;
+      margin: 0 10px;
+      font-weight: bold;
       &:hover {
         color: ${accentSecondary};
       }

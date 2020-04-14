@@ -24,7 +24,7 @@ const Contact = props => {
             <ContactInfo />
           </GridItem>
           <GridItem lgColumns={6} lgNbColumns={4}>
-            <ContactForm location={props.location} />
+            {/* <ContactForm location={props.location} /> */}
           </GridItem>
         </Grid>
       </Container>

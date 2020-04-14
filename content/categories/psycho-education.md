@@ -1,8 +1,8 @@
 ---
 icon: >-
-  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586854462/clinique/fl2ri73bwfnqajw1arsb.svg
-title: Stratégies face aux voix
-order: 3
+  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586854462/clinique/ii6a0pk165xd8lcxzdxj.svg
+title: Psycho-Education
+order: 1
 text: >-
   **Lorem ipsum dolor sit amet, consectetur adipiscing elit**. Duis at
   tortor quis ipsum fringilla tincidunt. Praesent fringilla hendrerit nunc
@@ -15,4 +15,5 @@ text: >-
   convallis vitae purus. Morbi at orci vel nunc mollis pretium nec sit amet
   augue. Proin vel elit a est tempor dignissim. Cras elementum finibus
   posuere.
+
 ---

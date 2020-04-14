@@ -1,10 +1,10 @@
 ---
-seo_title: Etirement en conscience
-seo_description: Etirement en conscience
+seo_title: Grounding - "Tolérance"
+seo_description: Grounding - "Tolérance"
 status: Publié
 date: 2020-04-06T14:50:56.013Z
 category: Pleine Conscience
-title: Etirement en conscience
+title: Grounding - "Tolérance"
 featured_image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/wpg6ibrcak41qtgree5v.svg
 sections:

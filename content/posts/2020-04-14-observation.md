@@ -1,10 +1,10 @@
 ---
-seo_title: Observation
-seo_description: Observation
+seo_title: Respiration en pleine conscience
+seo_description: Respiration en pleine conscience
 status: Publié
 date: 2020-04-06T14:50:56.013Z
 category: Pleine Conscience
-title: Observation
+title: Respiration en pleine conscience
 featured_image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/wpg6ibrcak41qtgree5v.svg
 sections:

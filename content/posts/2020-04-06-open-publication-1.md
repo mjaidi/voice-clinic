@@ -3,7 +3,7 @@ seo_title: Faire face aux symptomes
 seo_description: Faire face aux symptomes
 status: Publié
 date: 2020-04-06T14:50:56.013Z
-category: Psyco-Education
+category: Psycho-Education
 title: Faire face aux symptomes
 featured_image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/wpg6ibrcak41qtgree5v.svg

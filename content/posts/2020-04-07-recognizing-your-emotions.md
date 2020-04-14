@@ -3,7 +3,7 @@ seo_title: Recognizing your emotions
 seo_description: Recognizing your emotions
 status: Publié
 date: 2020-04-06T14:50:56.013Z
-category: Emotion
+category: Pleine Conscience
 title: Recognizing your emotions
 featured_image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/wpg6ibrcak41qtgree5v.svg

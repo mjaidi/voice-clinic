@@ -3,7 +3,7 @@ seo_title: Mindful Breathing
 seo_description: Mindful Breathing
 status: Publié
 date: 2020-04-06T14:50:56.013Z
-category: Mindfullness
+category: Psyco-Education
 title: Mindful Breathing
 featured_image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/y615ow4dufapktjoji0j.svg

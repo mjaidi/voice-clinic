@@ -3,7 +3,7 @@ seo_title: Myths about emotions
 seo_description: Myths about emotions
 status: Publié
 date: 2020-04-06T14:50:56.013Z
-category: Emotion
+category: Pleine Conscience
 title: Myths about emotions
 featured_image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/frwxb5i2tdinulwarjuc.svg

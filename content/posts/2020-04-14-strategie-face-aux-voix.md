@@ -1,14 +1,14 @@
 ---
-seo_title: Hygiène de vie
-seo_description: Hygiène de vie
+seo_title: Stratégies face au voix
+seo_description: Stratégies face au voix
 status: Publié
 date: 2020-04-06T14:50:56.013Z
-category: Psycho-Education
-title: Gestion du traitement médicamenteux
+category: Quelques Outils
+title: Stratégies face au voix
 featured_image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/frwxb5i2tdinulwarjuc.svg
 sections:
-  - title: Introduction
+  - title: Stratégies face au voix
     text: >-
       #### HEADER LIPSUM
 
@@ -37,16 +37,6 @@ sections:
       et elit.
     video_title: Mindfulness video
     video: 'https://www.youtube.com/embed/6p_yaNFSYao'
-  - title: Téléchargements
-    downloads:
-      - title: Document pdf exercise 1
-        description: >-
-          Duis turpis ante, accumsan quis luctus sit amet, consequat in libero.
-          Nulla imperdiet iaculis velit, nec maximus metus hendrerit in.
-          Suspendisse euismod felis id tellus dictum, ac tristique neque
-          efficitur. Vivamus dapibus dapibus imperdiet.
-        document_pdf: >-
-          https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586361873/clinique/pdh2gbiyyypv9tkbc2mw.pdf
   - title: Foire aux questions
     faq:
       - question: Lorem ipsum question 1?

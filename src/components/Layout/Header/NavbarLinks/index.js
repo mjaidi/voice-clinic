@@ -9,6 +9,11 @@ const NavbarLinks = ({ data, desktop, location }) => {
   console.log(location)
   return (
     <Wrapper desktop={desktop}>
+      <div className="navbarLink">
+        <Link to="/" className={location === "/" ? " active" : ""}>
+          Qui Sommes Nous
+        </Link>
+      </div>
       {data.categories.edges.map((c, i) => {
         const posts = data.posts.edges.filter(
           p => p.node.frontmatter.category === c.node.frontmatter.title

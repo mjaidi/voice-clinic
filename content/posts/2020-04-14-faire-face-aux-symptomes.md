@@ -3,12 +3,12 @@ seo_title: Faire face aux symptomes
 seo_description: Faire face aux symptomes
 status: Publié
 date: 2020-04-06T14:50:56.013Z
-category: Psycho-Education
+category: Quelques Outils
 title: Faire face aux symptomes
 featured_image: >-
-  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/wpg6ibrcak41qtgree5v.svg
+  https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/frwxb5i2tdinulwarjuc.svg
 sections:
-  - title: Comment faire face au symptomes
+  - title: Faire face aux symptomes
     text: >-
       #### HEADER LIPSUM
 
@@ -37,16 +37,6 @@ sections:
       et elit.
     video_title: Mindfulness video
     video: 'https://www.youtube.com/embed/6p_yaNFSYao'
-  - title: Téléchargements
-    downloads:
-      - title: Document pdf exercise 1
-        description: >-
-          Duis turpis ante, accumsan quis luctus sit amet, consequat in libero.
-          Nulla imperdiet iaculis velit, nec maximus metus hendrerit in.
-          Suspendisse euismod felis id tellus dictum, ac tristique neque
-          efficitur. Vivamus dapibus dapibus imperdiet.
-        document_pdf: >-
-          https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586361873/clinique/pdh2gbiyyypv9tkbc2mw.pdf
   - title: Foire aux questions
     faq:
       - question: Lorem ipsum question 1?

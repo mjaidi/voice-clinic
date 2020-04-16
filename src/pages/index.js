@@ -51,6 +51,18 @@ const IndexPage = props => {
         </ScrollAnimation>
       </Container>
 
+      {/* Our Strategy Section */}
+      <Container>
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2}>
+          <About>
+            <Grid>
+              <Title>Notre Stratégie Clinique</Title>
+              <div dangerouslySetInnerHTML={{ __html: aboutText }} />
+            </Grid>
+          </About>
+        </ScrollAnimation>
+      </Container>
+
       {/* Our team section */}
       <Container>
         <ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={2}>

@@ -4,6 +4,8 @@ seo_description: Grounding - "Tolérance"
 status: Publié
 date: 2020-04-06T14:50:56.013Z
 category: Pleine Conscience
+needs_login: true
+
 title: Grounding - "Tolérance"
 featured_image: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586532160/clinique/wpg6ibrcak41qtgree5v.svg
@@ -36,7 +38,7 @@ sections:
       pharetra blandit. Donec lacus nulla, molestie sed eleifend non, faucibus
       et elit.
     video_title: Mindfulness video
-    video: 'https://www.youtube.com/embed/6p_yaNFSYao'
+    video: "https://www.youtube.com/embed/6p_yaNFSYao"
   - title: Instructions
     text: >-
       #### HEADER LIPSUM

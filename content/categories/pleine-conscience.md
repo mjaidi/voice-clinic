@@ -3,6 +3,7 @@ icon: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586854462/clinique/ofuihea3qzoibi9oaecc.svg
 title: Pleine Conscience
 order: 1
+needs_login: true
 text: >-
   **Lorem ipsum dolor sit amet, consectetur adipiscing elit**. Duis at
   tortor quis ipsum fringilla tincidunt. Praesent fringilla hendrerit nunc

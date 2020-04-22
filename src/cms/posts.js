@@ -31,6 +31,11 @@ export const posts = {
       valueField: "title",
     },
     {
+      label: "Connéxion Obligatoire?",
+      name: "needs_login",
+      widget: "boolean",
+    },
+    {
       label: "Titre",
       name: "title",
       widget: "string",

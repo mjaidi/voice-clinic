@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, navigate } from "gatsby"
+import firebase from "gatsby-plugin-firebase"
 
 import remark from "remark"
 import recommended from "remark-preset-lint-recommended"
@@ -33,6 +34,11 @@ const CategoryDetailTemplate = props => {
     .use(remarkHtml)
     .processSync(category.frontmatter.text)
     .toString()
+
+  const isLoggedIn = firebase.auth().currentUser
+  if (!isLoggedIn && category.frontmatter.needs_login) {
+    navigate("/")
+  }
 
   return (
     <Layout location={props.location} title={siteTitle}>
@@ -85,6 +91,7 @@ export const pageQuery = graphql`
             title
             icon
             text
+            needs_login
           }
         }
       }

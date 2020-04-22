@@ -3,6 +3,7 @@ icon: >-
   https://res.cloudinary.com/dw6uzjc8d/image/upload/v1586854462/clinique/fl2ri73bwfnqajw1arsb.svg
 title: Quelques Outils
 order: 2
+needs_login: false
 text: >-
   **Lorem ipsum dolor sit amet, consectetur adipiscing elit**. Duis at
   tortor quis ipsum fringilla tincidunt. Praesent fringilla hendrerit nunc

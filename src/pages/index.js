@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
 import remark from "remark"
@@ -24,7 +24,6 @@ const IndexPage = props => {
     .use(remarkHtml)
     .processSync(aboutData.text)
     .toString()
-  console.log(ourTeam)
 
   return (
     <Layout location="/">

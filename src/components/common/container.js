@@ -11,6 +11,7 @@ const ContainerStyled = styled.section`
   background-color: ${props => props.props.color};
   background-image: url(${props => (props.props.textured ? texture : "")});
   background-size: 200px;
+  min-height: ${props => props.props.minHeight};
   .inner-container {
     margin: 0 auto;
     max-width: 1200px;

@@ -27,6 +27,11 @@ export const categories = {
       widget: "number",
     },
     {
+      label: "Connéxion Obligatoire?",
+      name: "needs_login",
+      widget: "boolean",
+    },
+    {
       label: "Text",
       name: "text",
       widget: "markdown",

@@ -6,19 +6,33 @@ import {
   accentSecondary,
   background,
   mainFont,
+  headerFont,
   borderRadius,
-} from "../../Layout/variables"
+} from "../Layout/variables"
 
-export const ContactFormSection = styled.section`
+export const LoginFormSection = styled.section`
   margin: 0 auto;
   max-width: 900px;
-  padding: 3rem;
+  padding: 2rem;
+
   box-shadow: ${shadowMain};
   background: ${background};
   border-radius: ${borderRadius};
-
+  .form-title {
+    text-align: center;
+    font-family: ${headerFont};
+    color: ${accentMain};
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .form-group {
     padding-bottom: 2rem;
+    width: 100%;
     label {
       display: block;
       font-size: 18px;

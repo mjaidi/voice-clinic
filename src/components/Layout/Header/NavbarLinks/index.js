@@ -1,12 +1,24 @@
 import React, { useState } from "react"
-import { Link, StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql, navigate } from "gatsby"
+import firebase from "gatsby-plugin-firebase"
 import { Wrapper, Menu } from "./styles"
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const NavbarLinks = ({ data, desktop, location }) => {
   const [activeMenu, setActiveMenu] = useState("")
-  console.log(location)
+  const handleLogout = () => {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        navigate("/")
+      })
+  }
+  const isLoggedIn = firebase.auth().currentUser
+  const activeCategories = data.categories.edges.filter(
+    c => !c.node.frontmatter.needs_login || isLoggedIn
+  )
   return (
     <Wrapper desktop={desktop}>
       <div className="navbarLink">
@@ -14,9 +26,11 @@ const NavbarLinks = ({ data, desktop, location }) => {
           Qui Sommes Nous
         </Link>
       </div>
-      {data.categories.edges.map((c, i) => {
+      {activeCategories.map((c, i) => {
         const posts = data.posts.edges.filter(
-          p => p.node.frontmatter.category === c.node.frontmatter.title
+          p =>
+            p.node.frontmatter.category === c.node.frontmatter.title &&
+            (!p.node.frontmatter.needs_login || isLoggedIn)
         )
         return (
           <div className="navbarLink" key={i}>
@@ -69,9 +83,23 @@ const NavbarLinks = ({ data, desktop, location }) => {
           to="/contact"
           className={location === "/contact" ? " active" : ""}
         >
-          Contactez Nous
+          Contact
         </Link>
       </div>
+      {!isLoggedIn && (
+        <div className="navbarLink">
+          <Link to="/login" className={location === "/login" ? " active" : ""}>
+            Connexion
+          </Link>
+        </div>
+      )}
+      {isLoggedIn && (
+        <div className="navbarLink">
+          <a href onClick={handleLogout}>
+            Se déconnécter
+          </a>
+        </div>
+      )}
     </Wrapper>
   )
 }
@@ -95,6 +123,7 @@ export default props => (
               }
               frontmatter {
                 title
+                needs_login
               }
             }
           }
@@ -112,6 +141,7 @@ export default props => (
               frontmatter {
                 title
                 category
+                needs_login
               }
             }
           }

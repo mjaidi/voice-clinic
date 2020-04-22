@@ -1,12 +1,14 @@
 import React, { useState } from "react"
 import { Formik } from "formik"
-import axios from "axios"
+import firebase from "gatsby-plugin-firebase"
+import { navigate } from "gatsby"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons"
-import Button from "../../common/button"
-import { ContactFormSection, Feedback } from "./styles"
+import Button from "../common/button"
+import { LoginFormSection, Feedback } from "./styles"
 
-const ContactForm = props => {
+const LoginForm = props => {
   const [feedbackMsg, setFeedbackMsg] = useState("")
   const [isLoading, setIsLoading] = useState(false)
 
@@ -30,12 +32,12 @@ const ContactForm = props => {
         </div>
       </Feedback>
 
-      <ContactFormSection>
+      <LoginFormSection>
+        <h2 class="form-title">Se connécter</h2>
         <Formik
           initialValues={{
-            "form-name": "Contact Form",
             email: "",
-            message: "",
+            password: "",
           }}
           validate={values => {
             const errors = {}
@@ -46,34 +48,30 @@ const ContactForm = props => {
             ) {
               errors.email = "Adresse email invalide"
             }
-            if (!values.message) {
-              errors.message = "Obligatoire"
+            if (!values.password) {
+              errors.password = "Obligatoire"
+            } else if (values.password.length < 6) {
+              errors.password = "Mot de passe trop court - min 6 caractères"
             }
+
             return errors
           }}
           onSubmit={async (values, { resetForm }) => {
             setIsLoading(true)
-            let formData = encode(values)
-            const axiosOptions = {
-              url: props.location.pathname,
-              method: "post",
-              headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-              },
-              data: formData,
-            }
 
-            axios(axiosOptions)
-              .then(response => {
-                setFeedbackMsg(
-                  "Votre demande a été envoyé avec succès! Nous vous contacterons dans les plus brefs délais"
-                )
+            firebase
+              .auth()
+              .signInWithEmailAndPassword(values.email, values.password)
+              .then(cred => {
+                console.log("loggedIn")
                 setIsLoading(false)
-                resetForm({})
+                resetForm()
+                navigate("/")
               })
               .catch(err => {
-                setFeedbackMsg("Une erreur c'est produite!")
+                setFeedbackMsg(err.message)
                 setIsLoading(false)
+                console.log(err)
               })
           }}
         >
@@ -84,18 +82,10 @@ const ContactForm = props => {
             handleChange,
             handleBlur,
             handleSubmit,
-            setFieldValue,
           }) => (
-            <form
-              onSubmit={handleSubmit}
-              name="Contact Form"
-              method="POST"
-              data-netlify="true"
-              id="form"
-            >
-              <input type="hidden" name="form-name" value="Contact Form" />
+            <form onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="email">Votre Email:</label>
+                <label htmlFor="email">Email:</label>
                 <input
                   type="email"
                   name="email"
@@ -111,32 +101,32 @@ const ContactForm = props => {
                 </div>
               </div>
               <div className="form-group">
-                <label htmlFor="message">Descriptif de vos besoins:</label>
-                <textarea
-                  type="message"
-                  name="message"
+                <label htmlFor="password">Mot de passe:</label>
+                <input
+                  type="password"
+                  name="password"
                   className={
-                    errors.message && touched.message && errors.message
+                    errors.password && touched.password && errors.password
                       ? "error"
                       : ""
                   }
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  value={values.message}
+                  value={values.password}
                 />
                 <div className="error-message">
-                  {errors.message && touched.message && errors.message}
+                  {errors.password && touched.password && errors.password}
                 </div>
               </div>
               <Button type="submit" disabled={isLoading}>
-                Envoyer
+                Se connécter
               </Button>
             </form>
           )}
         </Formik>
-      </ContactFormSection>
+      </LoginFormSection>
     </div>
   )
 }
 
-export default ContactForm
+export default LoginForm

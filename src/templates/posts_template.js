@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, navigate } from "gatsby"
+import firebase from "gatsby-plugin-firebase"
 
 import CustomBreadcrumb from "../components/common/customBreadcrumb"
 import Container from "../components/common/container"
@@ -27,6 +28,10 @@ const PostDetail = props => {
       crumbLabel: `${post.frontmatter.title}`,
     },
   ]
+  const isLoggedIn = firebase.auth().currentUser
+  if (!isLoggedIn && post.frontmatter.needs_login) {
+    navigate("/")
+  }
   return (
     <Layout location={props.location} title={siteTitle}>
       <PageHeader
@@ -82,6 +87,7 @@ export const pageQuery = graphql`
             title
             featured_image
             category
+            needs_login
             sections {
               title
               text

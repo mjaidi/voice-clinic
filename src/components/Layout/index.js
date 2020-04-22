@@ -9,12 +9,18 @@ import Footer from "./Footer"
 import { Global } from "./globalStyles"
 
 const Layout = ({ children, location }) => {
-  const [currentUser, setCurrentuser] = useState(firebase.auth().currentUser)
-  firebase.auth().onAuthStateChanged(() => {
-    if (!currentUser) {
-      setCurrentuser(firebase.auth().currentUser || true)
-    }
-  })
+  let initialUser = false
+  if (typeof window !== undefined) {
+    initialUser = firebase.auth().currentUser
+  }
+  const [currentUser, setCurrentuser] = useState(initialUser)
+  if (typeof window !== undefined) {
+    firebase.auth().onAuthStateChanged(() => {
+      if (!currentUser) {
+        setCurrentuser(firebase.auth().currentUser || true)
+      }
+    })
+  }
   if (!currentUser) {
     return <Loading />
   }

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
 import remark from "remark"

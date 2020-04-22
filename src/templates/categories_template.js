@@ -35,9 +35,11 @@ const CategoryDetailTemplate = props => {
     .processSync(category.frontmatter.text)
     .toString()
 
-  const isLoggedIn = firebase.auth().currentUser
-  if (!isLoggedIn && category.frontmatter.needs_login) {
-    navigate("/")
+  if (typeof window !== "undefined") {
+    const isLoggedIn = firebase.auth().currentUser
+    if (!isLoggedIn && category.frontmatter.needs_login) {
+      navigate("/")
+    }
   }
 
   return (

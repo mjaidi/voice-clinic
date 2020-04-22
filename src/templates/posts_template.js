@@ -28,9 +28,11 @@ const PostDetail = props => {
       crumbLabel: `${post.frontmatter.title}`,
     },
   ]
-  const isLoggedIn = firebase.auth().currentUser
-  if (!isLoggedIn && post.frontmatter.needs_login) {
-    navigate("/")
+  if (typeof window !== "undefined") {
+    const isLoggedIn = firebase.auth().currentUser
+    if (!isLoggedIn && post.frontmatter.needs_login) {
+      navigate("/")
+    }
   }
   return (
     <Layout location={props.location} title={siteTitle}>

@@ -10,11 +10,11 @@ import { Global } from "./globalStyles"
 
 const Layout = ({ children, location }) => {
   let initialUser = false
-  if (typeof window !== undefined) {
+  if (typeof window !== "undefined") {
     initialUser = firebase.auth().currentUser
   }
   const [currentUser, setCurrentuser] = useState(initialUser)
-  if (typeof window !== undefined) {
+  if (typeof window !== "undefined") {
     firebase.auth().onAuthStateChanged(() => {
       if (!currentUser) {
         setCurrentuser(firebase.auth().currentUser || true)
